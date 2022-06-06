@@ -1,0 +1,449 @@
+{
+    "id": "10",
+    "formVersion": "1",
+    "areaNumber": "4",
+    "areaId": "physicalAndSensory",
+    "areaLabel": "Physical and sensory",
+    "subAreaNumber": "10",
+    "subAreaId": "sensoryProcessing",
+    "subAreaLabel": "Sensory processing and integration",
+    "subCategory": [
+        {
+            "subCategoryId": "A4SA10SC1",
+            "subCategoryLabel": "Vestibular system (how our body reacts to gravity)",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC1SG1STE1",
+                            "statementLabel": " Has a well-developed vestibular system ie the system responsible for detecting how our body reacts against gravity.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STT1",
+                            "statementLabel": "Enjoys thrill seeking behaviour such as spinning, swinging upside down and climbing high on things but will respond to safety rules.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STT2",
+                            "statementLabel": "Frequently displays aversion to risks and movement eg won’t move or go to high. (hypersensitive to movement)",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STA1",
+                            "statementLabel": "Enjoys thrill seeking behaviour such as spinning, swinging upside down and climbing high on things but will not respond to safety rules.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STA2",
+                            "statementLabel": "Under-activated vestibular system leads to fear of movement or very sensory seeking behaviour eg crashing, banging, spinning and never getting tired.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STB1",
+                            "statementLabel": "Cannot walk without a walking aid outside but can walk inside by holding onto furniture; rails needed to help balance in bathroom /toilet",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG1STC1",
+                            "statementLabel": "Has no independent standing balance but can manage standing transfers using equipment for support ; can only walk using walking aid inside and outside",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA10SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC1SG2STE1",
+                            "statementLabel": "Has good postural balance and control and hence coordinated in his/her movement.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG2STT1",
+                            "statementLabel": "Can be a bit unstable and loses balance on occasion.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC1SG2STA1",
+                            "statementLabel": "Easily loses his/her balance eg on a bike or climbing stairs but continues despite the risk (as hypo sensitive)",
+                            "statementLevel": "a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC2",
+            "subCategoryLabel": "Interoceptive sense (interpreting sensations from internal organs)",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC2SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC2SG3STE1",
+                            "statementLabel": "Has a well-developed interoceptive system ie how we interpret sensations from our internal organs: for example heart rate, hunger, using the toilet.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC2SG3STT1",
+                            "statementLabel": "Cannot recognise the difference between hot and cold or know if they are hungry or full but will accept adults ‘guessing’ for them…’I think you are hungry, it’s time to eat’",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC2SG3STA1",
+                            "statementLabel": "Cannot recognise the difference between hot and cold or know if they are hungry or full and this is communicated through their behaviour as they become distressed or angry but cannot explain why.",
+                            "statementLevel": "a"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA10SC2SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC2SG4STE1",
+                            "statementLabel": "Is aware when they are hungry, cold, hot, full and can name these feelings.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC2SG4STT1",
+                            "statementLabel": "Cannot recognise the sensation of needing the toilet",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC2SG4STA1",
+                            "statementLabel": "Cannot recognise pain or illness symptoms accurately leading to missed illness or injury or misdiagnosis where pain is under reported or there is a delay in reporting.",
+                            "statementLevel": "a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC3",
+            "subCategoryLabel": "Proprioceptive sense",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC3SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC3SG5STE1",
+                            "statementLabel": " Has a well-developed proprioceptive sense ie a body awareness of knowing where they are positioned and where their body parts are without looking at them.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC3SG5STT1",
+                            "statementLabel": " Poor proprioceptive functioning (understanding of themselves in space). This can be linked to ACEs and/or Autism). He/she rushes about, bumps into things, and is fidgety. Is too jerky or too floppy. Uses the wrong pressure e.g. in writing or other fine motor tasks. May have joint hypermobility affecting proprioception",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC3SG5STA1",
+                            "statementLabel": "Needs to move constantly or have movement breaks to keep levels of alertness at a level to attend/concentrate and maintain postural stability",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC3SG5STB1",
+                            "statementLabel": "Has difficulty planning fine motor and Gross motor activities",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC3SG5STB2",
+                            "statementLabel": "Significant motor planning difficulties resulting in poor function (out of line with learning potential) which can affect sense of well-being and lead to anxiety and mental health problems",
+                            "statementLevel": "b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC4",
+            "subCategoryLabel": "Tactile Awareness (leading to avoidant or sensory seeking behaviours)",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC4SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC4SG6STE1",
+                            "statementLabel": "Has a well developed tactile sense. Is able to process touch sensation without additional visual or movement cues.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG6STT1",
+                            "statementLabel": "Appears to have a difference in how they process touch sensation. Misinterprets or does not appear to respond to tactile sensations . This is at a level that does not affect functional ability but may pose some risk to poor behavioural responses.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG6STT2",
+                            "statementLabel": "Those with ASD and DCD often have a difference in how they process tactile information.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG6STA1",
+                            "statementLabel": "Cannot accurately perceive touch sensations such as heat, burn, cuts, bruising. Danger that they will not avoid harmful tactile stimulus nor recognise or accurately report injury.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG6STA2",
+                            "statementLabel": "Reporting does not match the tactile experience therefore this can be a risk to peers /family/educators through misreporting. E.g. Where a mild bump is perceived and reported as a strong hit.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG6STB1",
+                            "statementLabel": "There is a possibility that in some cases an inability to recognise and accurately perceive touch sensations can be caused by a history of physical, neglectful or sexual abuse. The result behavoiur can lead to both avoidant and seeking tactile behaviours.",
+                            "statementLevel": "b"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA10SC4SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC4SG7STE1",
+                            "statementLabel": "Has no noticeable sensory avoidant behaviour. Can unconsciously combine senses in order to make sense of his/her environment.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STT1",
+                            "statementLabel": "Appears under-aroused. If present alerting activities he/she continues to appear under-aroused.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STT2",
+                            "statementLabel": "Is over-aroused. Is sensory-sensitive (hypersensitive) and is quickly overwhelmed by some sensory experiences.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STA1",
+                            "statementLabel": "Has sensory defensiveness. Cannot register the touch cues that they need to function efficiently. For example they do not notice their clothes are twisted or that they have dirt on their hands",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STA2",
+                            "statementLabel": "Is hyper-sensitive to touch. Experiences light touch as painful and hence goes into a fight or flight mode.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STA3",
+                            "statementLabel": "Has heightened sensitivity eg overreacts to insect bites, cuts and scrapes, will not wear certain textures of clothes.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STB1",
+                            "statementLabel": "Fearful of being touched or bumped into and this impacted upon peer relationships.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STB2",
+                            "statementLabel": "Inclusion with peers is impacted by sensitivities e.g. around food or possible contact with people. Can lash out if he/she is approached unexpectedly.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STB3",
+                            "statementLabel": "Those with these behaviours often feel distress and have raised anxiety.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG7STC1",
+                            "statementLabel": "Experiences sensory overload to the extent that cannot be in an environment with certain sensory stimuli such as bright lights or loud noises.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA10SC4SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC4SG8STE1",
+                            "statementLabel": "Has no noticeable sensory seeking behaviour. Can unconsciously combine senses in order to make sense of his/her environment.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STT1",
+                            "statementLabel": "Is sensory seeking but these needs can be met without disruption in the educational setting",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STT2",
+                            "statementLabel": "Yawns excessively and can seem fatigued and even fall asleep in a lesson.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STT3",
+                            "statementLabel": "Appears under-aroused but is shut down. IF present alerting activities he/she continues to appear under-aroused.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STT4",
+                            "statementLabel": "Is over-aroused. Is sensory-sensitive (hypersensitive) and is quickly overwhelmed by some sensory experiences.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA1",
+                            "statementLabel": "Sensory seeking needs are such that he/she will fidget/run off in order to get these needs met. Need to gain sensory feedback is strong.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA2",
+                            "statementLabel": "Is under-aroused or hyposensitive and hence makes loud noises (for example) to stimulate the underactive sense or is fidgety or sensory-seeking",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA3",
+                            "statementLabel": "Has sensory defensiveness. Cannot register the touch cues that they need to function efficiently. For example they do not notice their clothes or twisted or that they have dirt on their hands.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA4",
+                            "statementLabel": "Is hyper-sensitive to touch. Experiences light touch as painful and hence goes into a fight or flight mode.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA5",
+                            "statementLabel": "Overreacts to insect bites, cuts and scrapes.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STA6",
+                            "statementLabel": "Will not wear certain textures of clothes.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STB1",
+                            "statementLabel": "Sensory seeking behaviour leads to behaviour which disrupts from learning all day unless needs are met. Those with these behaviours often feel distress and have raised anxiety.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STB2",
+                            "statementLabel": "Fearful of being touched or bumped into and this impacted upon peer relationships.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STB3",
+                            "statementLabel": "Inclusion with peers is impacted by sensitivities eg around food or possible contact with people. Can lash out if he/she is approached unexpectedly.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STC1",
+                            "statementLabel": "Sensory seeking behaviour is such that the learner is constantly moving and unsettled. Leading to complete disengagement with learning, social and leisure activities and family life",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC4SG8STC2",
+                            "statementLabel": "Experiences sensory overload to the extent that cannot be in an environment with certain sensory stimuli such as bright lights or loud noises.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC5",
+            "subCategoryLabel": "Gustatory (taste) and Olifactory (smell) systems",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC5SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC5SG9STE1",
+                            "statementLabel": "Gustatory (taste) and Olifactory (smell) systems are not overly sensitive",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC5SG9STT1",
+                            "statementLabel": "He/she is hypersensitive to certain tastes and smells.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC5SG9STA1",
+                            "statementLabel": "He/she will not use the toilet at school or go to certain environments because of the smell.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC5SG9STA2",
+                            "statementLabel": "Can be distressed at mealtimes as needs to control what they are eating and with what equipment.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC5SG9STB1",
+                            "statementLabel": "He/she is involved in excessive chewing or licking anything (include non-edible items - Pica)",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC5SG9STC1",
+                            "statementLabel": "Constantly chewing, licking and some biting. At risk of consuming non-edible objects and/or choking.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC6",
+            "subCategoryLabel": "Visual processing",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC6SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC6SG10STE1",
+                            "statementLabel": "Does not have any sensory processing difficulties in terms of vision",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC6SG10STT1",
+                            "statementLabel": "Has visual defensiveness ie is over sensitive to bright lights and shields themselves or insists on putting on sun glasses indoors. (commonly linked to a diagnosis of autism).",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC6SG10STT2",
+                            "statementLabel": "Has Visual perceptual difficulties which mean processing of visual information is compromised. In particular some busy/cluttered images will be hard to process.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC6SG10STA1",
+                            "statementLabel": "Visual processing difficulties impact upon reading , numeracy and processing other visual images.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC6SG10STA2",
+                            "statementLabel": "Difficulties with spacing and orientation of letters etc.",
+                            "statementLevel": "a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA10SC7",
+            "subCategoryLabel": "Auditory processing",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA10SC7SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA10SC7SG11STE1",
+                            "statementLabel": "Does not have any sensory processing difficulties in terms of hearing.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC7SG11STT1",
+                            "statementLabel": "Is hypersensitive to noise (auditory defensiveness). Over sensitive hearing is a significant distraction. (commonly linked to a diagnosis of autism).",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA10SC7SG11STA1",
+                            "statementLabel": "He/she describes over-sensitive hearing as feeling like pain. This distracts from all learning and can be very distressing for him/her.",
+                            "statementLevel": "a"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRAKAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAKAAAAAAAAAA==/",
+    "_etag": "\"af00191d-0000-1100-0000-61c21e630000\"",
+    "_attachments": "attachments/",
+    "_ts": 1640111715
+}

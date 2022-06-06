@@ -1,0 +1,677 @@
+{
+    "id": "1",
+    "formVersion": "1",
+    "areaNumber": "1",
+    "areaId": "communicationAndInteraction",
+    "areaLabel": "Communication and interaction",
+    "subAreaNumber": "1",
+    "subAreaId": "expressiveCommunication",
+    "subAreaLabel": "Expressive language and communication",
+    "subCategory": [
+        {
+            "subCategoryId": "A1SA1SC1",
+            "subCategoryLabel": "Style of communication",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC1SG1STE1",
+                            "statementLabel": "Mostly able to change talking style to suit different people or situations, Sometimes gets it wrong, but realises and tries to change or apologises.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC1SG1STT1",
+                            "statementLabel": "Knows about changing style of talking for different people and situations and tries to do this. But doesn’t remember or chooses the wrong style, eg being too informal or jokey",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC1SG1STA1",
+                            "statementLabel": "Looks awkward when trying to chat, e.g. stands too close, stares or doesn’t use facial expressions. Often gets a dismissive or negative reaction.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC1SG1STB1",
+                            "statementLabel": "Has some awareness of differences of how to talk to familiar vs unfamiliar people but does not always make appropriate adjustments",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC1SG1STC1",
+                            "statementLabel": "Always talks in the same way no matter who they are talking to or wherever they are. Doesn't listen to advice to change.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC2",
+            "subCategoryLabel": "Vocabulary and sentence structure",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC2SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC2SG2STE1",
+                            "statementLabel": "Can express his/her needs and wishes verbally",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STT1",
+                            "statementLabel": "Vocabulary is slightly reduced in comparison to peers.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STA1",
+                            "statementLabel": "Has a significantly reduced vocabulary compared to same age peers.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STA2",
+                            "statementLabel": "Speaks in sentences but is missing many key grammatical features",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STB1",
+                            "statementLabel": "Does not use complex sentences (only simple phrases)",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STB2",
+                            "statementLabel": "Does not ask 'who, what, where, why' questions",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STC1",
+                            "statementLabel": "Uses words to name a few objects but not as part of functional communication",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG2STC2",
+                            "statementLabel": "Uses single or at most 2 word phrases just to name objects and people.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC2SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC2SG3STE1",
+                            "statementLabel": "Can use language that is (developmentally) at an appropriate level for their age",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG3STT1",
+                            "statementLabel": "Is described by a SALT as having mild expressive language difficulties.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG3STA1",
+                            "statementLabel": "Is described by a SALT as having moderate expressive language difficulties.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG3STB1",
+                            "statementLabel": "Is described by a SALT as having severe expressive language difficulties.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC2SG3STC1",
+                            "statementLabel": "Described by a SALT as having profound expressive language difficulties.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC3",
+            "subCategoryLabel": "Word finding",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC3SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC3SG4STE1",
+                            "statementLabel": "Can easily retrieve words from his/her memory to use in conversation without hesitation.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC3SG4STT1",
+                            "statementLabel": "Can pause slightly when trying to retrieve a word from memory. Sometimes replaces words rather than waiting to 'find' or remember a specific one.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC3SG4STA1",
+                            "statementLabel": "Has word finding difficulties which impacts upon fluency of speech but the general flow of conversation with familiar people is not interrupted.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC3SG4STB1",
+                            "statementLabel": "Word finding difficulties are such that he/she cannot respond to a question or join in a conversation without considerable pauses that affect the flow of those interactions.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC3SG4STC1",
+                            "statementLabel": "Word finding difficulties such that he/she can not respond to any question that is not pre-prepared or in a very familiar context.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC4",
+            "subCategoryLabel": "Speech",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC4SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC4SG5STE1",
+                            "statementLabel": "Speech is intelligible and all or nearly all speech sounds are formed correctly",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STT1",
+                            "statementLabel": "People he/she knows understand most of what he/she says but unfamiliar people can find it slightly difficult to follow their speech – eg lots of hesitations, too quiet or too quick..",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STT2",
+                            "statementLabel": "Most people understand most of what he/she says. If there’s a problem, they say things in different ways to get their message across.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STT3",
+                            "statementLabel": "Makes occasional sound substitutions or omission",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STA1",
+                            "statementLabel": "Quite difficult for unfamiliar people to understand. People always have to ask them to say things again.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STA2",
+                            "statementLabel": "A mild speech sound disorder/delay is diagnosed. Speech is still intelligible but unfamiliar people may need him/her to repeat themselves",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STA3",
+                            "statementLabel": "Makes frequent sound substitutions – words often unclear. Not always understood by peers",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STB1",
+                            "statementLabel": "Unfamiliar people really struggle to follow what he/she are saying but people they know understand some of what they say. He/she makes no attempt to make things clear.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STB2",
+                            "statementLabel": "He/she is described by a Speech and Language Therapist as having a moderate speech disorder ie speech will not develop in line with a typical developmental pathway.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STB3",
+                            "statementLabel": "Speech difficult to understand if context not known",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STC1",
+                            "statementLabel": "Speech is unclear to even familiar people. He/she makes no attempt to make things clear.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STC2",
+                            "statementLabel": "He/she is described by a Speech and Language Therapist as having a severe speech disorder ie speech will not develop in line with a typical developmental pathway.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC4SG5STC3",
+                            "statementLabel": "Speech only intelligible to familiar adults",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC5",
+            "subCategoryLabel": "Needs relating to brain injury",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC5SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC5SG6STE1",
+                            "statementLabel": "Has not had any brain injury or adverse circumstances that could impact upon brain function linked to speech and language production.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC5SG6STT1",
+                            "statementLabel": "He/she has experienced a stroke or traumatic head injury that has slightly impacted upon expressive language",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC5SG6STA1",
+                            "statementLabel": "He/she has experienced a stroke or traumatic head injury that has affected expressive language though speech is intact.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC5SG6STB1",
+                            "statementLabel": "Speech sound clarity has been impacted by stroke or brain injury (and is expected to recover)and expressive language has been effected",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC5SG6STC1",
+                            "statementLabel": "Speech sound clarity and expressive language is significantly impacted by a stroke or traumatic head injury . Difficulty is expected to sustain.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC6",
+            "subCategoryLabel": "Impact of anxiety/emotional wellbeing",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC6SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC6SG7STE1",
+                            "statementLabel": "Will talk with familiar peers and will also meet and talk to new peers (though could feel shy about this).",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC6SG7STT1",
+                            "statementLabel": "Will talk to familiar peers. Usually says very little when with people they don't know or in a new situation. Appears nervous and shy. Won't have a go.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC6SG7STA1",
+                            "statementLabel": "Prefers to communicate with a trusted adult or friend. Has limited social interaction as a result",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC6SG7STB1",
+                            "statementLabel": "Lacks social confidence linked to language delay and tends to avoid practicing and hence developing language with peers",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC6SG7STC1",
+                            "statementLabel": "Can speak but is not speaking (in educational setting) due to selective mutism, trauma, anxiety.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC7",
+            "subCategoryLabel": "Social expressive language",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC7SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC7SG8STE1",
+                            "statementLabel": "Can communicate well verbally and speech and language used does not form a barrier to social inclusion",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG8STT1",
+                            "statementLabel": "Some expressive language delay means that interaction with peers can be more difficult. May lack confidence to use language in interactions",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG8STA1",
+                            "statementLabel": "Language development is immature. Peers can be impatient with him/her. He/she can be left out or dominated in play/social interaction due to language difficulties.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG8STB1",
+                            "statementLabel": "Sometimes speaks to peers in 1:1 situations in structured times eg in lessons but not in unstructured times and not in groups.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG8STC1",
+                            "statementLabel": "Peers cannot understand him/her and this is a barrier to social inclusion. Displays frustration linked to this.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC7SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC7SG9STE1",
+                            "statementLabel": "Will interact using language with familiar and unfamiliar peers during activities and in unstructured times in 1:1 or group situations.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG9STT1",
+                            "statementLabel": "With familiar peers will join in with small group or 1:1 situations in structured and unstructured times. Does not find it easy to talk to new/unfamiliar peers and will resist this.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG9STA1",
+                            "statementLabel": "Sometimes speaks to peers in 1:1 or small group situations in structured times eg in lessons but not in unstructured times.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG9STB1",
+                            "statementLabel": "Sometimes speaks to peers in 1:1 situations in structured times eg in lessons but not in unstructured times and not in groups.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC7SG9STC1",
+                            "statementLabel": "Does not speak to peers apart from in adult supported situations and only responds to questions. Does not initiate any interaction/conversation.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC8",
+            "subCategoryLabel": "Conversational rules",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC8SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC8SG10STE1",
+                            "statementLabel": "He/she follows the thread of the conversation, taking turns and responding to the other participants as expected at his/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG10STT1",
+                            "statementLabel": "Can speak at a tangent to the conversation thread but is easily directed back to the conversation topic.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG10STA1",
+                            "statementLabel": "Does not stay focused on the topic of conversation and always speaks at a tangent. Does not notice verbal or non-verbal cues that the other person would like to speak.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG10STB1",
+                            "statementLabel": "Speaks in a monologue on a subject of his/her own choosing. If interrupted, he/she will stop or pause to allow another person to speak but will not necessarily listen.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG10STC1",
+                            "statementLabel": "Speaks in a monologue on a subject of his/her own choosing without listening to the other person. It is very difficult to interrupt them when talking",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC8SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC8SG11STE1",
+                            "statementLabel": "Understands and uses conversational rules, e.g. maintains topics, asks appropriate questions, takes turns and repairs conversation breakdowns by rephrasing language and giving clarification when needed",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG11STT1",
+                            "statementLabel": "Has learnt some conversation rules but when he/she applies these they can seem scripted/ rehearsed. Can seem inauthentic or stilted.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG11STA1",
+                            "statementLabel": "Does not stay focused on the topic of conversation and always speaks at a tangent. Does not notice verbal or non-verbal cues that the other person would like to speak.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG11STB1",
+                            "statementLabel": "Speaks in a monologue on a subject of his/her own choosing. If interrupted, he/she will stop or pause to allow another person to speak but will not necessarily listen.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC8SG11STC1",
+                            "statementLabel": "Speaks in a monologue on a subject of his/her own choosing without listening to the other person. It is very difficult to interrupt them when talking",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC9",
+            "subCategoryLabel": "Functional communication",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC9SG12",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC9SG12STE1",
+                            "statementLabel": "Can use language with people in the community, place of work, educational settings in a functional and effective way. For example, could ask for something, buy something, complete an interview verbally and be understood.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG12STT1",
+                            "statementLabel": "He/she can express him/herself verbally using functional (perhaps simple) communication and could get their needs met in the community or educational setting.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG12STA1",
+                            "statementLabel": "Functional communication skills (verbal and non-verbal)are such that he/she would find it difficult to get his/her needs met by unfamiliar people eg shopkeepers/doctors. Familiar people eg school/college staff do understand his/her communication.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG12STB1",
+                            "statementLabel": "Can communicate to familiar people in order to get basic needs met eg food, drink would find it difficult to give any detail to these requests or communicate feelings or thoughts to familiar or unfamiliar people.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG12STC1",
+                            "statementLabel": "Functional communication (verbal and non-verbal) is poor and he/she is not independent in getting needs met using communication in the community or the educational setting.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC9SG13",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC9SG13STE1",
+                            "statementLabel": "Could use language to communicate his/her thoughts or feelings in order to report concerns or ask for help.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG13STT1",
+                            "statementLabel": "Can use language to express his/her thoughts and feelings to a sufficient level, asking for help and reporting concerns.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG13STA1",
+                            "statementLabel": "He/she would find it difficult to speak to customers as part of a job.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG13STB1",
+                            "statementLabel": "Tends to get needs met in different ways than using communication eg physical gets things for him/self",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG13STC1",
+                            "statementLabel": "Tends to get needs met in different ways than using communication eg displays behaviour that challenges.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC9SG14",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC9SG14STE1",
+                            "statementLabel": "Language is not a barrier to him/her engaging in a course, training or employment.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG14STT1",
+                            "statementLabel": "Can participate in pair and group discussions needed to support learning though may find it more difficult to debate a point or give a more complex explanation.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG14STA1",
+                            "statementLabel": "In group discussions, finds it hard to express an opinion either due to the pace of the conversation or the complexity of the content.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG14STB1",
+                            "statementLabel": "In pair discussions, finds it hard to express an opinion either due to the pace of the conversation or the complexity of the content.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG14STC1",
+                            "statementLabel": "Could only use a small range of routine based/scripted phrases to interact in conversations linked to course, training or employment.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC9SG15",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC9SG15STE1",
+                            "statementLabel": "Explanations are generally clear, in a logical order. Struggles only when ideas get a lot more complicated or involved.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG15STT1",
+                            "statementLabel": "Simple explanations are fine. As they get longer or more complicated it starts off OK but then gets a bit muddled.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG15STA1",
+                            "statementLabel": "Finds it difficult to retell an event with any detail (due to memory and expressive language difficulties)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG15STB1",
+                            "statementLabel": "Explanations are very muddled. Has a go but it's very difficult to follow the thread.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG15STC1",
+                            "statementLabel": "Explanations are almost impossible. They just can't get the words out and need to demonstrate or show people what they mean.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA1SC9SG16",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC9SG16STE1",
+                            "statementLabel": "Is new to the country (<2 years) and English is an additional language. Is making expected or accelerated progress in learning English.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG16STT1",
+                            "statementLabel": "Is new to the country (<2 years) and English is an additional language. Is making some but slow progress in learning English.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG16STA1",
+                            "statementLabel": "English is an additional language but despite being in the country over 2 years, continues to have difficulties with language and literacy",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG16STB1",
+                            "statementLabel": "Language and Literacy skills are considerably out of step with chronological age and are a barrier to accessing other areas of the curriculum.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG16STC1",
+                            "statementLabel": "Has significant expressive language difficulties in their first and second languages.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC9SG16STC2",
+                            "statementLabel": "He/she uses only echolaic speech. Speech has little meaning.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA1SC10",
+            "subCategoryLabel": "Non-verbal, alternative/augmented communication",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA1SC10SG17",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA1SC10SG17STE1",
+                            "statementLabel": "Communicates verbally alongside typical non-verbal facial expressions and gestures.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STT1",
+                            "statementLabel": "Communicates verbally though with slightly delayed language skills may use some low-tech (visual) and gesture (sign based) communication systems alongside verbal communication.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STA1",
+                            "statementLabel": "Is not able to use language but has good communication skills and can communicate most needs, wishes and feelings through alternative means.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STB1",
+                            "statementLabel": "Is not able to use language. Uses only alternative or augmented communication systems (low or high tech communication aids) to make needs/choices known . They find it difficult to express views or complex feelings.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STB2",
+                            "statementLabel": "Will use a single PECS symbol to make a request from an adult independently but cannot use a phrase or sentence with PECS ",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STB3",
+                            "statementLabel": "Can use a Picture Exchange System to make a request from a choice of two options but from a limited range of choices and cannot make a sentence",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STB4",
+                            "statementLabel": "Can sometimes make a choice from two objects of reference to express wishes if focused.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STC1",
+                            "statementLabel": "Child or young person is pre-verbal or non-verbal with additional physical and learning difficulties, and will not be able to communicate through language or hand signs. May use low or high tech communication aids (objects of reference, switch for cause and effect)",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STC2",
+                            "statementLabel": "When prompted will complete a simple request sentence using PECS but only relating to a functional request eg (I want….)",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STC3",
+                            "statementLabel": "Can use a Picture Exchange System to make a request from a choice of two options but will not use PECS independently.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA1SC10SG17STC4",
+                            "statementLabel": "Is inconsistent in choosing from two objects of reference to express choices.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRABAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRABAAAAAAAAAA==/",
+    "_etag": "\"61072800-0000-1100-0000-61b2348a0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1639068810
+}

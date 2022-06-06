@@ -1,0 +1,559 @@
+{
+    "id": "3",
+    "formVersion": "1",
+    "areaNumber": "2",
+    "areaId": "cognitionAndLearning",
+    "areaLabel": "Cognition and learning",
+    "subAreaNumber": "3",
+    "subAreaId": "academicLearning",
+    "subAreaLabel": "Academic learning and employability",
+    "subCategory": [
+        {
+            "subCategoryId": "A2SA3SC1",
+            "subCategoryLabel": "Qualifications and employability",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC1SG1STE1",
+                            "statementLabel": "Is working towards national examinations as appropriate for their age (SATS,GCSEs, NVQs, entry level qualifications). Is expected to pass/achieve these.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG1STT1",
+                            "statementLabel": "Is ‘working towards’ expected level for the age in all areas of the curriculum. This could be due to specific difficulties in literacy or maths or general difficulties in all areas. He/she may also have gaps in learning for a range of reasons.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG1STA1",
+                            "statementLabel": "Is up to 2 years out of step with peers (expected level according to teacher assessment). This could be due to specific difficulties in literacy or maths or general difficulties in all areas. He/she may also have gaps in learning for a range of reasons.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG1STB1",
+                            "statementLabel": "Is over 2-3 years out of step with peers (expected level according to teacher assessment). This could be due to specific difficulties in literacy or maths or general difficulties in all areas. He/she may also have gaps in learning for a range of reasons.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG1STC1",
+                            "statementLabel": "Is over 3 years out of step with peers (expected level according to teacher assessment). This is due to a complex range of learning difficulties but also gaps in learning.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC1SG2STE1",
+                            "statementLabel": "Has GCSE/NVQ qualifications and is working towards A levels or an equivalent academic course requiring understanding of complex information.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG2STT1",
+                            "statementLabel": "Can access all academic subjects with some differentiation.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG2STA1",
+                            "statementLabel": "Is up to 2 years out of step with peers (expected level according to teacher assessment). This could be due to specific difficulties in literacy or maths or general difficulties in all areas. He/she may also have gaps in learning for a range of reasons.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG2STB1",
+                            "statementLabel": "Is over 2-3 years out of step with peers (expected level according to teacher assessment). This could be due to specific difficulties in literacy or maths or general difficulties in all areas. He/she may also have gaps in learning for a range of reasons.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC1SG2STC1",
+                            "statementLabel": "Is going to be doing a pre-supported internship course or a course that focuses only of life and functional skills for example.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC2",
+            "subCategoryLabel": "Processing",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC2SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC2SG3STE1",
+                            "statementLabel": "If focused and engaged, can process and understand most new learning presented to a level appropriate to his/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STT1",
+                            "statementLabel": "If focused and engaged, can process and understand differentiated new learning presented.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STA1",
+                            "statementLabel": "Has a processing speed that is slower than peers and finds it difficult to process information given at the same speed as others of his/her age. Understanding is then affected.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STA2",
+                            "statementLabel": "Is slower than peers to process auditory information. Will pause and seem to be processing what has been said. If given some more time, answers he/she gives eventually are appropriate to the subject area.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STB1",
+                            "statementLabel": "Processing speed is very slow and this causes significant gaps in understanding. Finds it very difficult to keep up with others and then cannot understand the learning presented to the group.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STB2",
+                            "statementLabel": "Is slower than peers to process auditory information. Will pause and seem to be processing what has been said. Answers he/she gives eventually are not appropriate to the question asked.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC2SG3STC1",
+                            "statementLabel": "Processing speed is very poor and he/she either gets lost in any new learning and/or disengages.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC3",
+            "subCategoryLabel": "Theory of mind",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC3SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC3SG4STE1",
+                            "statementLabel": "Has some 'theory of mind' to view the world from the perspective of others. Can put him/herself in other people's 'shoes'.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC3SG4STT1",
+                            "statementLabel": "Does not instinctively attempt to view the world from other people's perspectives, but if reminded to can engage with this, with a learning task for example, and come up with appropriate ideas (however unusual)",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC3SG4STA1",
+                            "statementLabel": "Is mostly egocentric, viewing the world from his/her own perspective. If another's person's perspective is highlighted for him/her, he/she can usually understand this to some extent. He/she is interested in trying to do this.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC3SG4STB1",
+                            "statementLabel": "Is mostly egocentric, viewing the world from his/her own perspective. If another's person's perspective is highlighted for him/her, he/she cannot seem to understand this and is not interested in doing so. This is a barrier to learning.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC3SG4STC1",
+                            "statementLabel": "Is completely egocentric and has no 'theory of mind'. Does not know that others can experience the world differently from him/her and is not interested in this.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC4",
+            "subCategoryLabel": "Problem solving  ",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC4SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC4SG5STE1",
+                            "statementLabel": "Will apply processing and problem solving skills needed to make safe choices and assess risk independently (to the level expected for his/her age).",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG5STT1",
+                            "statementLabel": "Can understand simple right/wrong or safe/unsafe decision making processes. Can be quite 'all or nothing' in thinking and finds more sophisticated or unclear decision making harder to work through.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG5STA1",
+                            "statementLabel": "Will follow a series of rules and use these to stay safe for example. However when there are a range of alternative choices either with learning or in terms of safety, gets stuck with working out a way forward.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG5STB1",
+                            "statementLabel": "Has difficulties with the problem solving needed to stay safe eg who to talk to, risk assessing certain environments, making safe decisions.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG5STC1",
+                            "statementLabel": "Is at risk of harm if independently cooking, washing and cleaning due to lack of understanding of risk and limitations.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC4SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC4SG6STE1",
+                            "statementLabel": "Shows curiosity and imagination, making links between different aspects of learning and questioning how things relate to each other in a cross-curricular way. Has good inference skills.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG6STT1",
+                            "statementLabel": "Notices some links in learning independently and has some inference skills. Does not always notice these but is seeking them out and interested in finding these links.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG6STA1",
+                            "statementLabel": "Makes some links/generalisations in learning but not consistently. Does not consistently apply inference skills to see patterns or consequences.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG6STB1",
+                            "statementLabel": "Does not make many links or generalisations in learning. Struggles to use inference skills consistently or accurately. Inability to use inference impacts on access to the curriculum.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG6STC1",
+                            "statementLabel": "Does not understand links or generalisations in learning even once explained to them. Inference skills are poor.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC4SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC4SG7STE1",
+                            "statementLabel": "Can understand past present and future, and if told the time knows if this is morning, afternoon or evening (has a sense of time)..",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG7STT1",
+                            "statementLabel": "Can get momentarily confused about the tense and whether he/she is learning about/talking about past. Present or future but either self-corrects or is easily reminded.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG7STA1",
+                            "statementLabel": "Finds it difficult to distinguish between past/present and future and this affects all decision making",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG7STB1",
+                            "statementLabel": "Does not have a good concept of time and hence could not talk about past events or future events aspirations. Any learning set in the past or future is confusing.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC4SG7STC1",
+                            "statementLabel": "Has no sense of time which impacts upon all learning. Can not understand if something is a past event or planned for the future.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC5",
+            "subCategoryLabel": "Memory",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC5SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC5SG8STE1",
+                            "statementLabel": "No short term or working memory difficulties.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STT1",
+                            "statementLabel": "Some memory difficulties but with repetition can learn work schedules/routines etc.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STT2",
+                            "statementLabel": "Can remember short, simple instructions, and knowing what to do. But if instructions are longer or more complicated they only remember part.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STA1",
+                            "statementLabel": "Finds it difficult to remember new learning across the span of a week",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STA2",
+                            "statementLabel": "Cannot hold more than two pieces of information in mind and work wth this information.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STB1",
+                            "statementLabel": "Finds it difficult to remember new learning by the next day",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STB2",
+                            "statementLabel": "Cannot hold more than one piece of information in mind and work with this information.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STC1",
+                            "statementLabel": "Does not retain new learning within the same lesson/day",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC5SG8STC2",
+                            "statementLabel": "Cannot independently use a smart phone (eg) to set reminders and support with schedules.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC6",
+            "subCategoryLabel": "Numeracy",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC6SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC6SG9STE1",
+                            "statementLabel": "Numeracy skills are at the 'expected' level for him/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG9STT1",
+                            "statementLabel": "Numeracy skills are 'working towards' the expected level at his/her age.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG9STA1",
+                            "statementLabel": "Numeracy skills have not progressed at the expected rate despite initial group intervention (key stage 1 or 2).",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG9STB1",
+                            "statementLabel": "Numeracy skills have not progressed at the expected rate despite individual targeted intervention",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG9STC1",
+                            "statementLabel": "Numeracy skills are severely delayed and out of step with chronological age and are a barrier to accessing other areas of the curriculum.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC6SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC6SG10STE1",
+                            "statementLabel": "Has functional maths skills that enable him/her to understand and use money, budget, read timetables etc.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG10STT1",
+                            "statementLabel": "Needs support with maths/numeracy skills needed to access main course/programme.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG10STA1",
+                            "statementLabel": "Has significant gaps in understanding of functional skills required to understand and use money, budget, read timetables etc.  ",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG10STB1",
+                            "statementLabel": "Does not have secure functional skills required to understand and use money, budget, read timetables etc.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG10STC1",
+                            "statementLabel": "Is working on access courses or functional skills courses for maths",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC6SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC6SG11STE1",
+                            "statementLabel": "Has maths/numeracy skills that are sufficient to access the course he/she is on",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG11STT1",
+                            "statementLabel": "Has a few gaps in learning perhaps understanding of early concepts in maths but is not ‘stuck’. Is ‘working towards’ the level expected at his/her age.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG11STB1",
+                            "statementLabel": "Is predicted to get less than a 5 in maths GCSE (Year 11 +)",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC6SG11STC1",
+                            "statementLabel": "Has not achieved a level 5 or above at GCSE maths (Year 12+)",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA3SC7",
+            "subCategoryLabel": "Literacy ",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA3SC7SG12",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC7SG12STE1",
+                            "statementLabel": "Literacy skills are at the expected level for his/her age",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG12STT1",
+                            "statementLabel": "Is ‘working towards’ the level expected at his/her age in reading. Has a few gaps in learning but is not ‘stuck’.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG12STA1",
+                            "statementLabel": "Has some difficulties at a word level with reading despite appropriate group intervention over time.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG12STB1",
+                            "statementLabel": "Reading skills have not progressed at the expected rate despite individual targeted intervention",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG12STC1",
+                            "statementLabel": "Reading skills are severely delayed and out of step with chronological age and are a barrier across the curriculum.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC7SG13",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC7SG13STE1",
+                            "statementLabel": "Literacy skills enable access to the wider curriculum.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG13STT1",
+                            "statementLabel": "Has a few gaps in learning perhaps understanding of early concepts in literacy/English but is not ‘stuck’. Is ‘working towards’ the level expected at his/her age.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG13STA1",
+                            "statementLabel": "Literacy difficulties are mild but impact upon access to areas of the curriculum which have a high demand on literacy skills",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG13STB1",
+                            "statementLabel": "Literacy difficulties are a barrier to learning across most areas of the curriculum to the extent that exam access arrangements are likely to be necessary. )",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG13STB2",
+                            "statementLabel": "Is predicted to get less than a 5 in English GCSE (Year 11 +",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG13STC1",
+                            "statementLabel": "Has not achieved a level 5 or above at GCSE English (Y12 +)",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC7SG14",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC7SG14STE1",
+                            "statementLabel": "Has functional English skills that allow him/her to independently complete forms, email and accessing information via text for example.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG14STT1",
+                            "statementLabel": "Is not fluent in literacy skills which acts as a barrier sometimes to functional skills in the community or when speed of reading/writing is necessary.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG14STA1",
+                            "statementLabel": "Has gaps in functional skills using English, for example understanding and completing forms, emailing and accessing information via text.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG14STB1",
+                            "statementLabel": "Has poor functional skills using English, for example understanding and completing forms, emailing and accessing information via text.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG14STC1",
+                            "statementLabel": "Has no functional skills using English, for example understanding and completing forms, emailing and accessing information via text.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA3SC7SG15",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA3SC7SG15STE1",
+                            "statementLabel": "Can use writing to record his/her thoughts and learning and keep up with the pace of peers in the lesson.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STT1",
+                            "statementLabel": "Is 'working towards' expected levels in writing. Can use writing to record his/her thoughts and is making some progress.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STT2",
+                            "statementLabel": "Makes some spelling errors but these are phonetically plausible or linked to homonyms.. Can spell a range of high frequency words though fewer than same aged peers.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STA1",
+                            "statementLabel": "Finds it very difficult to organise thoughts in order to write. Cannot do this independently (of support or IT)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STA2",
+                            "statementLabel": "Is not making progress with spelling despite small group intervention over time. Spellings are not always phonetically plausible.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STB1",
+                            "statementLabel": "Reluctant to write and writing Is slow and not fluent. Will only write single words in a writing frame with additional prompting",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STB2",
+                            "statementLabel": "Significant difficulties with spelling despite intervention over time. These errors make it difficult for the reader to understand what is written. Spelling development is not following a typical pattern.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STC1",
+                            "statementLabel": "Will not write due to a range of reasons. Refuses to write and also finds it incredibly difficult",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA3SC7SG15STC2",
+                            "statementLabel": "Severe spelling difficulties despite intervention.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRADAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRADAAAAAAAAAA==/",
+    "_etag": "\"880054bc-0000-1100-0000-61c0c3af0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1640022959
+}

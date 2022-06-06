@@ -1,0 +1,825 @@
+{
+    "id": "3",
+    "formVersion": "1",
+    "provisionGroup": "Additional Staff support",
+    "provisionGroupId": "PGID3",
+    "provisionsType": [
+        {
+            "provisionTypeNumber": 1,
+            "provisionTypeLabel": "General In class learning support pre-16",
+            "provisions": [
+                {
+                    "TypeOfProvision": "General In class learning support pre-16",
+                    "SpecificProvision": "Support staff support (shared with the group) to ‘get started’ on tasks and to check in at points during lessons.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID11",
+                    "provisionStatementId": "PGID3_PTID11_PS1"
+                },
+                {
+                    "TypeOfProvision": "General In class learning support pre-16",
+                    "SpecificProvision": "Support staff support (shared with the group) in certain subject areas eg PE, Art, practical subjects, science or maths (maximum of 5 hour lessons a week)",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "5",
+                    "Code": "E",
+                    "CostPerHr": "0.74382",
+                    "Total": "3.7191",
+                    "AnnualAmount": "145.0449",
+                    "ProvisionTypeId": "PTID11",
+                    "provisionStatementId": "PGID3_PTID11_PS2"
+                },
+                {
+                    "TypeOfProvision": "General In class learning support pre-16",
+                    "SpecificProvision": "Dedicated support staff support in all lessons that have high expectations of literacy skill proficiency. Support staff support to help generalise and reinforce learning from intervention taking place out of the classroom.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "17.5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "260.337",
+                    "AnnualAmount": "10153.143",
+                    "ProvisionTypeId": "PTID11",
+                    "provisionStatementId": "PGID3_PTID11_PS3"
+                },
+                {
+                    "TypeOfProvision": "General In class learning support pre-16",
+                    "SpecificProvision": "Dedicated support staff support in all lessons to support with language, understanding, and processing speed for example.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID11",
+                    "provisionStatementId": "PGID3_PTID11_PS4"
+                },
+                {
+                    "TypeOfProvision": "General In class learning support pre-16",
+                    "SpecificProvision": "Dedicated staff support eg to scribe when anything needs to be written or typed or to give assistance in practical subjects.. . (Post - 16) Access to Communication Support Workers and note takers as needed through the day.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID11",
+                    "provisionStatementId": "PGID3_PTID11_PS5"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 2,
+            "provisionTypeLabel": "General In lesson learning support post-16",
+            "provisions": [
+                {
+                    "TypeOfProvision": "General In lesson learning support post-16",
+                    "SpecificProvision": "Support staff support (shared with the group) to ‘get started’ on tasks and to check in at points during lessons.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID12",
+                    "provisionStatementId": "PGID3_PTID12_PS1"
+                },
+                {
+                    "TypeOfProvision": "General In lesson learning support post-16",
+                    "SpecificProvision": "Support staff support (shared with the group) in certain subject areas (maximum of 5 hour lessons a week)",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "5",
+                    "Code": "E",
+                    "CostPerHr": "0.74382",
+                    "Total": "3.7191",
+                    "AnnualAmount": "145.0449",
+                    "ProvisionTypeId": "PTID12",
+                    "provisionStatementId": "PGID3_PTID12_PS2"
+                },
+                {
+                    "TypeOfProvision": "General In lesson learning support post-16",
+                    "SpecificProvision": "Dedicated support staff support in all lessons that have high expectations of literacy skill proficiency.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "17.5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "260.337",
+                    "AnnualAmount": "10153.143",
+                    "ProvisionTypeId": "PTID12",
+                    "provisionStatementId": "PGID3_PTID12_PS3"
+                },
+                {
+                    "TypeOfProvision": "General In lesson learning support post-16",
+                    "SpecificProvision": "Dedicated support staff support in all lessons to support with language, understanding, and processing speed for example.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID12",
+                    "provisionStatementId": "PGID3_PTID12_PS4"
+                },
+                {
+                    "TypeOfProvision": "General In lesson learning support post-16",
+                    "SpecificProvision": "Access to Communication Support Workers and note takers as needed through the day.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID12",
+                    "provisionStatementId": "PGID3_PTID12_PS5"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 3,
+            "provisionTypeLabel": "In-Class staff support for social interaction",
+            "provisions": [
+                {
+                    "TypeOfProvision": "In-Class staff support for social interaction",
+                    "SpecificProvision": "Support staff support to held child/young person ‘get started’ in pair/group tasks in particular. Will need more support on some days than others to join in.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID13",
+                    "provisionStatementId": "PGID3_PTID13_PS1"
+                },
+                {
+                    "TypeOfProvision": "In-Class staff support for social interaction",
+                    "SpecificProvision": "Dedicated support staff support at 2/3 points of transition in the day eg first thing, just after lunch. Short bursts of support to ‘get started’ and settle.",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "74.382",
+                    "AnnualAmount": "2900.898",
+                    "ProvisionTypeId": "PTID13",
+                    "provisionStatementId": "PGID3_PTID13_PS2"
+                },
+                {
+                    "TypeOfProvision": "In-Class staff support for social interaction",
+                    "SpecificProvision": "Support staff support in all pair and group work in order to model social skills and social language necessary",
+                    "Grade": "4",
+                    "Level": "B",
+                    "Hours": "10",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "148.764",
+                    "AnnualAmount": "5801.796",
+                    "ProvisionTypeId": "PTID13",
+                    "provisionStatementId": "PGID3_PTID13_PS3"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 4,
+            "provisionTypeLabel": "In-Class staff support for emotional development",
+            "provisions": [
+                {
+                    "TypeOfProvision": "In-Class staff support for emotional development",
+                    "SpecificProvision": "A focus on helping the child/young person feel safe and special is embedded as a principle across the education settings with all staff focusing on building relationships of trust.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID14",
+                    "provisionStatementId": "PGID3_PTID14_PS1"
+                },
+                {
+                    "TypeOfProvision": "In-Class staff support for emotional development",
+                    "SpecificProvision": "An identified team approach to supporting the child/young person’s needs so there is a shared understanding of triggers and anxiety as well as shared strategies.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "",
+                    "Total": "",
+                    "AnnualAmount": "",
+                    "ProvisionTypeId": "PTID14",
+                    "provisionStatementId": "PGID3_PTID14_PS2"
+                },
+                {
+                    "TypeOfProvision": "In-Class staff support for emotional development",
+                    "SpecificProvision": "Support staff support in all lessons identified as potentially being anxiety provoking or present with social challenges. Support to deliver a ‘running commentary’ approach to emotional and social learning. Support to generalise and reinforce learning taking place out of the classroom.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "20",
+                    "Code": "A",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID14",
+                    "provisionStatementId": "PGID3_PTID14_PS3"
+                },
+                {
+                    "TypeOfProvision": "In-Class staff support for emotional development",
+                    "SpecificProvision": "Support staff support in all lessons including the transition to and from those lessons. Support to deliver a ‘running commentary’ approach to emotional and social learning.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID14",
+                    "provisionStatementId": "PGID3_PTID14_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 5,
+            "provisionTypeLabel": "In class Staff support for physical needs",
+            "provisions": [
+                {
+                    "TypeOfProvision": "In class Staff support for physical needs",
+                    "SpecificProvision": "Support to push a manual wheelchair, move furniture, adjust table heights etc to ensure access and inclusion.. Support for moving around the school, accessing PE and school trips. Support for postural management to transition into and from specialist equipment throughout the day.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID15",
+                    "provisionStatementId": "PGID3_PTID15_PS1"
+                },
+                {
+                    "TypeOfProvision": "In class Staff support for physical needs",
+                    "SpecificProvision": "Staff to support alongside in helping the child/young person to access the curriculum and/or move safely around the school. Staff to carry books, laptops etc.; needs assistance to set up more specialist seating /equipment or laptop in different classrooms or for specific lessons; Staff to assist in carrying lunch to table. Staff to help incorporate therapy goals and activities into the daily routine. Staff to support during PE and any outdoor activities; staff to help with dressing and undressing",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "74.382",
+                    "AnnualAmount": "2900.898",
+                    "ProvisionTypeId": "PTID15",
+                    "provisionStatementId": "PGID3_PTID15_PS2"
+                },
+                {
+                    "TypeOfProvision": "In class Staff support for physical needs",
+                    "SpecificProvision": "Staff to run a physical therapy programme with the child/young person for 30 minutes at least twice a week individually or in a small group if possible. Staff to incorporate a postural management programme into the daily routine using several pieces of specialist equipment.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "1",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "14.8764",
+                    "AnnualAmount": "580.1796",
+                    "ProvisionTypeId": "PTID15",
+                    "provisionStatementId": "PGID3_PTID15_PS3"
+                },
+                {
+                    "TypeOfProvision": "In class Staff support for physical needs",
+                    "SpecificProvision": "Staff support with use of hydrotherapy pool and/or to carry out a specialist physical intervention programme once a week for 2 hours (as recommended by a professional)",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "2",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "29.7528",
+                    "AnnualAmount": "1160.3592",
+                    "ProvisionTypeId": "PTID15",
+                    "provisionStatementId": "PGID3_PTID15_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 6,
+            "provisionTypeLabel": "In class Staff Suppport for vision and hearing needs",
+            "provisions": [
+                {
+                    "TypeOfProvision": "In class Staff Suppport for vision and hearing needs",
+                    "SpecificProvision": "A member of staff to manage resources each day such as hearing aids adapted devices and to hand these to children /young people or staff each day and collect them in – A resource administrator.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID16",
+                    "provisionStatementId": "PGID3_PTID16_PS1"
+                },
+                {
+                    "TypeOfProvision": "In class Staff Suppport for vision and hearing needs",
+                    "SpecificProvision": "Staff to develop individual resources needed eg enlarging handouts or setting up computer software or preparing manipulatives or physical resources each day. Also, staff to support inclusion of child/young person through the additional modfication of resources as and when needed during lessons.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "10",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "148.764",
+                    "AnnualAmount": "5801.796",
+                    "ProvisionTypeId": "PTID16",
+                    "provisionStatementId": "PGID3_PTID16_PS2"
+                },
+                {
+                    "TypeOfProvision": "In class Staff Suppport for vision and hearing needs",
+                    "SpecificProvision": "Staff to support the child/young person access learning and maintain social inclusion due to barriers presented by the vision or hearing difficulties. Barriers occur in certain lessons or at certain times of the day and could be about physical safety, curriculum access or interaction with peers in the classroom for example.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "15",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "223.146",
+                    "AnnualAmount": "8702.694",
+                    "ProvisionTypeId": "PTID16",
+                    "provisionStatementId": "PGID3_PTID16_PS3"
+                },
+                {
+                    "TypeOfProvision": "In class Staff Suppport for vision and hearing needs",
+                    "SpecificProvision": "Staff to support the child/young person access learning and maintain social inclusion due to barriers presented by the vision or hearing difficulties. Barriers occur regularly throughout the day.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID16",
+                    "provisionStatementId": "PGID3_PTID16_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 7,
+            "provisionTypeLabel": "Medical condition related staff support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Medical condition related staff support",
+                    "SpecificProvision": "Regular routine administration of oral medication by staff.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID17",
+                    "provisionStatementId": "PGID3_PTID17_PS1"
+                },
+                {
+                    "TypeOfProvision": "Medical condition related staff support",
+                    "SpecificProvision": "Additional medication to be administered by staff as needed by the child/young person eg pain relief.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID17",
+                    "provisionStatementId": "PGID3_PTID17_PS2"
+                },
+                {
+                    "TypeOfProvision": "Medical condition related staff support",
+                    "SpecificProvision": "Members of staff to manage care plan around the use of medication, to receive specific training and administer the medication including trips and visits.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "1.25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "18.5955",
+                    "AnnualAmount": "725.2245",
+                    "ProvisionTypeId": "PTID17",
+                    "provisionStatementId": "PGID3_PTID17_PS3"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 8,
+            "provisionTypeLabel": "Staff Support for Sensory processing needs",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Staff Support for Sensory processing needs",
+                    "SpecificProvision": "Support to set up, appropriate sensory strategies for use throughout the school day. Including arrivals, whole class lessons, small group work, break times and transitions.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID18",
+                    "provisionStatementId": "PGID3_PTID18_PS1"
+                },
+                {
+                    "TypeOfProvision": "Staff Support for Sensory processing needs",
+                    "SpecificProvision": "Support to briefly facilitate and prompt the child/young person to use appropriate sensory strategies at several points school day. Including arrivals, whole class lessons, small group work, break times and transitions.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "1.25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "18.5955",
+                    "AnnualAmount": "725.2245",
+                    "ProvisionTypeId": "PTID18",
+                    "provisionStatementId": "PGID3_PTID18_PS2"
+                },
+                {
+                    "TypeOfProvision": "Staff Support for Sensory processing needs",
+                    "SpecificProvision": "Specifically trained support staff available to a small group all day to help the child/young person regulate the sensory environment in line with their sensory profile. This may at times helping the child/young person exit from a sensory envioronment which is distressing for them whilst supporting them in development independence in their regulation or coping strategies.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "25",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "46.48875",
+                    "AnnualAmount": "1813.06125",
+                    "ProvisionTypeId": "PTID18",
+                    "provisionStatementId": "PGID3_PTID18_PS3"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 9,
+            "provisionTypeLabel": "Check-in support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Check-in support",
+                    "SpecificProvision": "An assigned key adult(s) that is known to the child/young person and checks in with them on an ad hoc or ‘as and when’ basis or if there is a period of difficulty.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "1",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "14.8764",
+                    "AnnualAmount": "580.1796",
+                    "ProvisionTypeId": "PTID19",
+                    "provisionStatementId": "PGID3_PTID19_PS1"
+                },
+                {
+                    "TypeOfProvision": "Check-in support",
+                    "SpecificProvision": "As assigned group of key staff, one of whom checks in with him/her for 5-10 minutes each day to talk about the day ahead, reflect on positives and address any concerns",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "1.25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "18.5955",
+                    "AnnualAmount": "725.2245",
+                    "ProvisionTypeId": "PTID19",
+                    "provisionStatementId": "PGID3_PTID19_PS2"
+                },
+                {
+                    "TypeOfProvision": "Check-in support",
+                    "SpecificProvision": "As assigned group of key staff, one of whom checks in with him/her for 10-15 minutes twice each day to talk about the day ahead, reflect on positives and address any concerns",
+                    "Grade": "3",
+                    "Level": "C",
+                    "Hours": "2.5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "37.191",
+                    "AnnualAmount": "1450.449",
+                    "ProvisionTypeId": "PTID19",
+                    "provisionStatementId": "PGID3_PTID19_PS3"
+                },
+                {
+                    "TypeOfProvision": "Check-in support",
+                    "SpecificProvision": "1:1 support throughout the day to offer a running commentary of in situ support and learning to enhance social and emotional understanding but also monitor and supervise to help avoid dysregulation and keep everyone safe.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID19",
+                    "provisionStatementId": "PGID3_PTID19_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 10,
+            "provisionTypeLabel": "Staffed Withdrawal/calm space",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Staffed Withdrawal/calm space",
+                    "SpecificProvision": "All staff provided with communication devices to use in emergencies.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID20",
+                    "provisionStatementId": "PGID3_PTID20_PS1"
+                },
+                {
+                    "TypeOfProvision": "Staffed Withdrawal/calm space",
+                    "SpecificProvision": "A withdrawal/calming space that he/she can used to help calm down before returning to peers. A plan to make a member of staff available to oversee this on an as and when basis.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "74.382",
+                    "AnnualAmount": "2900.898",
+                    "ProvisionTypeId": "PTID20",
+                    "provisionStatementId": "PGID3_PTID20_PS2"
+                },
+                {
+                    "TypeOfProvision": "Staffed Withdrawal/calm space",
+                    "SpecificProvision": "A staffed withdrawal space which can be used at any time for time limited calming and reflection in accordance with a risk assessment. This resource is also used by other children/young people.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "1.25",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "2.3244375",
+                    "AnnualAmount": "90.6530625",
+                    "ProvisionTypeId": "PTID20",
+                    "provisionStatementId": "PGID3_PTID20_PS3"
+                },
+                {
+                    "TypeOfProvision": "Staffed Withdrawal/calm space",
+                    "SpecificProvision": "A staffed withdrawal space used exclusively by this child/young person and at times used as a learning space away from others as necessary in accordance with a risk assessment",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID20",
+                    "provisionStatementId": "PGID3_PTID20_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 11,
+            "provisionTypeLabel": "Post-16 support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Post-16 support",
+                    "SpecificProvision": "Modification of the presentation of the curriculum and some shared additional adult support across the week on an as and when basis.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "25",
+                    "Code": "E",
+                    "CostPerHr": "0.74382",
+                    "Total": "18.5955",
+                    "AnnualAmount": "725.2245",
+                    "ProvisionTypeId": "PTID21",
+                    "provisionStatementId": "PGID3_PTID21_PS1"
+                },
+                {
+                    "TypeOfProvision": "Post-16 support",
+                    "SpecificProvision": "Individual support in teaching sessions and practical activities to enable access to learning",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "371.91",
+                    "AnnualAmount": "14504.49",
+                    "ProvisionTypeId": "PTID21",
+                    "provisionStatementId": "PGID3_PTID21_PS2"
+                },
+                {
+                    "TypeOfProvision": "Post-16 support",
+                    "SpecificProvision": "Higher levels of support for students studying advanced level courses as they will require a more skilled/experienced support worker with subject knowledge for at least half of the time.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "12",
+                    "Code": "D",
+                    "CostPerHr": "46.2",
+                    "Total": "554.4",
+                    "AnnualAmount": "21621.6",
+                    "ProvisionTypeId": "PTID21",
+                    "provisionStatementId": "PGID3_PTID21_PS3"
+                },
+                {
+                    "TypeOfProvision": "Post-16 support",
+                    "SpecificProvision": "Higher levels of support for students studying advanced level courses as they will require a more skilled/experienced support worker with subject knowledge full time.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "25",
+                    "Code": "D",
+                    "CostPerHr": "46.2",
+                    "Total": "1155",
+                    "AnnualAmount": "45045",
+                    "ProvisionTypeId": "PTID21",
+                    "provisionStatementId": "PGID3_PTID21_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 12,
+            "provisionTypeLabel": "Support over transition between educational settings (pre-16)",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (pre-16)",
+                    "SpecificProvision": "A planned transition to a new setting is in place. Close liaison between new and old settings, family and child/young person takes place up to the point of transition.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID22",
+                    "provisionStatementId": "PGID3_PTID22_PS1"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (pre-16)",
+                    "SpecificProvision": "One or two additional visits to a new setting are required (in addition to those commonly offered to children/young people moving settings). The child/young person has at least 3 short sessions with a key member of staff completing work to support the transition. At least two additional liaison points and meetings take place.",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "0.110132158590308",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "1.63837004405286",
+                    "AnnualAmount": "63.8964317180617",
+                    "ProvisionTypeId": "PTID22",
+                    "provisionStatementId": "PGID3_PTID22_PS2"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (pre-16)",
+                    "SpecificProvision": "An enhanced transition plan is developed and put into place. This includes at least 3 additional visits to the setting, at least 5 sessions with the child/young person completing work relating to the transition experience, frequent liaison with the new setting and family.",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "0.220264317180617",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "3.27674008810573",
+                    "AnnualAmount": "127.792863436123",
+                    "ProvisionTypeId": "PTID22",
+                    "provisionStatementId": "PGID3_PTID22_PS3"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (pre-16)",
+                    "SpecificProvision": "An enhanced transition plan is developed that includes at least 3 additional visits to the setting, and weekly sessions with the child/young person completing work relating to the transition experience and time in the new school when settingly in, frequent liaison with the new setting and family. Staff from the current setting spend time with the child/young person in the new setting after the transition has taken place to help him/her settle in.",
+                    "Grade": "3",
+                    "Level": "C",
+                    "Hours": "0.330396475770925",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "4.91511013215859",
+                    "AnnualAmount": "191.689295154185",
+                    "ProvisionTypeId": "PTID22",
+                    "provisionStatementId": "PGID3_PTID22_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 13,
+            "provisionTypeLabel": "Support over transition between educational settings (post-16)",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (post-16)",
+                    "SpecificProvision": "A planned transition to a new setting, apprentiship of place of employment is in place. . . Close liaison between new and old settings, family and child/young person takes place up to the point of transition. Consideration/assessment of mental capacity in terms of decision making.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID23",
+                    "provisionStatementId": "PGID3_PTID23_PS1"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (post-16)",
+                    "SpecificProvision": "The young person has at least 3 additional short sessions with a key member of staff completing work to support the transition to training/employment. At least two additional liaison points and meetings take place.",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "0.110132158590308",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "1.63837004405286",
+                    "AnnualAmount": "63.8964317180617",
+                    "ProvisionTypeId": "PTID23",
+                    "provisionStatementId": "PGID3_PTID23_PS2"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (post-16)",
+                    "SpecificProvision": "An enhanced transition plan is developed and put into place. This includes at least 3 additional visits to the new setting, at least 5 sessions with the young person completing work relating to the transition experience, frequent liaison with the new setting/employer",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "0.220264317180617",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "3.27674008810573",
+                    "AnnualAmount": "127.792863436123",
+                    "ProvisionTypeId": "PTID23",
+                    "provisionStatementId": "PGID3_PTID23_PS3"
+                },
+                {
+                    "TypeOfProvision": "Support over transition between educational settings (post-16)",
+                    "SpecificProvision": "An enhanced transition plan is developed that includes at least 3 additional visits to the setting/employer, and weekly sessions with the young person completing work relating to the transition experience. Staff from the current setting spend time with the young person in the new setting after the transition has taken place to help him/her settle in.",
+                    "Grade": "3",
+                    "Level": "C",
+                    "Hours": "0.330396475770925",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "4.91511013215859",
+                    "AnnualAmount": "191.689295154185",
+                    "ProvisionTypeId": "PTID23",
+                    "provisionStatementId": "PGID3_PTID23_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 14,
+            "provisionTypeLabel": "Life skills/functional skills provision",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Life skills/functional skills provision",
+                    "SpecificProvision": "There is a focus across the age ranges on supporting children/young people and young people to be as independent as possible. Independence and life skills are embedded into curriculum learning wherever possible.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID24",
+                    "provisionStatementId": "PGID3_PTID24_PS1"
+                },
+                {
+                    "TypeOfProvision": "Life skills/functional skills provision",
+                    "SpecificProvision": "Small group life skills/functional skills training delivered once a week with a focus on one or two aspects over 2 terms",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "0.308370044052863",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "0.573429515418502",
+                    "AnnualAmount": "22.3637511013216",
+                    "ProvisionTypeId": "PTID24",
+                    "provisionStatementId": "PGID3_PTID24_PS2"
+                },
+                {
+                    "TypeOfProvision": "Life skills/functional skills provision",
+                    "SpecificProvision": "Small group life skills training once a week across the year focussing on a range of aspects and consolidating ideas. Some practical element is included eg trips into the community, cooking or setting up a shop/restaurant.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "1",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "1.85955",
+                    "AnnualAmount": "72.52245",
+                    "ProvisionTypeId": "PTID24",
+                    "provisionStatementId": "PGID3_PTID24_PS3"
+                },
+                {
+                    "TypeOfProvision": "Life skills/functional skills provision",
+                    "SpecificProvision": "1:1 bespoke life skills training twice a week across the year focussing on a range of aspects and consolidating ideas with considerable repetition. All learning built on practical experiences which are in the community where possible.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "74.382",
+                    "AnnualAmount": "2900.898",
+                    "ProvisionTypeId": "PTID24",
+                    "provisionStatementId": "PGID3_PTID24_PS4"
+                },
+                {
+                    "TypeOfProvision": "Life skills/functional skills provision",
+                    "SpecificProvision": "1.1 bespoke daily life skills training every day focussing on a range of aspects and consolidating ideas with considerable repetition. All learning built on practical experiences which are in the community where possible.",
+                    "Grade": "3",
+                    "Level": "C",
+                    "Hours": "10",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "148.764",
+                    "AnnualAmount": "5801.796",
+                    "ProvisionTypeId": "PTID24",
+                    "provisionStatementId": "PGID3_PTID24_PS5"
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4ALcGQzUTAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUTAAAAAAAAAA==/",
+    "_etag": "\"0800c12c-0000-1100-0000-61d48bd70000\"",
+    "_attachments": "attachments/",
+    "_ts": 1641319383
+}

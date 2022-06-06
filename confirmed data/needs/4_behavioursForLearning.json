@@ -1,0 +1,469 @@
+{
+    "id": "4",
+    "formVersion": "1",
+    "areaNumber": "2",
+    "areaId": "cognitionAndLearning",
+    "areaLabel": "Cognition and learning",
+    "subAreaNumber": "4",
+    "subAreaId": "behavioursForLearning",
+    "subAreaLabel": "Behaviours for learning",
+    "subCategory": [
+        {
+            "subCategoryId": "A2SA4SC1",
+            "subCategoryLabel": "Independence as a learner",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC1SG1STE1",
+                            "statementLabel": "Generally aware of what they don't understand. Tries to solve the problem independently and then seeks help as needed.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG1STT1",
+                            "statementLabel": "Sometimes checks or asks for help but not consistently and may struggle with a task for a while before asking.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG1STA1",
+                            "statementLabel": "Doesn't automatically ask for help. Tends to know that they don't understand what they are supposed to be doing but is uncomfortable to ask.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG1STB1",
+                            "statementLabel": "Doesn’t ask for help or clarification. Not always aware that they do not understand or know what they are supposed to be doing. If someone checks their understanding they may stop, but not ask for help/repetition",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG1STC1",
+                            "statementLabel": "Never asks for help, just carries on. Tries to work it out for themselves even if what they think is right is often wrong.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC1SG2STE1",
+                            "statementLabel": "Is happy to work independently without the need for reassurance at each step in their learning.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STT1",
+                            "statementLabel": "Usually checks when they aren’t sure what to do. May look nervous or worried and need prompting. Needs to be sure before continuing.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STA1",
+                            "statementLabel": "Frequently seeks reassurance before starting any task. This relates to 'learnt helplessness' and he/she could do more on his/her own.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STB1",
+                            "statementLabel": "Always asks for help or reassurance before starting on any task but then will continue more independently for some time.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STC1",
+                            "statementLabel": "Continuously asks for help and reassurance. Will not continue independently.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC2",
+            "subCategoryLabel": "Following adult expectations with learning",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC2SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC2SG3STE1",
+                            "statementLabel": "Follows the same routines and expectations and the other learners in their group.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG3STT1",
+                            "statementLabel": "Will accept following adult instruction though is occasionally reluctant and frustrated.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG3STA1",
+                            "statementLabel": "Prefers to follow own agenda and is very reluctant to take instruction from others in terms of learning though will concede with adult support.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG3STB1",
+                            "statementLabel": "Without individual direction will follow his/her own agenda.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG3STC1",
+                            "statementLabel": "Refuses to comply with adult direction and will only follow own agenda if unsupported.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC3",
+            "subCategoryLabel": "Organisation for learning",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC3SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC3SG4STE1",
+                            "statementLabel": "When faced with a task, can see how to break it down into steps and will then work through this independently in a logical manner.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG4STT1",
+                            "statementLabel": "Can organise a task or tasks into a series of logical steps and work through these steps. but cannot explain the thought process behind this.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG4STA1",
+                            "statementLabel": "Can independently organise a tasks into a series of steps but regularly makes small errors with this.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG4STB1",
+                            "statementLabel": "Cannot independently organise a task into a sequence of steps and prioritise these",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG4STC1",
+                            "statementLabel": "Is chaotic in his/her approach to learning tasks",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC3SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC3SG5STE1",
+                            "statementLabel": "Can organise him/herself ready for task or lesson including sorting equipment. Is skilled at using a smart phone to support with scheduling",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STT1",
+                            "statementLabel": "Can occasionally forget equipment.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STT2",
+                            "statementLabel": "Is able to organise him/herself to travel on public transport independently to school/college",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STA1",
+                            "statementLabel": "When faced with a problem, does not applying basic problem solving skills to try to break the problem down or think about first steps.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STA2",
+                            "statementLabel": "May be anxious about travelling to school/college independently and find it difficult to organise money etc but with encouragement can manage this safely.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STA3",
+                            "statementLabel": "Cannot travel safely and independently to his/her pre-16 educational setting.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STB1",
+                            "statementLabel": "Has difficulties with decision making e.g. what food to buy, how to stay healthy.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STC1",
+                            "statementLabel": "Finds it difficult to learn simple life skills sequences such as cooking, washing, and shopping.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG5STC2",
+                            "statementLabel": "Cannot travel safely and independently to his/her post-16 educational setting.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC4",
+            "subCategoryLabel": "Flexible thinking",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC4SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC4SG6STE1",
+                            "statementLabel": "Has a range of interests that do not cause any barrier to learning and at times enhance it.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG6STT1",
+                            "statementLabel": "Has strong areas of interests and is prone to distraction if the areas of interested are visible or mentioned. However, he/she is able to maintain focus on the learning in hand with minimal prompting or redirection.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG6STA1",
+                            "statementLabel": "Has a range of special interests and he/she is easily distracted by these.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG6STB1",
+                            "statementLabel": "Has very few (1/2) special interests and prefers to engage only in activities relating to these or those on a schedule.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG6STC1",
+                            "statementLabel": "Has very few (1/2) special interests and will only engage in activities relating to these or those on a 'now and next' schedule",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC4SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC4SG7STE1",
+                            "statementLabel": "Can be flexible and imaginative in his/her learning.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG7STT1",
+                            "statementLabel": "Lacks flexibility and creativity in thinking",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG7STA1",
+                            "statementLabel": "Rigidity of thinking at times leads to some barriers to learning and issues with social problem solving.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG7STB1",
+                            "statementLabel": "Tends to have 'all or nothing' thinking and lack of flexibility impacts upon access to some areas of the curriculum",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG7STC1",
+                            "statementLabel": "Is very rigid in thinking. Has no flexibility of thought .This stifles his/her imagination to the extent that it is a significant barrier to learning.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC5",
+            "subCategoryLabel": "Attention and concentration",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC5SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC5SG8STE1",
+                            "statementLabel": "Attends and concentrates for as long as is expected in the educational setting.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STT1",
+                            "statementLabel": "Can fidget or seem restless/bored if asked to sit still for over 20 minutes. Is easily distracted but can be easily reengaged. Could be linked to an ADHD diagnosis.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STA1",
+                            "statementLabel": "Finds it difficult to concentrate and stay in his/her seat and on task for longer than 15 minutes (or the time expected at his/her age) at any one time. Is easily distracted and is difficult to refocus.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STB1",
+                            "statementLabel": "Finds it difficult to concentrate and stay in his/her seat and on task for longer than 5- 10 minutes at any one time. Is easily distracted and is difficult to refocus.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STB2",
+                            "statementLabel": "Despite accessing a practical/vocational course linked to an area of interest, attention and concentration remains a significant issue.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STC1",
+                            "statementLabel": "Severe concentration and attention difficulties. Find it very difficult to sit to a differentiated task for any length of time. Is hypervigilant or distracted by sensory stimuli for example.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC5SG8STC2",
+                            "statementLabel": "Focus and attention is such an issue that despite accessing a practical/vocational course linked to an area of interest, he/she will not independently stay on track with any task.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC6",
+            "subCategoryLabel": "Accepting challenge with learning",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC6SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC6SG9STE1",
+                            "statementLabel": "Will accept reasonable challenge with learning and shows interest in learning new things.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG9STT1",
+                            "statementLabel": "Reluctant to accept risks or challenge with learning. Needs prompting and encouragement to do so.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG9STA1",
+                            "statementLabel": "Finds any new learning or challenge with learning anxiety provoking.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG9STB1",
+                            "statementLabel": "Will not accept risks or challenge with learning. Has to work in comfort zone but then will comply with small increments of challenge.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG9STC1",
+                            "statementLabel": "All new learning is perceived to be challenging or is challenging and this learner obstructs and avoids that challenge hence progression is slow.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC6SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC6SG10STE1",
+                            "statementLabel": "Sees mistakes as learning points",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STT1",
+                            "statementLabel": "May be slightly upset by making a mistake but bounces back and tries again.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STA1",
+                            "statementLabel": "Could be described as perfectionist and finds it difficult to accept making mistakes without getting upset.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STB1",
+                            "statementLabel": "Is described as having low resilience as a learner. Is easily frustrated and gives up. However, has some preferred subjects where he/she shows better resilience.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STB2",
+                            "statementLabel": "Rather than make a mistake will avoid attempting tasks he/she believes he/she cannot do well.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STC1",
+                            "statementLabel": "Is described as having very poor resilience as a learner. Gives up or becomes frustrated very easily.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC6SG10STC2",
+                            "statementLabel": "Rather than make a mistake, will avoid all tasks.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A2SA4SC7",
+            "subCategoryLabel": "Motivation and aspiration",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A2SA4SC7SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC7SG11STE1",
+                            "statementLabel": "Has some motivation/aspiration to engage with learning. This is intrinsic (internally held)",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG11STT1",
+                            "statementLabel": "Is motivated to learn to some extent. This is mostly reinforced by external forces eg pleasing parents or teachers or gaining rewards.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG11STA1",
+                            "statementLabel": "Motivation (and attendance) is poor for certain subjects/ aspects of the curriculum. Engages with some subjects/aspects.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG11STB1",
+                            "statementLabel": "Has joined a college course from an alternative learning provider and finds it difficult to adjust to formal education and training and college life though is motivated to do so.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG11STC1",
+                            "statementLabel": "Has joined a college course from an alternative learning provider and finds it difficult to adjust to formal education and training and college life and is not highly motivated to do so.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC7SG12",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC7SG12STE1",
+                            "statementLabel": "Has aspirations for the future in terms of education, training and employment.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STT1",
+                            "statementLabel": "Does not hold aspirations for the future in terms of education and training but accepts that he/she needs an education and hence attends and participates to some extent.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STA1",
+                            "statementLabel": "Is only engaged in subjects directly related to chosen career path or specialist interest and disengages with everything else.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STB1",
+                            "statementLabel": "Is not motivated to engage in any adult-led learning when at school. Is disengaged and can truant.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STB2",
+                            "statementLabel": "Is only interested in school for the social/sport aspects. Shows no interest in formal learning.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STC1",
+                            "statementLabel": "Is not motivated to come to school and attendance is very poor.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC7SG12STC2",
+                            "statementLabel": "Does not hold aspirations for the future in terms of employment or training.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRAEAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAEAAAAAAAAAA==/",
+    "_etag": "\"6007049c-0000-1100-0000-61b233550000\"",
+    "_attachments": "attachments/",
+    "_ts": 1639068501
+}
