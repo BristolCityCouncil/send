@@ -1,0 +1,367 @@
+{
+    "id": "2",
+    "formVersion": "1",
+    "areaNumber": "1",
+    "areaId": "communicationAndInteraction",
+    "areaLabel": "Communication and interaction",
+    "subAreaNumber": "2",
+    "subAreaId": "receptiveCommunication",
+    "subAreaLabel": "Receptive language and communication",
+    "subCategory": [
+        {
+            "subCategoryId": "A1SA2SC1",
+            "subCategoryLabel": "Attention and listening",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA2SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC1SG1STE1",
+                            "statementLabel": "Can listen for long periods of time but is distracted by lots of background noise. Good strategies for focusing, e.g. looking at the speaker",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STT1",
+                            "statementLabel": "Can listen to simple instructions with some background noise, but can get distracted.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STA1",
+                            "statementLabel": "Can listen in bursts but finds lots of talking around him/her hard, and easily switches off.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STB1",
+                            "statementLabel": "Always finds it hard to listen, even when it's quiet. Easily distracted so switches off.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STB2",
+                            "statementLabel": "Responds to his/her name but does not maintain attention when someone is speaking to them unless about area of special interest",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STC1",
+                            "statementLabel": "Does not seem to attend to another person when they are speaking ie does not look up (if physically able to do so) or make eye contact.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STC2",
+                            "statementLabel": "Does not show any interest in what others are saying around him/her",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STC3",
+                            "statementLabel": "Does not respond to his/her name",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC1SG1STC4",
+                            "statementLabel": "Does not attend to sounds/voices",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA2SC2",
+            "subCategoryLabel": "Memory",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA2SC2SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC2SG2STE1",
+                            "statementLabel": "Short term and working memory are good enough and are no barrier to his/her understanding of language.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STT1",
+                            "statementLabel": "Can remember and follow short, simple instructions, but if instructions are longer or more complicated, they only remember part.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STA1",
+                            "statementLabel": "Remembers some of what they've been told, but usually needs some repetition of even the simplest things.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STA2",
+                            "statementLabel": "Can remember a maximum of 2-part instructions in a distraction free environment.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STB1",
+                            "statementLabel": "Finds remembering things really hard. Always has to ask again/be reminded. At times they'll still do the wrong thing.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STB2",
+                            "statementLabel": "Can remember only single part instructions",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC2SG2STC1",
+                            "statementLabel": "Cannot follow a single part instruction due to a combination of factors including attention, focus, understanding and memory.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA2SC3",
+            "subCategoryLabel": "Functional understanding",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA2SC3SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC3SG3STE1",
+                            "statementLabel": "Is able to access academic learning. This includes accessing GCSE or A levels or an equivalent academic course requiring understanding of complex verbally presented information.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG3STT1",
+                            "statementLabel": "Is able to access learning presented verbally but only if some adjustments are made to how language is used in the educational setting eg in terms of pace.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG3STA1",
+                            "statementLabel": "Finds it difficult to understand the vocabulary used in learning and the modified pace and complexity of presentation and giving instructions is still too fast and complex.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG3STB1",
+                            "statementLabel": "Cannot independently access (understand) the verbally presented curriculum at school or college.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG3STB2",
+                            "statementLabel": "Cannot understand sufficient language to be able to work in pairs/groups with peers.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG3STC1",
+                            "statementLabel": "Has a complex profile of needs that impact upon understanding of language in an educational setting that include significant learning, attention and memory difficulties alongside language difficulties. Cannot independently access the verbally presented curriculum at school/college due to this combination of factors.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA2SC3SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC3SG4STE1",
+                            "statementLabel": "Can understand multi-part instructions as expected for his/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STT1",
+                            "statementLabel": "Struggles with some multi-part instructions especially if these are not linked to common routines.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STA1",
+                            "statementLabel": "Cannot understand multi-part instructions as expected for his/her age. Can only understand two- part simplified instructions (and this is below developmental expectations).",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STB1",
+                            "statementLabel": "Can understand simple questions relating to things he/she can see/touch eg 'where is your nose?' but not abstract questions eg about things he/she thinks or feels.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STB2",
+                            "statementLabel": "Cannot understand, ‘what?’ and/or ‘where?’ questions.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STB3",
+                            "statementLabel": "Can only understand single part simplified instructions if these are supported with visual prompts and cues (and this is below developmental expectations).",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STC1",
+                            "statementLabel": "Cannot follow single part instructions or understand one key word in a sentence 'Where's your nose?'",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STC2",
+                            "statementLabel": "Does not respond to familiar requests (eg come here)",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STC3",
+                            "statementLabel": "Cannot understand 'how?’ and/or ‘ who?’ questions.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG4STC4",
+                            "statementLabel": "Can only follow instructions if relate to his/her familiar routine. Cannot understand any instructions given verbally despite visual and physical prompts",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A1SA2SC3SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC3SG5STE1",
+                            "statementLabel": "Knowledge of vocabulary is in line with expectations for his/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STT1",
+                            "statementLabel": "Knows quite a lot of words from school, college or the workplace. Needs to hear a new word a couple of times before they learn it fully.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STT2",
+                            "statementLabel": "Reduced vocabulary knowledge affects understanding of learning in lessons.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STT3",
+                            "statementLabel": "Is described by a SALT as having mild receptive language difficulties.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STA1",
+                            "statementLabel": "Knows commonly used words (eg relating to school, work or college). Won't always ask when hears an unfamiliar word",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STA2",
+                            "statementLabel": "Is described by a SALT as having moderate receptive language difficulties.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STB1",
+                            "statementLabel": "Has only a limited functional understanding of vocabulary",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STB2",
+                            "statementLabel": "Has an understanding of vocabulary of less than 300 words",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STB3",
+                            "statementLabel": "Is described by a SALT as having severe receptive language difficulties.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STC1",
+                            "statementLabel": "Cannot point to high frequency everyday items, e.g main body parts, clothing items etc. when asked.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STC2",
+                            "statementLabel": "Does not consistently recognise the names of objects when asked to point/get them",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC3SG5STC3",
+                            "statementLabel": "Described by a SALT as having profound receptive language difficulties.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA2SC4",
+            "subCategoryLabel": "Understanding social language",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA2SC4SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC4SG6STE1",
+                            "statementLabel": "Can understand more than just the function of language (eg instructions and explanations). Can understand humour, sarcasm, idioms and more complex aspects of social language.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STT1",
+                            "statementLabel": "Can be over literal in understanding of language",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STT2",
+                            "statementLabel": "Cannot always follow the meaning of other people’s conversations especially between adults or older young people. This can be linked to pace, complexity of language or sophistication of language used.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STA1",
+                            "statementLabel": "Struggles to understand more complex and sophisticated social language and this impacts upon social inclusion. Is motivated to be included and realises a difference from others.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STB1",
+                            "statementLabel": "Avoids and/or becomes upset by social interaction with same age peers as he/she cannot follow the conversation. Chooses to interact with young peers or only adults.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STB2",
+                            "statementLabel": "Understands language literally and does not understand complex language (metaphor or simile for example) even if explained over time",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STC1",
+                            "statementLabel": "Understands language literally and does not understand complex language (metaphor or simile for example) even if explained over time. Is fixed in a position that either he/she does not need to learn new skills or that they can’t learn new skills in this area.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC4SG6STC2",
+                            "statementLabel": "The way he/she understands language frustrates others to the extent that he/she is ostracised by peers, and employers and colleagues would find it difficult to work with him/her. Language difficulty combined with inflexibility would impact on employability. .",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A1SA2SC5",
+            "subCategoryLabel": "Non-verbal, alternative/augmented communication",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A1SA2SC5SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A1SA2SC5SG7STE1",
+                            "statementLabel": "Can understand facial expressions and non-verbal communication well. Understands subtle differences and complexities such as sarcasm and humour.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC5SG7STT1",
+                            "statementLabel": "Does not always read facial expressions or body language correctly.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC5SG7STT2",
+                            "statementLabel": "Can misread what might be meant as sarcasm/humour in non-verbal gestures or facial expressions.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC5SG7STA1",
+                            "statementLabel": "Significantly misinterprets nonverbal communication including facial expressions to the extent that this causes upset and/or conflict on a daily basis.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A1SA2SC5SG7STC1",
+                            "statementLabel": "Does not respond to or seem to understand gestures eg wave for 'bye'",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRACAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRACAAAAAAAAAA==/",
+    "_etag": "\"60073e69-0000-1100-0000-61b232b50000\"",
+    "_attachments": "attachments/",
+    "_ts": 1639068341
+}

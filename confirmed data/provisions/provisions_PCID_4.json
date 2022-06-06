@@ -1,0 +1,90 @@
+{
+    "id": "4",
+    "formVersion": "1",
+    "provisionGroup": "Family Support",
+    "provisionGroupId": "PGID4",
+    "provisionsType": [
+        {
+            "provisionTypeNumber": 1,
+            "provisionTypeLabel": "Family Support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Family Support",
+                    "SpecificProvision": "Regular (at least weekly) contact between education settings to establish positive relationships and communication.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID25",
+                    "provisionStatementId": "PGID4_PTID25_PS1"
+                },
+                {
+                    "TypeOfProvision": "Family Support",
+                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member to establish positive communication and ensure that there is a joint approach.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID25",
+                    "provisionStatementId": "PGID4_PTID25_PS2"
+                },
+                {
+                    "TypeOfProvision": "Family Support",
+                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member family member/carer/social worker to establish positive communication and ensure that there is a joint approach. Also, regular (possibly once or twice per week) meetings with parent/carer(s) taking longer than 15 minutes.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID25",
+                    "provisionStatementId": "PGID4_PTID25_PS3"
+                },
+                {
+                    "TypeOfProvision": "Family Support",
+                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member family member/carer/social worker to establish positive communication and ensure that there is a joint approach. . Also, regular (nearly daily) meetings with parent/carer(s) family member/carer/social worker taking longer than 15 minutes.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "1",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "14.8764",
+                    "AnnualAmount": "580.1796",
+                    "ProvisionTypeId": "PTID25",
+                    "provisionStatementId": "PGID4_PTID25_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 2,
+            "provisionTypeLabel": "Family Intervention (pre-16)",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Family Intervention (pre-16)",
+                    "SpecificProvision": "Intervention support for parents such as increased input from Setting’s Family Support Worker, parenting course offered, parent counselling with outside agency providers. This is offered as at least 6 sessions equivalent across the year.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "0.13215859030837",
+                    "Code": "G",
+                    "CostPerHr": "10.37",
+                    "Total": "1.3704845814978",
+                    "AnnualAmount": "53.4488986784141",
+                    "ProvisionTypeId": "PTID26",
+                    "provisionStatementId": "PGID4_PTID26_PS1"
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4ALcGQzUUAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUUAAAAAAAAAA==/",
+    "_etag": "\"000044e5-0000-1100-0000-61d874ea0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1641575658
+}

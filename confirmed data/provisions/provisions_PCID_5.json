@@ -1,0 +1,245 @@
+{
+    "id": "5",
+    "formVersion": "1",
+    "provisionGroup": "Support in non-teaching/unstructured times",
+    "provisionGroupId": "PGID5",
+    "provisionsType": [
+        {
+            "provisionTypeNumber": 1,
+            "provisionTypeLabel": "lunchtime support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "lunchtime support",
+                    "SpecificProvision": "Opportunities to go to a club or room (eg library/learning support room) instead of joining peers. General staff monitoring.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID27",
+                    "provisionStatementId": "PGID5_PTID27_PS1"
+                },
+                {
+                    "TypeOfProvision": "lunchtime support",
+                    "SpecificProvision": "A staff overseen club/group social activity which he/she attends instead of joining peers at least twice a week at lunchtimes. Staff monitoring dedicated to a him/her as one of a small group of children/young people.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "3",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "5.57865",
+                    "AnnualAmount": "217.56735",
+                    "ProvisionTypeId": "PTID27",
+                    "provisionStatementId": "PGID5_PTID27_PS2"
+                },
+                {
+                    "TypeOfProvision": "lunchtime support",
+                    "SpecificProvision": "A group led by a member of staff with a focus on supporting and modelling positive social interactions. Child/young person attends instead of joining peers every day lunchtime",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "5",
+                    "Code": "F",
+                    "CostPerHr": "1.85955",
+                    "Total": "9.29775",
+                    "AnnualAmount": "362.61225",
+                    "ProvisionTypeId": "PTID27",
+                    "provisionStatementId": "PGID5_PTID27_PS3"
+                },
+                {
+                    "TypeOfProvision": "lunchtime support",
+                    "SpecificProvision": "Total supervision/monitoring in all lunch times but with a constant focus on maintaining independence and social inclusion as is possible. Support should be discrete and from a distance.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "5",
+                    "Code": "B",
+                    "CostPerHr": "12.7",
+                    "Total": "63.5",
+                    "AnnualAmount": "2476.5",
+                    "ProvisionTypeId": "PTID27",
+                    "provisionStatementId": "PGID5_PTID27_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 2,
+            "provisionTypeLabel": "break time support",
+            "provisions": [
+                {
+                    "TypeOfProvision": "break time support",
+                    "SpecificProvision": "General staff monitoring.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID28",
+                    "provisionStatementId": "PGID5_PTID28_PS1"
+                },
+                {
+                    "TypeOfProvision": "break time support",
+                    "SpecificProvision": "Staff monitoring dedicated to a him/her as one of a small group of children/young people",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "1",
+                    "Code": "C",
+                    "CostPerHr": "1.27",
+                    "Total": "1.27",
+                    "AnnualAmount": "49.53",
+                    "ProvisionTypeId": "PTID28",
+                    "provisionStatementId": "PGID5_PTID28_PS2"
+                },
+                {
+                    "TypeOfProvision": "break time support",
+                    "SpecificProvision": "some supervision/monitoring as part of a group in all break times but with a constant focus on maintaining independence and social inclusion as is possible. Support should be discrete and from a distance.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "1.25",
+                    "Code": "B",
+                    "CostPerHr": "12.7",
+                    "Total": "15.875",
+                    "AnnualAmount": "619.125",
+                    "ProvisionTypeId": "PTID28",
+                    "provisionStatementId": "PGID5_PTID28_PS3"
+                },
+                {
+                    "TypeOfProvision": "break time support",
+                    "SpecificProvision": "Total supervision/monitoring in all break times but with a constant focus on maintaining independence and social inclusion as is possible. Support should be discrete and from a distance.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "2.5",
+                    "Code": "B",
+                    "CostPerHr": "12.7",
+                    "Total": "31.75",
+                    "AnnualAmount": "1238.25",
+                    "ProvisionTypeId": "PTID28",
+                    "provisionStatementId": "PGID5_PTID28_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 3,
+            "provisionTypeLabel": "support over transitions in current setting (pre-16)",
+            "provisions": [
+                {
+                    "TypeOfProvision": "support over transitions in current setting (pre-16)",
+                    "SpecificProvision": "Some support over transitions .E.g. allowed to leave early from lessons or coming in early before other or support to manage separation from familiar staff when arriving at the setting. Discreet supervision of all vulnerable students during unstructured times of the day in settings where there is public access.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID29",
+                    "provisionStatementId": "PGID5_PTID29_PS1"
+                },
+                {
+                    "TypeOfProvision": "support over transitions in current setting (pre-16)",
+                    "SpecificProvision": "Additional member of staff support for over 10 minutes during at least 2 transitions a day.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "1",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "14.8764",
+                    "AnnualAmount": "580.1796",
+                    "ProvisionTypeId": "PTID29",
+                    "provisionStatementId": "PGID5_PTID29_PS2"
+                },
+                {
+                    "TypeOfProvision": "support over transitions in current setting (pre-16)",
+                    "SpecificProvision": "Additional member of staff support for over 10 minutes over at least 3 transitions a day.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "2.5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "37.191",
+                    "AnnualAmount": "1450.449",
+                    "ProvisionTypeId": "PTID29",
+                    "provisionStatementId": "PGID5_PTID29_PS3"
+                },
+                {
+                    "TypeOfProvision": "support over transitions in current setting (pre-16)",
+                    "SpecificProvision": "Total supervision over all transitions between lessons and different activities and at the beginning and end of the day.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "3.75",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "55.7865",
+                    "AnnualAmount": "2175.6735",
+                    "ProvisionTypeId": "PTID29",
+                    "provisionStatementId": "PGID5_PTID29_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 4,
+            "provisionTypeLabel": "Support over transitions post-16",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Support over transitions post-16",
+                    "SpecificProvision": "Some support over transitions .E.g. allowed to leave early from lessons or coming in early before other or support to manage separation from familiar staff when arriving at the setting. Discreet supervision of all vulnerable students during unstructured times of the day in settings where there is public access.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID30",
+                    "provisionStatementId": "PGID5_PTID30_PS1"
+                },
+                {
+                    "TypeOfProvision": "Support over transitions post-16",
+                    "SpecificProvision": "In an open college setting, staff availability in receptions areas/outside the entrance at least twice a day",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "1",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "14.8764",
+                    "AnnualAmount": "580.1796",
+                    "ProvisionTypeId": "PTID30",
+                    "provisionStatementId": "PGID5_PTID30_PS2"
+                },
+                {
+                    "TypeOfProvision": "Support over transitions post-16",
+                    "SpecificProvision": "In an open college setting, staff availability in receptions areas/outside the entrance at least three times a day",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "2.5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "37.191",
+                    "AnnualAmount": "1450.449",
+                    "ProvisionTypeId": "PTID30",
+                    "provisionStatementId": "PGID5_PTID30_PS3"
+                },
+                {
+                    "TypeOfProvision": "Support over transitions post-16",
+                    "SpecificProvision": "Total supervision over all transitions between lessons and different activities and at the beginning and end of the day",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "3.75",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "55.7865",
+                    "AnnualAmount": "2175.6735",
+                    "ProvisionTypeId": "PTID30",
+                    "provisionStatementId": "PGID5_PTID30_PS4"
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4ALcGQzUVAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUVAAAAAAAAAA==/",
+    "_etag": "\"0800d72c-0000-1100-0000-61d48c270000\"",
+    "_attachments": "attachments/",
+    "_ts": 1641319463
+}

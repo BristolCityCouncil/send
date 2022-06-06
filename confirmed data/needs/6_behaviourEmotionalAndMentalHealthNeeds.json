@@ -1,0 +1,491 @@
+{
+    "id": "6",
+    "formVersion": "1",
+    "areaNumber": "3",
+    "areaId": "socialEmotionalAndMentalHealth",
+    "areaLabel": "Social, emotional and mental health",
+    "subAreaNumber": "6",
+    "subAreaId": "behaviourEmotionalAndMentalHealthNeeds",
+    "subAreaLabel": "Behaviour, emotional and mental health needs",
+    "subCategory": [
+        {
+            "subCategoryId": "A3SA6SC1",
+            "subCategoryLabel": "Incidents of behaviour that challenges",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA6SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC1SG1STE1",
+                            "statementLabel": "Has not received any fixed term exclusions and behaviour monitoring shows more positive 'points' on record than negative.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG1STT1",
+                            "statementLabel": "Has not received any fixed term exclusions. Behaviour monitoring shows some negative behaviour points and possibly internal exclusions in certain areas but also a good number of positive behaviour 'points' in comparison to peers.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG1STA1",
+                            "statementLabel": "Has received some (>5) internal exclusions or equivalent sanctions which is significant compared to peers. Behaviour monitoring shows a greater number of negative than positive behaviour 'points'.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG1STB1",
+                            "statementLabel": "Has had some (<5) fixed term exclusions for behaviour.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG1STC1",
+                            "statementLabel": "Has had some (>5) fixed term exclusions relating to behaviour. Is at risk of permanent exclusion from school.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC1SG2STE1",
+                            "statementLabel": "Conforms to school expectations around behaviour. No incidents of physical or verbal aggression are recorded.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STT1",
+                            "statementLabel": "Generally conforms to school expectations around behaviour. Single incidents of physical or verbal aggression relate to exceptional circumstances, for example one difficult relationship or a traumatic life event.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STT2",
+                            "statementLabel": "Swears frequently but usually not in a targeted way towards others",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STA1",
+                            "statementLabel": "Is recorded as frequently throwing objects or lashing out when distressed (without physical aggression towards people)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STA2",
+                            "statementLabel": "When distressed or annoyed by someone will often swear or use abusive language (though not racist/homophobic or other derogatory language)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STB1",
+                            "statementLabel": "When distressed displays fight, flight, freeze responses without cognitive regulation. . Can be physically aggressive towards people on occasion when very distressed.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STB2",
+                            "statementLabel": "Is frequently verbally aggressive using swearing and obscenities on a daily basis. This is often targeted directly at a person.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STC1",
+                            "statementLabel": "Is frequently physically aggressive towards people (or has intervention which isolates him/her as a result of a history of this level of aggression and hence prevents the incidents).",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STC2",
+                            "statementLabel": "Has a criminal record or displays anti –social behaviour that affects employment possibilities",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STC3",
+                            "statementLabel": "Cannot travel on public transport. Requires specialist transport due to behaviour.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STC4",
+                            "statementLabel": "Risk assessments will not allow him/her to work in certain environments due to behaviour",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG2STC5",
+                            "statementLabel": "Is frequently verbally aggressive and abusive using racist/homophobic or other derogatory offence langauge towards others.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC1SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC1SG3STE1",
+                            "statementLabel": "Will allow others to take control. Will accept being led or being asked to make choices. Is not overly dominated by others. Will also be a leader if this is appropriate in the situation.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG3STT1",
+                            "statementLabel": "Likes to dominate and take control in situations but can be reminded to share and listen. Understands the need to comply with adult expectations and demands.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG3STT2",
+                            "statementLabel": "Can be passive and hence dominated by others in peer groups. Would still hold boundaries with this however and would not cross boundaries of expectations/right and wrong or legal boundaries.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG3STA1",
+                            "statementLabel": "Needs to feel a sense of control in situations (perhaps in order to feel safe due to ACES or linked to Autism type traits). Will accept being able to make a choice as giving him/her that control. If he/she feels he/she has no control then his/her behaviour can escalate.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG3STB1",
+                            "statementLabel": "Responds negatively to direct commands and overt demands. Will avoid, abscond and frequently lash out if asked/told to do something he/she does not want to do.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC1SG3STC1",
+                            "statementLabel": "Avoids all adult demands upon him/her even if this is about something he/she might want to do. Responses to demand are so extreme that adults are concerned about keeping him/her and others physically safe.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA6SC2",
+            "subCategoryLabel": "Emotional development and emotional literacy",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA6SC2SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC2SG4STE1",
+                            "statementLabel": "Can understand and name his/her own emotions and uses facial expression and words to communicate this.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STT1",
+                            "statementLabel": "Has some gaps in emotional understanding and skills needed to be able to communicate feelings.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STT2",
+                            "statementLabel": "Has some mild language, communication or learning difficulties that impact upon his/her abilty to describe/express emotions though he/she has good emotional understanding in general.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STA1",
+                            "statementLabel": "Emotional literacy skills are immature or there are gaps in emotional development due to Autism or experience of ACEs for example. The child/young person presents as someone 2/3 years younger than their chronological age in terms of emotional development (understanding and regulation)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STA2",
+                            "statementLabel": "Has some mild language, communication or learning difficulties that impact upon his/her abilty to describe/express emotions and his/her emotional understanding in general.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STB1",
+                            "statementLabel": "Emotional literacy skills are very immature. Cannot name emotions of him/herself or others. Presents as/is assessed as having significant gaps in early emotional development (e.g. Boxall profile/Thrive). Is presenting as a young child (<4 years)",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STB2",
+                            "statementLabel": "Significant/moderate language, communication and learning difficulties are such that this is a barrier to making progress with emotional literacy skills as expected for his/her age. These difficulties affect expression and understanding of emotions and also his/her ability to access teaching and learning in this area.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STC1",
+                            "statementLabel": "Cannot identify physiological or emotional feelings and responses and is hence overwhelmed by emotions. Cannot use cognitive skills to regulate emotions. Is constantly hypervigilant and in a high state of arousal/anxiety.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC2SG4STC2",
+                            "statementLabel": "Is non-verbal and/or has learning difficulties that mean he/she cannot express any emotions verbally and most communicated through behaviour.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA6SC3",
+            "subCategoryLabel": "Emotional regulation and impulsivity",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA6SC3SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC3SG5STE1",
+                            "statementLabel": "Has a positive and realistic sense of themselves. Can talk about their strengths but also things they find difficult.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STT1",
+                            "statementLabel": "Will not automatically notice or point out positive qualities or achievement but responds warmly to praise if others notice and can build a more positive view of themselves particularly as a learner.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STT2",
+                            "statementLabel": "Can be sad at times but experiences joy and pleasure in several parts of their life.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STA1",
+                            "statementLabel": "Consistently speaks negatively of him/herself despite praise and encouragement. There is considerable discrepancy between where he/she would like to be and what he/she is achieving at this point. These unrealistic expectations further compound a poor sense of self.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STA2",
+                            "statementLabel": "Presents as anxious and/or of low mood on occasion. Is underachieving as a result.. Does not often laugh and experience joy.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STB1",
+                            "statementLabel": "Talks about not being able to do things and being 'rubbish' at doing things to the extent that this is a significant barrier to him/her making progress (self-fulfilling prophecy). This is in line with some genuine learning or other difficulties. IT is likely there he/she has had some ACEs.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STB2",
+                            "statementLabel": "Is frequently of very low mood.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STC1",
+                            "statementLabel": "Has negative thoughts and a very poor self-concept/self-esteem. May have spoken about or displayed self-harm or in extreme cases expressed suicidal ideologies.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG5STC2",
+                            "statementLabel": "Is diagnosed as having clinical depression or other mental illness.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC3SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC3SG6STE1",
+                            "statementLabel": "Has a positive sense of their ability to make changes to their own life to make things better (internal local of control)",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG6STT1",
+                            "statementLabel": "Sometimes can seem passive about making positive changes in their life. Makes comments that imply he/she accepts the way things are.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG6STA1",
+                            "statementLabel": " Gives up easily when things are difficult and blames others for his/her difficulties as a first course of response. Does not make reflections about what he/she could change.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG6STC1",
+                            "statementLabel": "Does not hold any belief that change is possible and that they have any power to make things better. Believe that things happen to them and are out of their control to change (external locus of control)",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC3SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC3SG7STE1",
+                            "statementLabel": "When faced with a difficult emotion has some effective positive strategies to help calm and regulate/sooth him/herself.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STT1",
+                            "statementLabel": " Applies some successful coping strategies in the face of difficult emotions though has a small range of options.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STT2",
+                            "statementLabel": "Is hypervigilant in observing the behaviour of others to the extent that this is a significant distraction at times but he/she can be absorbed by the learning.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STA1",
+                            "statementLabel": "Displays frustration linked to language needs as can’t express emotional needs verbally. Can lash out or withdraw.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STA2",
+                            "statementLabel": "Finds it difficult to self-regulate. Can become very distressed and leave the room. Takes some time to calm down with adult support. Triggers for this are known.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STA3",
+                            "statementLabel": "Is anxious and unsettled on a weekly basis. This presents as extremely withdrawn, vigilant or acting out behaviour.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STA4",
+                            "statementLabel": "Has experienced a bereavement/loss or separation over 1 year previously and does not appear to be adjusting to and coping with this loss.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STA5",
+                            "statementLabel": "Will notice everything occurring in the room between other people or if someone enters the room for example. Seems anxious and on edge, perhaps fearful. Is easily distracted from learning.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STB1",
+                            "statementLabel": "Cannot regulate on his/her own. Triggers are not all known and he/she can seemingly suddenly become dysregulated.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STB2",
+                            "statementLabel": "Dysregulates on a daily basis and finds it difficult to calm down even with adult support.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STB3",
+                            "statementLabel": "Has had a significant life-changing traumatic experience",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STB4",
+                            "statementLabel": "Is very hypervigilant and this is very distracting to all engagement with learning.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STC1",
+                            "statementLabel": "Cannot independently regulate him/herself",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STC2",
+                            "statementLabel": "Dysregulates more than once a day the situation mostly escalates before he/she can begin to calm down. Presents as a toddler might when distressed. Triggers are in the context and more immediate and are not all understood by staff.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STC3",
+                            "statementLabel": "Dissociates from the situation and appears absent and stares.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STC4",
+                            "statementLabel": "Has developmental trauma and/or has experienced more than 5 ACEs and this trauma is having ongoing impact in nearly all areas of social, emotional and mental health.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC3SG7STC5",
+                            "statementLabel": "Is so fearful and hypervigilant that he/she is unable to access any learning.. Needs to feel safe as a priority. Is likely to have experiences ACEs and may living in fear at present.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA6SC4",
+            "subCategoryLabel": "Anxiety",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA6SC4SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC4SG8STE1",
+                            "statementLabel": "He/she can think before he/she reacts, pausing before responses Is not impulsive and reflecting on situations so that his/her responses are controlled and measured.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STT1",
+                            "statementLabel": "Is sometimes impulsive in behaviour but is able to regulate to the extent that he/she is not physically and/or verbally aggressive towards others.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STT2",
+                            "statementLabel": "Is sometimes impulsive in behaviour and absconds but returns within a reasonable length of time or when supported to do so.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STA1",
+                            "statementLabel": "Is impulsive in behaviour on a weekly basis and this results in absconding or verbal aggression",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STA2",
+                            "statementLabel": "He/she says that she cannot control impulsivity independently but responds to support to calm down and slow down.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STB1",
+                            "statementLabel": "Is impulsive in behaviour on a daily basis and this results in absconding and/or verbal aggression and occasionally physical aggression.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STB2",
+                            "statementLabel": "He/she says that she cannot control anger and can't control lashing out/being verbally abusive or running away. Describes a ‘red mist’ or ‘blank’ mind at the time of incidents (Could be linked to ADHD diagnosis and/or trauma/ACES).",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STC1",
+                            "statementLabel": "Is impulsive in behaviour throughout the day and this can result in absconding, verbal and/or physical aggression",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG8STC2",
+                            "statementLabel": "He/she says that she cannot control anger and how this always leads to physical or severe verbal aggression. Describes a ‘red mist’ or ‘blank’ mind at the time of incidents (Could be linked to ADHD diagnosis and/or trauma/ACES).",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC4SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC4SG9STE1",
+                            "statementLabel": "Can accept changes to routine and schedule.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG9STT1",
+                            "statementLabel": "Shows distress if faced with unpredictable changes in daily routines. Finds transitions difficult to manage but calms with support. A visual timetable helps.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG9STA1",
+                            "statementLabel": "Is upset by change unless warned. In which case he/she will tolerate it to some extent.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG9STB1",
+                            "statementLabel": "Finds change distressing and experiences very high stress, with difficulty communicating this. High reliance on familiar routines.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG9STC1",
+                            "statementLabel": "Absence from school is concerning and linked to school based anxiety. At risk of significant underachievement. At risk of being not in education or training (NEET)",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA6SC4SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA6SC4SG10STE1",
+                            "statementLabel": "Can be supported by different people including substitute staff.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG10STA1",
+                            "statementLabel": "Is upset by change unless warned. In which case he/she will tolerate it to some extent.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG10STB1",
+                            "statementLabel": "Finds change distressing and experiences very high stress, with difficulty communicating this. High reliance on familiar routines.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA6SC4SG10STC1",
+                            "statementLabel": "Is resistant to all change even if warned of this change.and will become dysregulated I the face of change.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRAGAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAGAAAAAAAAAA==/",
+    "_etag": "\"61070b83-0000-1100-0000-61b236100000\"",
+    "_attachments": "attachments/",
+    "_ts": 1639069200
+}

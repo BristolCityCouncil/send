@@ -1,0 +1,232 @@
+{
+    "id": "7",
+    "formVersion": "1",
+    "provisionGroup": "Health care",
+    "provisionGroupId": "PGID7",
+    "provisionsType": [
+        {
+            "provisionTypeNumber": 1,
+            "provisionTypeLabel": "Medical care",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Medical care",
+                    "SpecificProvision": "Support for students who are managing their own medication.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID35",
+                    "provisionStatementId": "PGID7_PTID35_PS1"
+                },
+                {
+                    "TypeOfProvision": "Medical care",
+                    "SpecificProvision": "Administration of non-emergency/prescribed medication.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID35",
+                    "provisionStatementId": "PGID7_PTID35_PS2"
+                },
+                {
+                    "TypeOfProvision": "Medical care",
+                    "SpecificProvision": "Emergency medication i.e. for seizures following care plan recommendations.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "0",
+                    "Code": "Q",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID35",
+                    "provisionStatementId": "PGID7_PTID35_PS3"
+                },
+                {
+                    "TypeOfProvision": "Medical care",
+                    "SpecificProvision": "Other medical procedures i.e. suction for tracheotomy, gastrostomy etc",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "0",
+                    "Code": "Q",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID35",
+                    "provisionStatementId": "PGID7_PTID35_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 2,
+            "provisionTypeLabel": "Support at meal times",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Support at meal times",
+                    "SpecificProvision": "Staff to oversee and occasionally remind about eating skills every lunchtime.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID36",
+                    "provisionStatementId": "PGID7_PTID36_PS1"
+                },
+                {
+                    "TypeOfProvision": "Support at meal times",
+                    "SpecificProvision": "Shared staff supervision around meal times eg to cut up or puree food due to choke risk.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "5",
+                    "Code": "C",
+                    "CostPerHr": "1.27",
+                    "Total": "6.35",
+                    "AnnualAmount": "247.65",
+                    "ProvisionTypeId": "PTID36",
+                    "provisionStatementId": "PGID7_PTID36_PS2"
+                },
+                {
+                    "TypeOfProvision": "Support at meal times",
+                    "SpecificProvision": "Dedicated staff supervision around meal times eg to cut up or puree food due to choke risk. This will be ongoing.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "5",
+                    "Code": "B",
+                    "CostPerHr": "12.7",
+                    "Total": "63.5",
+                    "AnnualAmount": "2476.5",
+                    "ProvisionTypeId": "PTID36",
+                    "provisionStatementId": "PGID7_PTID36_PS3"
+                },
+                {
+                    "TypeOfProvision": "Support at meal times",
+                    "SpecificProvision": "Staff support to prepare food and feed him/her once a day",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "5",
+                    "Code": "B",
+                    "CostPerHr": "12.7",
+                    "Total": "63.5",
+                    "AnnualAmount": "2476.5",
+                    "ProvisionTypeId": "PTID36",
+                    "provisionStatementId": "PGID7_PTID36_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 3,
+            "provisionTypeLabel": "Intimate care",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Intimate care",
+                    "SpecificProvision": "(Year R) Staff to give some reminders and support with a toileting routine including the use of visual scheduling or encouraging regular toilet visits as necessary.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID37",
+                    "provisionStatementId": "PGID7_PTID37_PS1"
+                },
+                {
+                    "TypeOfProvision": "Intimate care",
+                    "SpecificProvision": "(Year 1+) Staff to support with access to bathroom or dressing/undressing to use the toilet but child/young person is continent.",
+                    "Grade": "2",
+                    "Level": "A",
+                    "Hours": "2",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "29.7528",
+                    "AnnualAmount": "1160.3592",
+                    "ProvisionTypeId": "PTID37",
+                    "provisionStatementId": "PGID7_PTID37_PS2"
+                },
+                {
+                    "TypeOfProvision": "Intimate care",
+                    "SpecificProvision": "(Year 1+) Staff to support with access to bathroom, dressing/undressing to use the toilet and some cleaning and support with changing if necessary.",
+                    "Grade": "3",
+                    "Level": "B",
+                    "Hours": "5",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "74.382",
+                    "AnnualAmount": "2900.898",
+                    "ProvisionTypeId": "PTID37",
+                    "provisionStatementId": "PGID7_PTID37_PS3"
+                },
+                {
+                    "TypeOfProvision": "Intimate care",
+                    "SpecificProvision": "Staff to change pads in an adapted change room on a regular daily basis as part of a care plan.",
+                    "Grade": "4",
+                    "Level": "C",
+                    "Hours": "10",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "148.764",
+                    "AnnualAmount": "5801.796",
+                    "ProvisionTypeId": "PTID37",
+                    "provisionStatementId": "PGID7_PTID37_PS4"
+                }
+            ]
+        },
+        {
+            "provisionTypeNumber": 4,
+            "provisionTypeLabel": "Personal care",
+            "provisions": [
+                {
+                    "TypeOfProvision": "Personal care",
+                    "SpecificProvision": "Staff to remind him/her about washing hands.",
+                    "Grade": "1",
+                    "Level": "A",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID38",
+                    "provisionStatementId": "PGID7_PTID38_PS1"
+                },
+                {
+                    "TypeOfProvision": "Personal care",
+                    "SpecificProvision": "(Year 1+) Staff to support with encouraging a toileting routine including prompting and the use of visual schedules.",
+                    "Grade": "2",
+                    "Level": "B",
+                    "Hours": "0",
+                    "Code": "L",
+                    "CostPerHr": "0",
+                    "Total": "0",
+                    "AnnualAmount": "0",
+                    "ProvisionTypeId": "PTID38",
+                    "provisionStatementId": "PGID7_PTID38_PS2"
+                },
+                {
+                    "TypeOfProvision": "Personal care",
+                    "SpecificProvision": "(Year 2+) Staff to support with encouraging a toileting routine including prompting and the use of visual schedules.",
+                    "Grade": "3",
+                    "Level": "C",
+                    "Hours": "1.25",
+                    "Code": "A",
+                    "CostPerHr": "14.8764",
+                    "Total": "18.5955",
+                    "AnnualAmount": "725.2245",
+                    "ProvisionTypeId": "PTID38",
+                    "provisionStatementId": "PGID7_PTID38_PS3"
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4ALcGQzUXAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUXAAAAAAAAAA==/",
+    "_etag": "\"0800f52c-0000-1100-0000-61d48c810000\"",
+    "_attachments": "attachments/",
+    "_ts": 1641319553
+}

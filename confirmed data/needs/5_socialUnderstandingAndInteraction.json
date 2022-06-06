@@ -1,0 +1,604 @@
+{
+    "id": "5",
+    "formVersion": "1",
+    "areaNumber": "3",
+    "areaId": "socialEmotionalAndMentalHealth",
+    "areaLabel": "Social, emotional and mental health",
+    "subAreaNumber": "5",
+    "subAreaId": "socialUnderstandingAndInteraction",
+    "subAreaLabel": "Social understanding and interaction",
+    "subCategory": [
+        {
+            "subCategoryId": "A3SA5SC1",
+            "subCategoryLabel": "Social interest",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC1SG1STE1",
+                            "statementLabel": "Is friendly and generally happy to talk to people, even those they don’t know.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG1STT1",
+                            "statementLabel": "Usually smiles and nods and makes fleeting eye contact when friends or familiar people are talking to show interest. With other people appears shy. Uses these skills inconsistently.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG1STA1",
+                            "statementLabel": "Finds it hard to be friendly or chat to people, seems not interested, even with people he/she knows. Not relaxed and approachable. Seems uncomfortable with eye contact.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG1STB1",
+                            "statementLabel": "Refuses to communicate with unfamiliar people and will only respond to briefly to questions from others he knows if encouraged. He/she does not show any interest in the other person and avoids eye contact if possible.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG1STC1",
+                            "statementLabel": "Shows no interest in other people. Does not make eye contact or show response to their voice.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC1SG2STE1",
+                            "statementLabel": "With most people most of the time, shows interest when talking by looking, smiling and nodding. May give less feedback to strangers or in new situations.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG2STT1",
+                            "statementLabel": "Gives very little feedback when people are talking to them - even with friends. Looks bored or uninterested. People might ask if there's a problem.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG2STA1",
+                            "statementLabel": "Can be considered 'rude' when people try to talk to him/her. Might make a rude comment or walk away. Other people are often offended by his/her manner",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG2STB1",
+                            "statementLabel": "Is unfriendly when people try to talk to him/her. Will look away or walk away. People might be upset/ offended.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG2STC1",
+                            "statementLabel": "Shows no interest in other people. Does not make eye contact or show response to their voice.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC1SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC1SG3STE1",
+                            "statementLabel": "Enjoys talking in a known environment. With new people or situations, may keep quiet as unsure how to talk to them, but will try if prompted. .",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG3STT1",
+                            "statementLabel": "Gives very little feedback when people are talking to them - even with friends. Looks bored or uninterested. People might ask if there's a problem.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG3STA1",
+                            "statementLabel": "Can be considered 'rude' when people try to talk to him/her. Might make a rude comment or walk away. Other people are often offended by his/her manner",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG3STB1",
+                            "statementLabel": "Is unfriendly when people try to talk to him/her. Will look away or walk away. People might be upset/ offended.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC1SG3STC1",
+                            "statementLabel": "Shows no interest in other people. Does not make eye contact or show response to their voice.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC2",
+            "subCategoryLabel": "Social anxiety",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC2SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC2SG4STE1",
+                            "statementLabel": "Quite confident talking to new people he/she doesn’t know or in new situations, but it’s clear that they have to be quite courageous to do so.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STT1",
+                            "statementLabel": "Able to discuss worries about friendships. Falls in and out of friendships and can be preoccupied with peer relationships.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STA1",
+                            "statementLabel": "Is socially anxious. Finds it difficult to walk through the door into a classroom. Is worried about what peers will say and think. Leaves the classroom at least once a week due to feeling anxious/ uncomfortable socially.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STB1",
+                            "statementLabel": "Attends school regularly but struggles to go into lessons due to social anxiety. Truants from some lessons and hides on site.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STB2",
+                            "statementLabel": "Leaves the classroom on a daily basis due to anxiety. On some days does not make it into the classroom.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STC1",
+                            "statementLabel": "Has left the school site due to social anxiety or social difficulties. Is at risk due to this.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC2SG4STC2",
+                            "statementLabel": "Attendance is poor due to social anxiety. Finds it hard to make it into school. Is in a cycle where the less he/she is in school the harder it is to attend.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC3",
+            "subCategoryLabel": "Social understanding",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC3SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC3SG5STE1",
+                            "statementLabel": "Understands and uses all social norms and conventions (as expected for his/her age)",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STT1",
+                            "statementLabel": "Does not understand all social norms and conventions (as expected for their age). Makes errors in their interpretation of some more complex social situations leading to some upset and conflicts.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STA1",
+                            "statementLabel": "Misunderstanding of social situations, norms and conventions is causing incidents on a daily basis. He/she reports to feeling upset and isolated. He/she wants to make friends but finds this very difficult.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STB1",
+                            "statementLabel": "Misunderstands most social situations and social interactions and either withdraws or lashes out in these situations.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STC1",
+                            "statementLabel": "Misunderstands nearly all social situations and social interactions and either absconds or lashes out in these situations.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STC2",
+                            "statementLabel": "Is vulnerable on social media to over disclosure or social media is his/her only source of social contact.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG5STC3",
+                            "statementLabel": "Is highly vulnerable to the negative influence of peers and older young people. Is indiscriminate and over trusting in all relationships.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC3SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC3SG6STE1",
+                            "statementLabel": "Understands the social rules around expected behaviour in different places and with different people. Can learn to follow boundaries and rules linked to safety and social norms (For example, can plan to go into town with friends )",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STT1",
+                            "statementLabel": "Can display some unusual behaviour e.g. shouting loudly. Needs to explicitly learn social expectations around this but then is able to change behaviour in line with this.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STA1",
+                            "statementLabel": "Finds it difficult to understand the difference between private and public spaces despite intervention to support with this. Displays some unexpected behaviour in public such as swearing frequently.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STB1",
+                            "statementLabel": "Finds it difficult to understand the difference between private and public spaces despite intervention to support with this. Displays unexpected behaviour in public that is considering challenging including undressing and masturbating for example.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STB2",
+                            "statementLabel": "Is on the peripheries of groups or gangs involved in anti-social behaviour and is vulnerable to being influenced by these groups. May be known to the police and/or youth offending team.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STC1",
+                            "statementLabel": "Does not understand social boundaries and expectations to the extent that he/she is at risk of harm or of harming others for example through inappropriate sexual touching, exposure, sexualised behaviour, sexualised language.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STC2",
+                            "statementLabel": "Displays behaviour that would be seen as anti-social or ‘inappropriate’ by others in the community",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC3SG6STC3",
+                            "statementLabel": "Is involved with groups or gangs in the community involved in negative or anti-social behaviour. Is known to the police and/or the youth offending team.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC4",
+            "subCategoryLabel": "Social interaction and communication",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC4SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC4SG7STE1",
+                            "statementLabel": "Can work with other children and young people in pairs or groups in a positive way without incident.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG7STT1",
+                            "statementLabel": "Works well in a group, but tends to take on the same role. Listens to others and takes things on board, but doesn’t usually contribute a great deal.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG7STA1",
+                            "statementLabel": "Finds it difficult to interact in a pairs or groups and will either avoid this or be very much on the periphery. Can fall out with people and the situation always seems to end in trouble.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG7STB1",
+                            "statementLabel": "Needs to work on his /her own, possibly at a workstation. May choose to do this. Cannot do school/college work collaboratively with others and situations end in confrontation or conflict. Finds it difficult to take turns, share and work together.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG7STC1",
+                            "statementLabel": "Finds it very difficult to learn in the same classroom as others and often needs to sit at a workstation outside of the room. Cannot easily tolerate people being in close proximity and does not interact with peers to complete learning.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC4SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC4SG8STE1",
+                            "statementLabel": "Can sustain positive relationships with other children and young people over a period of time.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STT1",
+                            "statementLabel": "Reports to feeling different and finding it hard to make friends but is motivated to build friendships.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STT2",
+                            "statementLabel": "May choose to be alone during unstructured times but is not upset by this and will accept peers approaching him/her and will join in if peers take the initiative in starting an interaction.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STT3",
+                            "statementLabel": "Is on the periphery of a social group/groups but is accepted (even if superficially) by other children and young people",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STA1",
+                            "statementLabel": "Is able to interact with adults but can experience poor interactions with peers more frequently than most same-aged peers",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STA2",
+                            "statementLabel": "Frequently reports to feeling bullied or teased. Incident logs show weekly accusations.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STA3",
+                            "statementLabel": "Is frequently accused of bullying or teasing others.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STB1",
+                            "statementLabel": "Does not choose to or finds it hard to interact with peers. Only interacts with adults. Will tolerate/comply with working with peers if overseen by an adult.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STB2",
+                            "statementLabel": "Is at risk of being socially isolated.. Does not choose to interact with others in unstructured times and if approached by peers can be verbally or physically aggressive.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STC1",
+                            "statementLabel": "Is socially isolated. Is not part of a social group in their educational setting and/or in the community. Does not have any reciprocal friendships.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG8STC2",
+                            "statementLabel": "Frustration linked to social and communication difficulties is such that peers are 'fearful' of him/her and avoid him/her. He/she has a reputation linked to being aggressive and unpredictable with his/her peer group.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC4SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC4SG9STE1",
+                            "statementLabel": "Is socially aware and has some empathy skills to the extent that he/she will consider someone else's feelings and this will prevent them acting in a way that might hurt that other person.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG9STT1",
+                            "statementLabel": "May behave in a way that disregards the feelings of others in the moment but initiates an apology or tries to resolve the situation in some way to make the other person feel better.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG9STA1",
+                            "statementLabel": "Finds it very difficult to put him/herself in someone else's position when reflecting on a situation/incident.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG9STB1",
+                            "statementLabel": "Cannot understand how their actions can emotionally impact others. .Lacks empathy towards others in comparison to same-aged peers.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG9STC1",
+                            "statementLabel": "Seems to lack any remorse or compassion for others. Is described as deliberately mean to others.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC4SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC4SG10STE1",
+                            "statementLabel": "Has good understanding of how others may be feeling and proactively looks for clues in facial expression and body language.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STT1",
+                            "statementLabel": " Can make a good guess at how others may be feeling by reading facial expression and body language. Can misunderstand this on occasion.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STT2",
+                            "statementLabel": "Is OK in a group but quite likes being by themselves. Sometimes forgets to listen to others or think about others’ ideas. Needs a reminder.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STA1",
+                            "statementLabel": "Is very controlling in friendships causing other learners to begin to avoid interaction with him/her.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STA2",
+                            "statementLabel": "Frequently lies or makes false accusations against others.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STB1",
+                            "statementLabel": "Lacks any social filter and hence causes offence or ostracises him/herself from social groups.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STC1",
+                            "statementLabel": "Peers will not interact with him/her due to the extent of his/her controlling behaviour.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG10STC2",
+                            "statementLabel": "Lack of social filter makes him/her vulnerable to harm and isolated in peer group and community.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A3SA5SC4SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC4SG11STE1",
+                            "statementLabel": "Is able to interact with staff in a positive way and understands the difference between interactions with different members of staff, family and friends.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STT1",
+                            "statementLabel": "Has built positive relationships with a few selected key staff that he/she trusts.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STA1",
+                            "statementLabel": "Can find it harder than most to establish a warm and trusting relationship with key staff",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STA2",
+                            "statementLabel": "Chooses to interact with staff rather than peers. Needs to be encouraged to interact with peers at all.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STB1",
+                            "statementLabel": "Sabotages relationships with key staff",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STB2",
+                            "statementLabel": "Is over dependent on relationships with key adults. Does not interact with other adults or peers.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STB3",
+                            "statementLabel": "Is possessive. Will not share the adult with others and this leads to behaviour that challenges.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STC1",
+                            "statementLabel": "Does not trust adults and has not established any trusting relationships despite a year in a setting. Continues to test relationships with his/her behaviour and does not obviously respond to rewards or sanctions.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC4SG11STC2",
+                            "statementLabel": "As he/she does not always respond to adults, there are risks with him/her going on trips/sport off school site.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC5",
+            "subCategoryLabel": "Belonging and social inclusion",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC5SG12",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC5SG12STE1",
+                            "statementLabel": "Reports to feeling a sense of connection or belonging to individuals or a social group. Sees any differences to others as positive and important rather than as a negative distancing factor. Accepts difference in others.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STT1",
+                            "statementLabel": "Seeks to /wants to interact with other children and young people but does not fit easily into social groups. He/she says he/she feels different to others. Other children and young people attempt to include him/her.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STA1",
+                            "statementLabel": "Is rejected by most peers/groups and could be or has been bullied and ostracised..",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STA2",
+                            "statementLabel": "Reports that he/she does not feel he/she belongs and feels difference to others.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STA3",
+                            "statementLabel": "Peer kudos is a strong motivator. He/she displays low level disruption in class on a daily basis in order to gain peer attention.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STB1",
+                            "statementLabel": "Communicates solely online and avoids talking to peers in person socially. Only feels a sense of belonging to online virtual groups.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STB2",
+                            "statementLabel": "Peer kudos is his/her priority. He/she displays frequent low level disruption in class on a daily basis in order to gain peer attention and this escalates every day into more challenging behaviour as peers either ignore or encourage him/her.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STC1",
+                            "statementLabel": "Is at risk of radicalisation and/or social isolation.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC5SG12STC2",
+                            "statementLabel": "Peer kudos is her/her only priority and he/she displays challenging behaviour more than once a day in structured and unstructured times as he/she tries to be accepted. He/she is intimidating to peers who may avoid or join him/her through ‘fear’.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC6",
+            "subCategoryLabel": "Sex and romantic relationships",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC6SG13",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC6SG13STE1",
+                            "statementLabel": "Has a good understanding of 'sex and relationships education' ,what is right and wrong and how to keep themselves safe.  ",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC6SG13STT1",
+                            "statementLabel": "Finds it difficult to access the SRE curriculum due to learning difficulties and/or ACEs but wants to learn. ",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC6SG13STA1",
+                            "statementLabel": "Is sexually precocious and is seeking romantic relationships on line and off line with older young people.  ",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC6SG13STB1",
+                            "statementLabel": "Is at risk of underage sex and pregnancy.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC6SG13STB2",
+                            "statementLabel": "Has learning difficulties and/or social communication difficulties and is socially over -trusting .",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC6SG13STC1",
+                            "statementLabel": "Is at high risk of child sexual exploitation (CSE) or grooming and online abuse.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A3SA5SC7",
+            "subCategoryLabel": "Gender identity",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A3SA5SC7SG14",
+                    "statements": [
+                        {
+                            "statementNumber": "A3SA5SC7SG14STE1",
+                            "statementLabel": "Is secure in their acceptance and understanding of their biological or chosen gender identity",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC7SG14STT1",
+                            "statementLabel": "Is questioning and exploring ideas around their gender identity which can wobble them at times or affect social relationships",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC7SG14STA1",
+                            "statementLabel": "Gender identity questions and concerns are regularly causing some anxiety and/or friendship issues. They may report to feeling isolated or bullied.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC7SG14STB1",
+                            "statementLabel": "Gender identity related issues are proving a barrier to them accessing education. This is due to social or emotional difficulties for example. Attendance islikely to be poor. They may be withdrawn or angry. They may report to having experienced bullying. They report to feeling a sense of isolation or lack of belonging.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A3SA5SC7SG14STC1",
+                            "statementLabel": "Gender identity concerns and related anxiety is so signficant as to mean that they are not attending or may only attend for a reduced period of time each week. Is at risk of social isolation at the setting but also in their community.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRAFAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAFAAAAAAAAAA==/",
+    "_etag": "\"6007ecbd-0000-1100-0000-61b233b80000\"",
+    "_attachments": "attachments/",
+    "_ts": 1639068600
+}

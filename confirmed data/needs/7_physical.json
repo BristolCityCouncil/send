@@ -1,0 +1,650 @@
+{
+    "id": "7",
+    "formVersion": "1",
+    "areaNumber": "4",
+    "areaId": "physicalAndSensory",
+    "areaLabel": "Physical and sensory",
+    "subAreaNumber": "7",
+    "subAreaId": "physical",
+    "subAreaLabel": "Medical, physical, motor-skills and mobility",
+    "subCategory": [
+        {
+            "subCategoryId": "A4SA7SC1",
+            "subCategoryLabel": "Physical health/ Medical needs",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC1SG1",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC1SG1STE1",
+                            "statementLabel": "Is in overall good physical health",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG1STT1",
+                            "statementLabel": "Has some health issues which staff need to be aware of in terms of risk assessment but needs should not impact upon day to day functioning.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG1STA1",
+                            "statementLabel": "Medical condition requires some short interruptions and gaps in education.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG1STB1",
+                            "statementLabel": "Medical condition requires procedures/operations and blocks of time off school/college for treatment/recovery. ",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG1STC1",
+                            "statementLabel": "Has a degenerative condition which is likely to be life-limiting.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC1SG2",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC1SG2STE1",
+                            "statementLabel": "Medical assessment indicates is physically healthy (within average range)",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG2STT1",
+                            "statementLabel": "Has some health issues which staff need to be aware of in terms of risk assessment but needs should not impact upon day to day functioning.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG2STA1",
+                            "statementLabel": "Is expected to need an operation/procedure in the next year that will require a few months out of school",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG2STB1",
+                            "statementLabel": "Has frequent (at least termly) periods of extended absence from school/college due to a (physical) medical condition",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG2STC1",
+                            "statementLabel": "Has a lifelong medical condition that impacts on all aspects of daily functioning.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG2STC2",
+                            "statementLabel": "Is receiving palliative care.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC1SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC1SG3STE1",
+                            "statementLabel": "Does not need any medication during the day or is independent in administering this.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG3STT1",
+                            "statementLabel": "He/she needs support with administration of regular oral medication in the setting",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG3STA1",
+                            "statementLabel": "He/she needs support with medication administered at the setting that requires medical expertise or procedural training.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG3STB1",
+                            "statementLabel": "Needs daily support to meet medical needs from staff who are trained and overseen by clinical specialists. Procedures are not overly risky.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG3STC1",
+                            "statementLabel": "Specialist health care support required e.g. tracheostomy, gastronomy, pressure care, multi-agency joint working required",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC1SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC1SG4STE1",
+                            "statementLabel": "Has sufficient energy levels to be able to participate in all of the physical and cognitive activities of the day in an educational setting.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG4STT1",
+                            "statementLabel": "Can be fatigued at the end of the day in particular or after certain strenuous activities",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG4STA1",
+                            "statementLabel": "Is fatigued by the end of every day to the point that he/she can seem to be near falling asleep. Any learning in the afternoons is impacted by energy levels.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG4STB1",
+                            "statementLabel": "Has low energy all day. This can link to physical or mental health conditions. Attendance to the educational setting is impacted by this.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC1SG4STC1",
+                            "statementLabel": "Experiences chronic fatigue. Tiredness which relates to medical conditions is such that it impacts on attendance.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC2",
+            "subCategoryLabel": "Pain",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC2SG5",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC2SG5STE1",
+                            "statementLabel": "Is pain free throughout the day.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC2SG5STT1",
+                            "statementLabel": "Has episodes of pain that are easily treated with non-prescription pain killers and helped by avoiding certain positions and pacing of activity throughout the day",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC2SG5STA1",
+                            "statementLabel": "Has episodes of mild but persistent pain that sustain despite treatment and impact upon his/her behaviour and wellbeing.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC2SG5STA2",
+                            "statementLabel": "Can talk about being in pain but can confuse this with other feelings or is distressed through anticipating pain.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC2SG5STB1",
+                            "statementLabel": "Is thought to be in pain but does not know how to communicate this or distinguish it from other feelings. Frequent episodes of supposed pain impact upon behaviour and wellbeing to the extent that he/she ca not concentrate on learning. .",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC2SG5STC1",
+                            "statementLabel": "Is in constant pain and this significantly impacts upon behaviour and wellbeing. May or may not be able to talk about the pain they experience and may be very upset/anxious/angry as a result of it.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC3",
+            "subCategoryLabel": "Health anxiety",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC3SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC3SG6STE1",
+                            "statementLabel": "If he/she is unwell he/she has a positive mind-set and expects to get well. Accepts treatment and will visit a doctor or hospital without significant upset or worry.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STT1",
+                            "statementLabel": "Is worried about getting ill or receiving treatment but is not preoccupied by this. Applies positive copying strategies to get through procedural anxiety or worries about infection.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STA1",
+                            "statementLabel": "Is preoccupied with physical health, expecting to get ill and fixating on minor symptoms. Catastrophizes and could be described as a hypochondriac.  ",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STB1",
+                            "statementLabel": "Is very anxious about medical health and as a result is distracted/disengaged thinking about it",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STB2",
+                            "statementLabel": "Displays some obsessive traits relating to anxiety about getting ill eg obsessive hand washing or cleanliness.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STC1",
+                            "statementLabel": "Has procedural anxiety and general anxiety linked to medical condition such that he/she is frequently absent from school/ avoidant/withdrawn or aggressive and angry",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC3SG6STC2",
+                            "statementLabel": "Could be described as having OCD by medical professionals.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC4",
+            "subCategoryLabel": "Traumatic brain injury",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC4SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC4SG7STE1",
+                            "statementLabel": "Has recovered from a minor brain injury with no known adverse circumstances.  ",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC4SG7STT1",
+                            "statementLabel": "Impact of brain injury is not obvious and needs monitoring. No known impact at present.  ",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC4SG7STA1",
+                            "statementLabel": "Mild traumatic brain injury has caused some difference in presentation and learning.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC4SG7STB1",
+                            "statementLabel": "Deterioration in physical ability, wellbeing and capacity to learn is deemed highly likely as a result of traumatic brain injury.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC4SG7STC1",
+                            "statementLabel": "Traumatic brain injury is causing substantial changes in physical ability, learning, well-being and social interaction",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC5",
+            "subCategoryLabel": "Fine motor skills (and personal care)",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC5SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC5SG8STE1",
+                            "statementLabel": "Is able to use fine motor skills for any tasks required in the curriculum",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG8STT1",
+                            "statementLabel": "Writing is difficult for unfamiliar staff to read and stands out as less developed than the writing of same age peers.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG8STA1",
+                            "statementLabel": "Writing is nearly illegible to unfamiliar staff and familiar staff can find some words difficult to read. Text is not organised in straight lines on the page or with appropriate spacing between words.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG8STB1",
+                            "statementLabel": "He/she cannot write by hand due to motor skills difficulties that cannot be improved, muscle tone or strength for example.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG8STC1",
+                            "statementLabel": "Cannot use hands to record either by writing or use of a keyboard. Dependent on assistive technology and/or support for most curriculum access",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC5SG9",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC5SG9STE1",
+                            "statementLabel": "Can form letters when writing (in line with developmental expectations). Handwriting is legible to unfamiliar people.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG9STT1",
+                            "statementLabel": "Issues with word spacing make writing difficult to read.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG9STT2",
+                            "statementLabel": "Writing legible but speed is reduced due to muscle tone/ reduced muscle control so cannot complete work in the designated time frame",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG9STA1",
+                            "statementLabel": "Writing Speed reduced due to fatigue",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG9STB1",
+                            "statementLabel": "He/she cannot write by hand due to motor skills difficulties that cannot be improved, muscle tone or strength for example.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG9STC1",
+                            "statementLabel": "Cannot use hands to record either by writing or use of a keyboard. Dependent on assistive technology and/or support for most curriculum access",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC5SG10",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC5SG10STE1",
+                            "statementLabel": "Can dress and undress independently",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG10STT1",
+                            "statementLabel": "Can change for PE or exercise independently but finds some complex fastenings difficult.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG10STA1",
+                            "statementLabel": "If changing for PE/exercise will commonly put things on backwards or in the wrong sequence and struggle with fastenings. Cannot tie laces.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG10STB1",
+                            "statementLabel": "Can take clothes off independently but cannot put them on. Has difficulties with planning, co-ordination and orientation of clothing to dress.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG10STC1",
+                            "statementLabel": " Cannot take clothes off or put them on independently.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC5SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC5SG11STE1",
+                            "statementLabel": "Can feed him/her self using cutlery and a cup/glass.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG11STT1",
+                            "statementLabel": "Finds coordinating a fork and knife together difficult but can use a spoon accurately and drink out of a regular cup. May find it difficult to carry tray with food to table",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG11STA1",
+                            "statementLabel": "If eating independently, will often miss his/her mouth. Cannot cut up food to eat. Drinking is difficult without a modified cup.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG11STB1",
+                            "statementLabel": "Cannot cut up food or bring it to his/her mouth by hand or with cutlery.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG11STC1",
+                            "statementLabel": "Cannot feed him/self. Cannot hold cutlery or food or coordinate moving this to his/her mouth to eat.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC5SG11STC2",
+                            "statementLabel": "Is at risk of choking due to chewing or swallowing issues.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC6",
+            "subCategoryLabel": "Mobility, gross motor skills and coordination",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC6SG12",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC6SG12STE1",
+                            "statementLabel": "Can participate fully in physical activities both in structured and unstructured times",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG12STT1",
+                            "statementLabel": "He/she uses a wheelchair but drives it independently",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG12STA1",
+                            "statementLabel": "He/she is mobile with the use of walking aids. May require level access and/or supervision or assistance on stairs, etc.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG12STB1",
+                            "statementLabel": "Learner requires specialist seating and possible other specialist equipment.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG12STC1",
+                            "statementLabel": " Is non-weight bearing – requires use of hoisting.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC6SG13",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC6SG13STE1",
+                            "statementLabel": "Can lift any equipment required to access the curriculum",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG13STT1",
+                            "statementLabel": "Has poor balance and can easily fall over.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG13STA1",
+                            "statementLabel": "Has very low muscle tone and poor posture. Will easily fall over particularly if knocked by others.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG13STB1",
+                            "statementLabel": "Learner needs access to wheelchair for movement either independent with chair or staff support",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG13STC1",
+                            "statementLabel": "Uses a powered wheelchair or dependent on assistance for mobility.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC6SG14",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC6SG14STE1",
+                            "statementLabel": "Can orientate him/herself on any school/college equipment and in any school/college environments without incident",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG14STT1",
+                            "statementLabel": "He/she is independently mobile without the use of aids etc. but finds some physical obstacles difficult eg stairs.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG14STA1",
+                            "statementLabel": "Learner uses a wheelchair and needs some support in using it.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG14STB1",
+                            "statementLabel": "Needs to change position and equipment frequently.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG14STC1",
+                            "statementLabel": "Uses a powered wheelchair or dependent on assistance for mobility.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC6SG15",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC6SG15STE1",
+                            "statementLabel": "Physical development is within expected range for his/her age.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG15STT1",
+                            "statementLabel": "Mild disability e.g. absent digits, mild diplegia that does not impact significantly on access to education; early stages of degenerative condition, myopathy or Muscular dystrophy",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG15STA1",
+                            "statementLabel": "Described as having moderate level of physical disability",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG15STB1",
+                            "statementLabel": "Described as having moderate/severe level of physical disability",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC6SG15STC1",
+                            "statementLabel": "Is described as having severe level of disability and/or Profound or Progressive condition",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC7",
+            "subCategoryLabel": "Continence",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC7SG16",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC7SG16STE1",
+                            "statementLabel": "Is continent and independent in using the toilet.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG16STT1",
+                            "statementLabel": "Is continent but has occasional accidents eg when distracted.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG16STA1",
+                            "statementLabel": "Has shown that can physiologically be continent but has regular accidents despite intervention over time.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG16STB1",
+                            "statementLabel": "Is incontinent. Requires intimate and personal care prompting and support at an age greater than 7 years.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG16STC1",
+                            "statementLabel": "Fully dependent on personal and intimate care support",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A4SA7SC7SG17",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC7SG17STE1",
+                            "statementLabel": "Is independently toilet trained but has the occasional accident 5-7 years.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STT1",
+                            "statementLabel": "Will follow a schedule to support toilet use and personal hygiene independently.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STA1",
+                            "statementLabel": "Is aware when he/she needs the toilet. Will only use the toilet following an adult prompt and the use of a simple command relating to a schedule",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STA2",
+                            "statementLabel": "Is aware when he/she needs the toilet but needs prompting to use it in time and wash his/her hands. May need support with clothes after using the toilet",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STB1",
+                            "statementLabel": "Is very delayed in continence development (eg >8 years old). Is expected to follow a typical developmental pathway towards continence.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STB2",
+                            "statementLabel": "Is unaware when needs the toilet and does not notice if he/she has wet/soiled. Will not follow a command or schedule to use the toilet. Does not understand this.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STC1",
+                            "statementLabel": "Is not expected to be fully independently continent (eg health reasons).",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC7SG17STC2",
+                            "statementLabel": "Is Non-weight bearing ( requires use of hoisting) and incontinent.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subCategoryId": "A4SA7SC8",
+            "subCategoryLabel": "Sleep",
+            "statementGroup": [
+                {
+                    "statementGroupNumber": "A4SA7SC8SG18",
+                    "statements": [
+                        {
+                            "statementNumber": "A4SA7SC8SG18STE1",
+                            "statementLabel": "Has good sleep hygiene. Sleeps within the healthy range of hours for his/her age",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC8SG18STT1",
+                            "statementLabel": "Sporadic occasional sleep difficulties and tiredness.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC8SG18STA1",
+                            "statementLabel": "Irregular sleep problems that have an impact on certain days of the week or when anxious for example (Could be linked to medication, gaming, medical conditions or ACEs)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC8SG18STB1",
+                            "statementLabel": "Severe sleep difficulties sustained over time linked to a range of factors but also entrenched poor sleep hygiene habits.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A4SA7SC8SG18STC1",
+                            "statementLabel": "Chronic sleep difficulties despite intervention to support sleep routines and sleep hygiene. Impacts upon all aspects of life and access to the curriculum. Constantly tired in the day time.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "_rid": "XIk4AOtbRRAHAAAAAAAAAA==",
+    "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAHAAAAAAAAAA==/",
+    "_etag": "\"ab0041ed-0000-1100-0000-61c200840000\"",
+    "_attachments": "attachments/",
+    "_ts": 1640104068
+}
