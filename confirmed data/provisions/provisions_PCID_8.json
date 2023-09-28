@@ -1,0 +1,75 @@
+{ 
+"id":"8",
+"formVersion":"1",
+"provisionGroup":"Additional and Different provision",
+"provisionGroupId":"PCID8",
+"provisionsType":[
+{
+"provisionTypeNumber": 1,
+"provisionTypeLabel": "Training",
+"provisions": [
+{
+"typeOfProvision":"Training","specificProvision":"Whole setting awareness training eg in language and communication , autism, attachment, de-escalation approaches.","level":"A","hoursPerWeek":"","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS1"}, 
+{
+"typeOfProvision":"Training","specificProvision":"Half a day, or less, specific annual training required","level":"A","hoursPerWeek":"0.087912","calculationOfHoursPerWeek":"4/45.5","hoursForCalculation":"4","code":"H","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS2"}, 
+{
+"typeOfProvision":"Training","specificProvision":"1 day of specific annual training required","level":"A","hoursPerWeek":"0.153846","calculationOfHoursPerWeek":"7/45.5","hoursForCalculation":"7","code":"H","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS3"}, 
+{
+"typeOfProvision":"Training","specificProvision":"1 day of specific bi-annual training required","level":"A","hoursPerWeek":"0.307692","calculationOfHoursPerWeek":"14/45.5","hoursForCalculation":"14","code":"H","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS4"}, 
+{
+"typeOfProvision":"Training","specificProvision":"Ongoing or termly specific training required","level":"C","hoursPerWeek":"0.395604","calculationOfHoursPerWeek":"18/45.5","hoursForCalculation":"18","code":"H","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS5"}, 
+{
+"typeOfProvision":"Training","specificProvision":"Block of travel training for post-16 students","level":"A","hoursPerWeek":"0.131868","calculationOfHoursPerWeek":"6/45.5","hoursForCalculation":"6","code":"Q","provisionTypeId":"PTID8-1","provisionStatementId":"PCID8_PTID8-1_PS6"}
+
+]
+}, 
+{
+"provisionTypeNumber": 2,
+"provisionTypeLabel": "Post-16 specific provision",
+"provisions": [
+{
+"typeOfProvision":"Post-16 specific provision","specificProvision":"Post-16 courses specifically designed for students with EHCP’s, with smaller groups sizes and additional in-class support","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-2","provisionStatementId":"PCID8_PTID8-2_PS1"}, 
+{
+"typeOfProvision":"Post-16 specific provision","specificProvision":"Residential training opportunities, where appropriate, to needs or provision in EHCP","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-2","provisionStatementId":"PCID8_PTID8-2_PS2"}, 
+{
+"typeOfProvision":"Post-16 specific provision","specificProvision":"Life skills or community learning requiring high levels of support for safety or a curriculum regularly taught off-site, i.e. travel, community activities etc.","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-2","provisionStatementId":"PCID8_PTID8-2_PS3"}, 
+{
+"typeOfProvision":"Post-16 specific provision","specificProvision":"Bespoke college based timetable: bespoke packages individually tailored to the young person, i.e. mixture of college and another provider","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-2","provisionStatementId":"PCID8_PTID8-2_PS4"}, 
+{
+"typeOfProvision":"Post-16 specific provision","specificProvision":"Young person bringing their own support into college: packages designed where the college offer does not meet the needs of the young person directly","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-2","provisionStatementId":"PCID8_PTID8-2_PS5"}
+
+]
+}, 
+{
+"provisionTypeNumber": 3,
+"provisionTypeLabel": "VI specific provision",
+"provisions": [
+{
+"typeOfProvision":"VI specific provision","specificProvision":"Specialist resources relating to vision impairment","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-3","provisionStatementId":"PCID8_PTID8-3_PS1"}
+
+]
+}, 
+{
+"provisionTypeNumber": 4,
+"provisionTypeLabel": "HI Specific Provision",
+"provisions": [
+{
+"typeOfProvision":"HI Specific Provision","specificProvision":"Specialist resources relating to hearing impairment","level":"C","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-4","provisionStatementId":"PCID8_PTID8-4_PS1"}
+
+]
+}, 
+{
+"provisionTypeNumber": 5,
+"provisionTypeLabel": "Educational/ communication resources",
+"provisions": [
+{
+"typeOfProvision":"Educational/ communication resources","specificProvision":"IT used to support alternatives to written recording and to promote independent learning","level":"A","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID8-5","provisionStatementId":"PCID8_PTID8-5_PS1"}, 
+{
+"typeOfProvision":"Educational/ communication resources","specificProvision":"Concrete apparatus and resourcces including manipulatives","level":"A","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID8-5","provisionStatementId":"PCID8_PTID8-5_PS2"}, 
+{
+"typeOfProvision":"Educational/ communication resources","specificProvision":"Resources to support alternative communication methods including the use of Makaton, PECS and other communication aids (Low tech)","level":"A","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID8-5","provisionStatementId":"PCID8_PTID8-5_PS3"}, 
+{
+"typeOfProvision":"Educational/ communication resources","specificProvision":"Laptop, software, hardware, communication devices needed for individual use by the child or young person (where cost is over £500)","level":"A","hoursPerWeek":"bespoke","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID8-5","provisionStatementId":"PCID8_PTID8-5_PS4"}
+
+]
+}]}
