@@ -32,5 +32,6 @@
     </div>
 </footer>
 <script src="/main.js"></script>
+<script src="/fileupload.js"></script>
 </body>
 </html>

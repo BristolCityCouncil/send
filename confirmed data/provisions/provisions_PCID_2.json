@@ -1,322 +1,98 @@
+{ 
+"id":"2",
+"formVersion":"1",
+"provisionGroup":"Group & Individual Intervention",
+"provisionGroupId":"PCID2",
+"provisionsType":[
 {
-    "id": "2",
-    "formVersion": "1",
-    "provisionGroup": "Group & Individual Intervention",
-    "provisionGroupId": "PGID2",
-    "provisionsType": [
-        {
-            "provisionTypeNumber": 1,
-            "provisionTypeLabel": "Generalisation and reinforcement",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Generalisation and reinforcement",
-                    "SpecificProvision": "Weekly pre-tutoring or a short targeted intervention focusing on one aspect of learning or gap in learning.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID5",
-                    "provisionStatementId": "PGID2_PTID5_PS1"
-                },
-                {
-                    "TypeOfProvision": "Generalisation and reinforcement",
-                    "SpecificProvision": "Pre-tutoring each week for 30 minutes to prepare for the week ahead.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0.5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "7.4382",
-                    "AnnualAmount": "290.0898",
-                    "ProvisionTypeId": "PTID5",
-                    "provisionStatementId": "PGID2_PTID5_PS2"
-                },
-                {
-                    "TypeOfProvision": "Generalisation and reinforcement",
-                    "SpecificProvision": "Pre-tutoring daily for 20-30 minutes with a member of staff looking at learning that is coming up and preparing for this eg with vocabulary or key concepts.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "2.5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "37.191",
-                    "AnnualAmount": "1450.449",
-                    "ProvisionTypeId": "PTID5",
-                    "provisionStatementId": "PGID2_PTID5_PS3"
-                },
-                {
-                    "TypeOfProvision": "Generalisation and reinforcement",
-                    "SpecificProvision": "Pre-tutoring daily for 20-30 minutes looking at learning that is coming and consolidation for 20-30 minutes at the end of each day with a member of staff.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "74.382",
-                    "AnnualAmount": "2900.898",
-                    "ProvisionTypeId": "PTID5",
-                    "provisionStatementId": "PGID2_PTID5_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 2,
-            "provisionTypeLabel": "1:1 Intervention",
-            "provisions": [
-                {
-                    "TypeOfProvision": "1:1 Intervention",
-                    "SpecificProvision": "1:1 targeted intervention for 2 terms 3 times a week focussing on gaps in learning or understanding that group intervention did not resolve",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "1.12334801762115",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "16.7113744493392",
-                    "AnnualAmount": "651.743603524229",
-                    "ProvisionTypeId": "PTID6",
-                    "provisionStatementId": "PGID2_PTID6_PS1"
-                },
-                {
-                    "TypeOfProvision": "1:1 Intervention",
-                    "SpecificProvision": "A 1:1 intervention delivered by a trained Staff for 15-20 minutes. This is delivered at least four times a week.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "1.2",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "17.85168",
-                    "AnnualAmount": "696.21552",
-                    "ProvisionTypeId": "PTID6",
-                    "provisionStatementId": "PGID2_PTID6_PS2"
-                },
-                {
-                    "TypeOfProvision": "1:1 Intervention",
-                    "SpecificProvision": "A bespoke 1:1 intervention delivered by a trained/qualified member of Staff who is overseen/supervised by a specialist in the area, with contact more than twice a year. This is delivered at least three times a week.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "3",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "44.6292",
-                    "AnnualAmount": "1740.5388",
-                    "ProvisionTypeId": "PTID6",
-                    "provisionStatementId": "PGID2_PTID6_PS3"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 3,
-            "provisionTypeLabel": "Small group Intervention",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Small group Intervention",
-                    "SpecificProvision": "Small group ‘booster’ type intervention delivered for a term or perhaps 2 focusing on targeted support filling gaps in learning or underlying errors.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID7",
-                    "provisionStatementId": "PGID2_PTID7_PS1"
-                },
-                {
-                    "TypeOfProvision": "Small group Intervention",
-                    "SpecificProvision": "A group based intervention (<12) delivered by a trained/experienced adult. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles. This intervention is delivered once a week for under an hour. . . One block of intervention of max 12 weeks is delivered per year.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0.26431718061674",
-                    "Code": "F",
-                    "CostPerHr": "1.85955",
-                    "Total": "0.491511013215859",
-                    "AnnualAmount": "19.1689295154185",
-                    "ProvisionTypeId": "PTID7",
-                    "provisionStatementId": "PGID2_PTID7_PS2"
-                },
-                {
-                    "TypeOfProvision": "Small group Intervention",
-                    "SpecificProvision": "A group based intervention (<8) delivered by a trained/experienced adult. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles. This intervention is delivered at least twice a week for under two hours. . . Two block of intervention of max 12 weeks are delivered per year.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0.52863436123348",
-                    "Code": "F",
-                    "CostPerHr": "1.85955",
-                    "Total": "0.983022026431718",
-                    "AnnualAmount": "38.337859030837",
-                    "ProvisionTypeId": "PTID7",
-                    "provisionStatementId": "PGID2_PTID7_PS3"
-                },
-                {
-                    "TypeOfProvision": "Small group Intervention",
-                    "SpecificProvision": "A group based intervention (<8) delivered by a trained/experienced adult. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles. This intervention is delivered at least twice a week. Delivery is ongoing throughout the year.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "2",
-                    "Code": "F",
-                    "CostPerHr": "1.85955",
-                    "Total": "3.7191",
-                    "AnnualAmount": "145.0449",
-                    "ProvisionTypeId": "PTID7",
-                    "provisionStatementId": "PGID2_PTID7_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 4,
-            "provisionTypeLabel": "Intervention for social and emotional learning",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Intervention for social and emotional learning",
-                    "SpecificProvision": "Time limited small group intervention (eg for one term) once a week for 30 mins with a trained/experienced adult.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID8",
-                    "provisionStatementId": "PGID2_PTID8_PS1"
-                },
-                {
-                    "TypeOfProvision": "Intervention for social and emotional learning",
-                    "SpecificProvision": "Once a week 1:1 for 30 mins with a member of trained staff using approaches known to work to support social and emotional literacy development.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0.5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "7.4382",
-                    "AnnualAmount": "290.0898",
-                    "ProvisionTypeId": "PTID8",
-                    "provisionStatementId": "PGID2_PTID8_PS2"
-                },
-                {
-                    "TypeOfProvision": "Intervention for social and emotional learning",
-                    "SpecificProvision": "Twice a week 1:1 for 30 mins with a member of trained staff using approaches known to work to support social and emotional literacy development.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "1",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "14.8764",
-                    "AnnualAmount": "580.1796",
-                    "ProvisionTypeId": "PTID8",
-                    "provisionStatementId": "PGID2_PTID8_PS3"
-                },
-                {
-                    "TypeOfProvision": "Intervention for social and emotional learning",
-                    "SpecificProvision": "Three times a week 1:1 for 30 mins with a member of trained staff using approaches known to work to support social and emotional literacy development.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "1.5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "22.3146",
-                    "AnnualAmount": "870.2694",
-                    "ProvisionTypeId": "PTID8",
-                    "provisionStatementId": "PGID2_PTID8_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 5,
-            "provisionTypeLabel": "Post-16 tutoring",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Post-16 tutoring",
-                    "SpecificProvision": "Tutoring for over 16’s that have not attained a GCSE English and/or Maths at Grade 4.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "2",
-                    "Code": "D",
-                    "CostPerHr": "46.2",
-                    "Total": "92.4",
-                    "AnnualAmount": "3603.6",
-                    "ProvisionTypeId": "PTID9",
-                    "provisionStatementId": "PGID2_PTID9_PS1"
-                },
-                {
-                    "TypeOfProvision": "Post-16 tutoring",
-                    "SpecificProvision": "English/Maths interventions with a trained and experienced mentor to provide additional focus in this area.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "2",
-                    "Code": "D",
-                    "CostPerHr": "46.2",
-                    "Total": "92.4",
-                    "AnnualAmount": "3603.6",
-                    "ProvisionTypeId": "PTID9",
-                    "provisionStatementId": "PGID2_PTID9_PS2"
-                },
-                {
-                    "TypeOfProvision": "Post-16 tutoring",
-                    "SpecificProvision": "English/Maths and IT interventions with a trained and experienced mentor to provide additional focus in this area.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "3",
-                    "Code": "D",
-                    "CostPerHr": "46.2",
-                    "Total": "138.6",
-                    "AnnualAmount": "5405.4",
-                    "ProvisionTypeId": "PTID9",
-                    "provisionStatementId": "PGID2_PTID9_PS3"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 6,
-            "provisionTypeLabel": "Post-16 exam support",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Post-16 exam support",
-                    "SpecificProvision": "A few sessions of exam technique/exam preparation support prior to exams",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0.330396475770925",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "4.91511013215859",
-                    "AnnualAmount": "191.689295154185",
-                    "ProvisionTypeId": "PTID10",
-                    "provisionStatementId": "PGID2_PTID10_PS1"
-                },
-                {
-                    "TypeOfProvision": "Post-16 exam support",
-                    "SpecificProvision": "Some Additional support with exams",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0.330396475770925",
-                    "Code": "F",
-                    "CostPerHr": "1.85955",
-                    "Total": "0.614388766519824",
-                    "AnnualAmount": "23.9611618942731",
-                    "ProvisionTypeId": "PTID10",
-                    "provisionStatementId": "PGID2_PTID10_PS2"
-                },
-                {
-                    "TypeOfProvision": "Post-16 exam support",
-                    "SpecificProvision": "A scribe/amanuensis for all exams.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0.330396475770925",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "4.91511013215859",
-                    "AnnualAmount": "191.689295154185",
-                    "ProvisionTypeId": "PTID10",
-                    "provisionStatementId": "PGID2_PTID10_PS3"
-                }
-            ]
-        }
-    ],
-    "_rid": "XIk4ALcGQzUSAAAAAAAAAA==",
-    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUSAAAAAAAAAA==/",
-    "_etag": "\"0800ae2c-0000-1100-0000-61d48ba10000\"",
-    "_attachments": "attachments/",
-    "_ts": 1641319329
-}
+"provisionTypeNumber": 1,
+"provisionTypeLabel": "Generalisation and reinforcement",
+"provisions": [
+{
+"typeOfProvision":"Generalisation and reinforcement","specificProvision":"Weekly pre-tutoring or a short targeted intervention as neeeded (i.e. not for the whole year), focusing on one aspect of learning or gap in learning","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID2-1","provisionStatementId":"PCID2_PTID2-1_PS1"}, 
+{
+"typeOfProvision":"Generalisation and reinforcement","specificProvision":"Pre-tutoring each week for 30 minutes to prepare for the week ahead","level":"A","hoursPerWeek":"0.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-1","provisionStatementId":"PCID2_PTID2-1_PS2"}, 
+{
+"typeOfProvision":"Generalisation and reinforcement","specificProvision":"Pre-tutoring daily for 20-30 minutes in a small group with a member of staff looking at learning that is coming up and preparing for this e.g. with vocabulary or key concepts","level":"B","hoursPerWeek":"2.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"F","provisionTypeId":"PTID2-1","provisionStatementId":"PCID2_PTID2-1_PS3"}, 
+{
+"typeOfProvision":"Generalisation and reinforcement","specificProvision":"Pre-tutoring daily for 20-30 minutes 1:1 with a member of staff looking at learning that is coming up and preparing for this e.g. with vocabulary or key concepts","level":"B","hoursPerWeek":"2.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-1","provisionStatementId":"PCID2_PTID2-1_PS4"}, 
+{
+"typeOfProvision":"Generalisation and reinforcement","specificProvision":"Pre-tutoring daily for 20-30 minutes looking at learning that is coming and consolidation for 20-30 minutes at the end of each day with a member of staff","level":"C","hoursPerWeek":"5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-1","provisionStatementId":"PCID2_PTID2-1_PS5"}
+
+]
+}, 
+{
+"provisionTypeNumber": 2,
+"provisionTypeLabel": "1:1 Intervention",
+"provisions": [
+{
+"typeOfProvision":"1:1 Intervention","specificProvision":"1:1 three times a week for 30 minutes per session, delivered by trained or experienced staff for 10-12 weeks across the year","level":"A","hoursPerWeek":"0.39560","calculationOfHoursPerWeek":"(1.5x12)/45.5","hoursForCalculation":"18","code":"A","provisionTypeId":"PTID2-2","provisionStatementId":"PCID2_PTID2-2_PS1"}, 
+{
+"typeOfProvision":"1:1 Intervention","specificProvision":"1:1 twice a week for over 30 minutes per session, delivered by trained or experienced staff for at least 10-12 weeks across the year","level":"B","hoursPerWeek":"0.527472","calculationOfHoursPerWeek":"24/45.5","hoursForCalculation":"24","code":"A","provisionTypeId":"PTID2-2","provisionStatementId":"PCID2_PTID2-2_PS2"}, 
+{
+"typeOfProvision":"1:1 Intervention","specificProvision":"1:1 once or twice a week for 30-60 minutes - delivered by trained or experienced staff across the year","level":"B","hoursPerWeek":"1","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-2","provisionStatementId":"PCID2_PTID2-2_PS3"}, 
+{
+"typeOfProvision":"1:1 Intervention","specificProvision":"1:1 twice a week for 30-60 minutes, delivered across the year by a trained/experienced staff member (who maybe overseen/superised by specialists in the area)","level":"C","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-2","provisionStatementId":"PCID2_PTID2-2_PS4"}
+
+]
+}, 
+{
+"provisionTypeNumber": 3,
+"provisionTypeLabel": "Small group Intervention",
+"provisions": [
+{
+"typeOfProvision":"Small group Intervention","specificProvision":"A group (< 15) ‘booster’ intervention, delivered once a week for a term or two - focusing on targeted support filling gaps in learning or underlying errors","level":"A","hoursPerWeek":"1","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID2-3","provisionStatementId":"PCID2_PTID2-3_PS1"}, 
+{
+"typeOfProvision":"Small group Intervention","specificProvision":"A group based intervention (<8) delivered by a trained or experienced adult once a week for up to an hour, for up to two blocks of 10-12 weeks. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles .","level":"A","hoursPerWeek":"0.52747253","calculationOfHoursPerWeek":"24/45.5","hoursForCalculation":"24","code":"F","provisionTypeId":"PTID2-3","provisionStatementId":"PCID2_PTID2-3_PS2"}, 
+{
+"typeOfProvision":"Small group Intervention","specificProvision":"A group-based intervention (<8) delivered by a trained/experienced adult once a week for 1 hour in total. At least three blocks of intervention (10-12 weeks) are delivered across the year. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles.","level":"B","hoursPerWeek":"0.7692308","calculationOfHoursPerWeek":"36/45.5","hoursForCalculation":"36","code":"F","provisionTypeId":"PTID2-3","provisionStatementId":"PCID2_PTID2-3_PS3"}, 
+{
+"typeOfProvision":"Small group Intervention","specificProvision":"A group-based intervention (<8) delivered by a trained or experienced adult at least twice a week for up to an hour per session. The programme is either designed and advised by a specialist professional or uses a programme informed by sound theoretical principles. Delivery is ongoing throughout the year .","level":"C","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"F","provisionTypeId":"PTID2-3","provisionStatementId":"PCID2_PTID2-3_PS4"}
+
+]
+}, 
+{
+"provisionTypeNumber": 4,
+"provisionTypeLabel": "Intervention for social and emotional learning",
+"provisions": [
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"Access to a safe space or reflection room as needed","level":"A","hoursPerWeek":"","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS1"}, 
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"Time limited small group intervention (e.g. for one term) once a week for 30 mins with a trained or experienced adult","level":"A","hoursPerWeek":"0.076923","calculationOfHoursPerWeek":"(7x0.5)/45.5","hoursForCalculation":"3.5","code":"L","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS2"}, 
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"1:1 once a week for 30 mins with a member of trained staff, using approaches known to work to support social and emotional literacy development","level":"A","hoursPerWeek":"0.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS3"}, 
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"1:1 twice a week for 30 mins with a member of trained staff, using approaches known to work to support social and emotional literacy development","level":"B","hoursPerWeek":"1","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS4"}, 
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"1:1 three times a week for 30 mins with a member of trained staff, using approaches known to work to support social and emotional literacy development","level":"C","hoursPerWeek":"1.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS5"}, 
+{
+"typeOfProvision":"Intervention for social and emotional learning","specificProvision":"A nurture group (or informed by nurture group principles), forest schools, or other positive activities intervention offered for most afternoons to a small group","level":"C","hoursPerWeek":"15","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"F","provisionTypeId":"PTID2-4","provisionStatementId":"PCID2_PTID2-4_PS6"}
+
+]
+}, 
+{
+"provisionTypeNumber": 5,
+"provisionTypeLabel": "Post-16 tutoring",
+"provisions": [
+{
+"typeOfProvision":"Post-16 tutoring","specificProvision":"Tutoring for over 16’s that have not attained a GCSE English and /or Maths at Grade 4","level":"A","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"D","provisionTypeId":"PTID2-5","provisionStatementId":"PCID2_PTID2-5_PS1"}, 
+{
+"typeOfProvision":"Post-16 tutoring","specificProvision":"English / Maths interventions with a trained and experienced mentor to provide additional focus in this area","level":"B","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"D","provisionTypeId":"PTID2-5","provisionStatementId":"PCID2_PTID2-5_PS2"}, 
+{
+"typeOfProvision":"Post-16 tutoring","specificProvision":"English / Maths and IT interventions with a trained and experienced mentor to provide additional focus in this area","level":"C","hoursPerWeek":"3","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"D","provisionTypeId":"PTID2-5","provisionStatementId":"PCID2_PTID2-5_PS3"}
+
+]
+}, 
+{
+"provisionTypeNumber": 6,
+"provisionTypeLabel": "Post-16 exam support",
+"provisions": [
+{
+"typeOfProvision":"Post-16 exam support","specificProvision":"Up to five small group sessions of exam technique / exam preparation support prior to exams","level":"A","hoursPerWeek":"0.109890","calculationOfHoursPerWeek":"5/45.5","hoursForCalculation":"5","code":"F","provisionTypeId":"PTID2-6","provisionStatementId":"PCID2_PTID2-6_PS1"}, 
+{
+"typeOfProvision":"Post-16 exam support","specificProvision":"Up to five 1:1 sessions of exam technique / exam preparation support prior to exams","level":"B","hoursPerWeek":"0.109890","calculationOfHoursPerWeek":"5/45.5","hoursForCalculation":"5","code":"A","provisionTypeId":"PTID2-6","provisionStatementId":"PCID2_PTID2-6_PS2"}, 
+{
+"typeOfProvision":"Post-16 exam support","specificProvision":"A scribe / amanuensis for all exams (assuming 10 exams in the year)","level":"C","hoursPerWeek":"0.439560","calculationOfHoursPerWeek":"20/45.5","hoursForCalculation":"20","code":"A","provisionTypeId":"PTID2-6","provisionStatementId":"PCID2_PTID2-6_PS3"}
+
+]
+}]}

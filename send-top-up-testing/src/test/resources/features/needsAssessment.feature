@@ -1,7 +1,7 @@
 @expCommInter
-Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
+Feature: Needs Assessment - high level summary page [Test Suite - 32294]
 
-  Scenario: Verify Expressive language and communication Needs links [Test suite - 32293]
+  Scenario: needsAssessment1- Verify Expressive language and communication Needs links [Test suite - 32293]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Expressive language and communication need
     Then the Needs page has the following accordion sections:
@@ -17,7 +17,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
     | Non-verbal, alternative/augmented communication |
     And all selected Expressive language and communication need levels are displayed at the bottom of page
 
-  Scenario: Verify Receptive language and communication Needs links [Test suite - 32880]
+  Scenario: needsAssessment2- Verify Receptive language and communication Needs links [Test suite - 32880]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Receptive language and communication need
     Then the Needs page has the following accordion sections:
@@ -29,7 +29,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
     And all selected Receptive language and communication need levels are displayed at the bottom of page
 
 
-  Scenario: Verify Academic learning and employability Needs links [Test suite - 33001]
+  Scenario: needsAssessment3- Verify Academic learning and employability Needs links [Test suite - 33001]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Academic learning and employability need
     Then the Needs page has the following accordion sections:
@@ -42,9 +42,9 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
       | Literacy |
     And all selected Academic learning and employability need levels are displayed at the bottom of page
 
-  Scenario: Verify Behaviours for learning Needs links [Test suite - 33002]
+  Scenario: needsAssessment4- Verify Behaviours for learning Needs links [Test suite - 33002]
     Given user views assessment without any Needs or Provisions selected
-    When user clicks link for Behaviours for learning
+    When user clicks link for Behaviours for learning need
     Then the Needs page has the following accordion sections:
       | Independence as a learner |
       | Following adult expectations with learning |
@@ -55,9 +55,9 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
       | Motivation and aspiration |
     And all selected Behaviours for learning need levels are displayed at the bottom of page
 
-  Scenario: Verify Social understanding and interaction Needs links [Test suite - 33192]
+  Scenario: needsAssessment5- Verify Social understanding and interaction Needs links [Test suite - 33192]
     Given user views assessment without any Needs or Provisions selected
-    When user clicks link for Social understanding and interaction
+    When user clicks link for Social understanding and interaction needs
     Then the Needs page has the following accordion sections:
       | Social interest |
       | Social anxiety |
@@ -68,7 +68,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
       | Gender identity |
     And all selected Social understanding and interaction need levels are displayed at the bottom of page
 
-  Scenario: Verify Behaviour, emotional and mental health Needs links [Test suite - 33193]
+  Scenario: needsAssessment6- Verify Behaviour, emotional and mental health Needs links [Test suite - 33193]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Behaviour, emotional and mental health needs
     Then the Needs page has the following accordion sections:
@@ -78,7 +78,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
       | Anxiety |
     And all selected Behaviour, emotional and mental health need levels are displayed at the bottom of page
 
-  Scenario: Verify Hearing Needs links [Test Suite 33483]
+  Scenario: needsAssessment7- Verify Hearing Needs links [Test Suite 33483]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Hearing needs
     Then the Needs page has the following accordion sections:
@@ -89,7 +89,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
       | Wellbeing and identity |
     And all selected Hearing need levels are displayed at the bottom of page
 
-  Scenario: Verify Medical, physical, motor-skills and mobility Needs links [Test Suite 33289]
+  Scenario: needsAssessment8- Verify Medical, physical, motor-skills and mobility Needs links [Test Suite 33289]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Medical, physical, motor-skills and mobility needs
     Then the Needs page has the following accordion sections:
@@ -104,7 +104,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
     And all selected Medical, physical, motor-skills and mobility need levels are displayed at the bottom of page
 
 
-  Scenario: Verify Vision Needs links [Test Suite 33290]
+  Scenario: needsAssessment9- Verify Vision Needs links [Test Suite 33290]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Vision needs
     Then the Needs page has the following accordion sections:
@@ -116,7 +116,7 @@ Feature: Verify Needs Headings and Expanding Sections with selected Needs levels
     And all selected Vision need levels are displayed at the bottom of page
 
 
-  Scenario: Verify Sensory, processing and integration Needs links [Test Suite 33484]
+  Scenario: needsAssessment10- Verify Sensory, processing and integration Needs links [Test Suite 33484]
     Given user views assessment without any Needs or Provisions selected
     When user clicks link for Sensory processing and integration needs
     Then the Needs page has the following accordion sections:

@@ -1,0 +1,18 @@
+{
+    "id": "10",
+    "formVersion": "1",
+    "Type": "L",
+    "Description": "Ordinarily available provision. Cost from school SEND(or other) budget ",
+    "CostPerHour": "0",
+    "HnbBudget": "0",
+    "WeeklyCapInHoursForThisType": "1",
+    "WeeklyCapInHoursForDifferentTypes": "",
+    "PopUp": "This is ordinarily available provision that is not funded from HNB.",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wKAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wKAAAAAAAAAA==/",
+    "_etag": "\"c300b74c-0000-1100-0000-62d6bb250000\"",
+    "_attachments": "attachments/",
+    "_ts": 1658239781
+}

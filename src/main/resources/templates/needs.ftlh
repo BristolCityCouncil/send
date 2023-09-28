@@ -1,18 +1,40 @@
 <#import "/spring.ftl" as spring/>
 <#include "./includes/header.ftlh">
   <div class="row-fluid">
-    <div class="span12">
-
-      <header class="step-header">
-        <h1 class="step-header__title step-header__two-cols">
-        <span><@spring.message "application.title"/></span>
-        <span class="step-header__title__steps">         
-          <span id="upn">UPN: ${assessment.upn}</span>
-        </span>
-        </h1>
-        <h2 class="step-header__subtitle">${subAreaLabel}</h2>
-      </header>
-
+    <div class="span12">   	
+      <div>         
+            <nav aria-label="Breadcrumb">
+				<ul aria-label="Breadcrumb" class="breadcrumb breadcrumb-horizontal" role="navigation">
+	                <li class="">
+						<a href="/top-up-assessment" id="assessments-href">
+							<@spring.message "breadcrumb.home.label"/>
+						</a>
+					</li>
+					
+					<li class="">
+						<a href="/top-up-assessment/overview?assessmentId=${assessment.id}" id="overview-href">
+							<@spring.message "breadcrumb.overview.label"/>
+						</a>
+					</li>
+					
+					<li class="">
+						<a href="/top-up-assessment/summary?assessmentId=${assessment.id}" id="summary-href">
+							<@spring.message "breadcrumb.summary.label"/>
+						</a>
+					</li>
+					                
+	               <li class="active" aria-current="page">
+	                	<@spring.message "breadcrumb.needs.label"/>
+	               </li>
+	               
+	               <span id="upn">UPN: ${assessment.upn}</span>
+	                
+            	</ul>	
+            </nav>             		           			       	          	        
+      </div>
+                
+      <h1 class="padded" id="pageTitleId">${subAreaLabel}</h1>
+     
       <div class="accordion">
         <#list needStatements as needStatement>
           <#-- if first need statement in group, do the group title and heading -->        
@@ -84,12 +106,22 @@
       <h2><@spring.message "needs.needLevel.heading"/></h2>
       
       <#if maximumNeedLevel?has_content>
-        <div id="maxNeedSelected" class="info info--affirm info--reverse">
-          <div class="info__title"><@spring.message "needs.needLevel.title"/></div>          
-          <div id="maximumNeedLevel" class="info__copy"><@spring.messageArgs code="needs.needLevel.selected.value" args=['${maximumNeedLevel}']/></div>
-        </div>
-        <div id="maxNeedNotSelected" style="display:none"><@spring.message "needs.needLevel.notSelected"/></div>
-      <#else>
+	      <#if maximumNeedLevel == "T">
+	      	<div id="maxNeedSelectedText1"><@spring.message "needs.needLevel.selected.text1"/></div>
+	      	<div id="maxNeedSelected" class="info info--affirm info--reverse">
+	          <div class="info__title"><@spring.message "needs.needLevel.oap.title"/></div>          
+	          <div id="maximumNeedLevel" class="info__copy"><@spring.message "needs.needLevel.selected.oap.value"/></div>
+	        </div>
+	      <#else>
+	      	<div id="maxNeedSelectedText1"><@spring.message "needs.needLevel.selected.text1"/></div>
+	      	<div id="maxNeedSelectedText2"><@spring.message "needs.needLevel.selected.text2"/></div>
+	        <div id="maxNeedSelected" class="info info--affirm info--reverse">
+	          <div class="info__title"><@spring.message "needs.needLevel.title"/></div>          
+	          <div id="maximumNeedLevel" class="info__copy"><@spring.messageArgs code="needs.needLevel.selected.value" args=['${maximumNeedLevel}']/></div>
+	        </div>
+	        <div id="maxNeedNotSelected" style="display:none"><@spring.message "needs.needLevel.notSelected"/></div>
+	      </#if>
+      <#else>          	
         <div id="maxNeedSelected" style="display:none" class="info info--affirm info--reverse">
           <div class="info__title"><@spring.message "needs.needLevel.title"/></div>
           <div id="maximumNeedLevel" class="info__copy">${maximumNeedLevel}</div>
@@ -101,7 +133,7 @@
       <input type="hidden" id="subAreaId" name="subAreaId" value="${subAreaId}">
 
       <div class="button-holder">
-        <a class="send-button" id="back-button" href="${pathPrefix}/summary?assessmentId=${assessment.id}"><button class="newcta" type="button">Back</button></a> 
+        <a class="send-button" id="backButton" href="${pathPrefix}/summary?assessmentId=${assessment.id}"><button class="newcta" type="button">Back</button></a> 
         <button class="newcta newcta--primary send-button-primary" type="submit" value="Submit" onclick="updateSelectedNeeds('${hasSelectedProvisions?c}', '${maximumNeedLevel}')">Save</button>
       </div>
 

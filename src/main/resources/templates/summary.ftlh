@@ -2,17 +2,34 @@
 <#include "./includes/header.ftlh">
 
   <div class="row-fluid">
-    <div class="span12">
-
-      <header class="step-header">
-        <h1 class="step-header__title step-header__two-cols">
-        <span><@spring.message "application.title"/></span>
-        <span class="step-header__title__steps">          
-          <span id="upn">UPN: ${assessment.upn}</span>
-        </span>
-        </h1>
-        <h2 class="step-header__subtitle"><@spring.message "assessment.title"/></h2>
-      </header>
+    <div class="span12">    
+      <div>         
+           <nav aria-label="Breadcrumb">
+				<ul aria-label="Breadcrumb" class="breadcrumb" role="navigation">
+	                <li class="">
+						<a href="/top-up-assessment" id="assessments-href">
+							<@spring.message "breadcrumb.home.label"/>
+						</a>
+					</li>
+					
+					<li class="">
+						<a href="/top-up-assessment/overview?assessmentId=${assessment.id}" id="overview-href">
+							<@spring.message "breadcrumb.overview.label"/>
+						</a>
+					</li>
+					                
+	                <li class="active" aria-current="page">
+	                	<@spring.message "breadcrumb.summary.label"/>
+	                </li>
+	                	                           
+	          		<span id="upn">UPN: ${assessment.upn}</span>
+	          			        		
+            	</ul>	
+            </nav>              		           			       	          	        
+      </div>
+            
+      <h1 class="padded" id="pageTitleId"><@spring.message "assessment.title"/></h1>
+      
 	  <#assign needSelected = "false">
       <div class="assessment">  
       
@@ -40,11 +57,16 @@
             <#-- do needs links -->       
             <#if keyFound?? && keyFound==needSubArea.subAreaId && needSubArea.areaId == needArea.areaId>
               <div class="needs-links" id="needsPageLink_${needSubArea.subAreaId}">                                           
-                <p><a href="${pathPrefix}/needs?assessmentId=${assessment.id}&amp;subAreaId=${needSubArea.subAreaId}&amp;selectedStatementIds=" id="needshref_${needSubArea.subAreaId}">${needSubArea.subAreaLabel}</a></p>     
+                <p><a href="${pathPrefix}/needs?assessmentId=${assessment.id}&amp;subAreaId=${needSubArea.subAreaId}&amp;selectedStatementIds=" id="needshref_${needSubArea.subAreaId}" >${needSubArea.subAreaLabel}</a></p>     
               <#assign needSelected = "true">
                   <div class="info info--affirm info--reverse" >
-                  <div class="info__title"><@spring.message "yourAssessments.assessment.selectedNeedLevel"/></div>
-                  <div id="maximumNeedLevel_${needSubArea.subAreaId}" class="info__copy">Block ${valueFound}</div>
+                   <#if valueFound?has_content && valueFound == "T">
+                   	<div class="info__title"><@spring.message "needs.needLevel.oap.title"/></div>
+                   	<div id="maximumNeedLevel_${needSubArea.subAreaId}" class="info__copy"><@spring.message "needs.needLevel.selected.oap.value"/></div>
+                   <#else>
+                  	<div class="info__title"><@spring.message "needs.needLevel.title"/></div>
+                  	<div id="maximumNeedLevel_${needSubArea.subAreaId}" class="info__copy"><@spring.message "needs.needLevel.selected.value"/></div>
+                  </#if>
                 </div>
               </div>  
             <#elseif needSubArea.areaId == needArea.areaId > 
@@ -56,8 +78,12 @@
             <#-- do provisions links -->       
             <#if keyFound?? && keyFound == needSubArea.subAreaId && needSubArea.areaId == needArea.areaId>
               <div class="provisions-links" id="provisionPageLink_${needSubArea.subAreaId}">
+              <#if valueFound?has_content && valueFound == "T">
+                <p><a href="javascript:void(0)" class="link-disabled" disabled="disabled" id="provisionhref_${needSubArea.subAreaId}">${needSubArea.subAreaLabel}</a></p>     
+              <#else>
                 <p><a href="${pathPrefix}/provisions?assessmentId=${assessment.id}&amp;areaId=${needArea.areaId}&amp;subAreaId=${needSubArea.subAreaId}&amp;needLevel=${valueFound}" id="provisionhref_${needSubArea.subAreaId}">${needSubArea.subAreaLabel}</a></p>     
-             
+              </#if>
+
               <#if selectedProvisions??>
                 <#list selectedProvisions as selectedProvision>               
 				  <#if selectedProvision.subAreaId == needSubArea.subAreaId>
@@ -77,7 +103,7 @@
 						
 						 <div class="provisions-links" id="selectedProvisionLinks_${needSubArea.subAreaId}_${provisionCounter}">
 						  <a href="${pathPrefix}/provisions?assessmentId=${assessment.id}&amp;areaId=${needArea.areaId}&amp;subAreaId=${needSubArea.subAreaId}&amp;needLevel=${valueFound}" id="editProvisionLink_${needSubArea.subAreaId}_${provisionCounter}">Edit</a>              
-     					<a href="javascript:void(0)" onclick="javascript:confirmRemoval('${selectedProvision.subAreaId}', '${selectedProvision.provisionStatementId}')" id="removeProvisionLink_${needSubArea.subAreaId}_${provisionCounter}">Remove</a>	      					
+     					  <a href="javascript:void(0)" onclick="javascript:confirmProvisionRemoval('${selectedProvision.subAreaId}', '${selectedProvision.provisionStatementId}')" id="removeProvisionLink_${needSubArea.subAreaId}_${provisionCounter}">Remove</a>	      					
 						 </div>
 					 </div>
 				  </#if>
@@ -110,8 +136,9 @@
 		</div>	     
       </#if>
       <br/>    
-      <a class="send-button" id="back-button" href="${pathPrefix}"><button class="newcta" type="button">Back</button></a>     
-
+          	  
+      <a class="send-button" id="backButton" href="${pathPrefix}/overview?assessmentId=${assessment.id}"><button class="newcta" type="button">Back</button></a>
+            
       </div>
  
     </div>  

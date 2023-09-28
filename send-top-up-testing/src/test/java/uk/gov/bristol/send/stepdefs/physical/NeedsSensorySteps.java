@@ -4,6 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
+import uk.gov.bristol.send.SENDException;
 import uk.gov.bristol.send.pages.AccordionPage;
 import uk.gov.bristol.send.pages.physicalsensory.hearing.*;
 import uk.gov.bristol.send.pages.physicalsensory.sensory.*;
@@ -34,6 +35,35 @@ public class NeedsSensorySteps extends StepUtils {
 
     @Autowired
     private VisualProcessingPage visualProcessingPage;
+
+    private static final String VESTIBULAR_SYSTEM = "Vestibular system";
+    private static final String INTEROCEPTIVE_SENSE = "Interoceptive sense";
+    private static final String PROPRIOCEPTIVE_SENSE = "Proprioceptive sense";
+    private static final String TACTILE_AWARENESS = "Tactile Awareness";
+    private static final String GUSTATORY_OLIFACTORY = "Gustatory and Olifactory";
+    private static final String VISUAL_PROCESSING = "Visual processing";
+    private static final String AUDITORY_PROCESSING = "Auditory processing";
+
+    @When("user selects Sensory processing and integration needs - {string} - {string}")
+    public void selectNeedLevel(String needPage, String level) {
+        switch (needPage) {
+            case VESTIBULAR_SYSTEM: vestibularSystemPage.selectNeedsLevel(level);
+                break;
+            case INTEROCEPTIVE_SENSE: interoceptiveSensePage.selectNeedsLevel(level);
+                break;
+            case PROPRIOCEPTIVE_SENSE: proprioceptiveSensePage.selectNeedsLevel(level);
+                break;
+            case TACTILE_AWARENESS: tactileAwarenessPage.selectNeedsLevel(level);
+                break;
+            case GUSTATORY_OLIFACTORY: gustatorySystemPage.selectNeedsLevel(level);
+                break;
+            case VISUAL_PROCESSING: visualProcessingPage.selectNeedsLevel(level);
+                break;
+            case AUDITORY_PROCESSING: auditoryProcessingPage.selectNeedsLevel(level);
+                break;
+            default : throw new SENDException("Needs sub-area was not found");
+        }
+    }
 
     @Then("the Sensory, processing and integration Level of need is identified as {string}")
     public void the_social_understanding_level_of_need_is_identified_as(String string) {

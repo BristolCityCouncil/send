@@ -28,6 +28,32 @@ public class NeedsRlcSteps extends StepUtils {
     @Autowired
     private UnderstandSocialLanguagePage understandSocialLanguagePage;
 
+    @When("user selects Attention and listening {string}")
+    public void selectAttentionNeedLevel(String level) {
+        attentionListeningPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Memory {string}")
+    public void selectMemoryNeedLevel(String level) {
+        memoryPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Functional understanding {string}")
+    public void selectFunctionalNeedLevel(String level) {
+        functionalUnderstandingPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Understanding social language {string}")
+    public void selectUnderstandingNeedLevel(String level) {
+        understandSocialLanguagePage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Non-verbal, alternative augmented communication {string}")
+    public void selectNonVerbalNeedLevel(String level) {
+        nonVerbalPage.selectNeedsLevel(level);
+    }
+
+
     @Then("the Receptive language and communication level of need is identified as {string}")
     public void the_social_understanding_level_of_need_is_identified_as(String string) {
         Assert.assertEquals(string, attentionListeningPage.getSelectedNeedLevel());

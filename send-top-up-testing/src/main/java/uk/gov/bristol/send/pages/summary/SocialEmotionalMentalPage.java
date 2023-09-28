@@ -23,7 +23,7 @@ public class SocialEmotionalMentalPage extends BasePage {
     @FindBy(id = "needshref_behaviourEmotionalAndMentalHealthNeeds")
     private WebElement bemNeedsLink;
 
-    @FindBy(id = "provisionhref_behavioursForLearning")
+    @FindBy(id = "provisionhref_behaviourEmotionalAndMentalHealthNeeds")
     private WebElement bemProvisionsLink;
 
     @FindBy(id = "provisionPageLink_socialUnderstandingAndInteraction")

@@ -1,0 +1,18 @@
+{
+    "id": "6",
+    "formVersion": "1",
+    "Type": "F",
+    "Description": "Teaching assistant to small group (<1:10)",
+    "CostPerHour": "2.95",
+    "HnbBudget": "assume BG7 shared with 4 children ",
+    "WeeklyCapInHoursForThisType": "25",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 15 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wGAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wGAAAAAAAAAA==/",
+    "_etag": "\"0d00138a-0000-1100-0000-63234f8b0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258507
+}

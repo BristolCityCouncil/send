@@ -3,7 +3,7 @@
     <div class="span12">   
         <div class="open-validation">
             <div class="open-validation__title">
-                <h1 id="page-title">Sorry, we can't find that page</h1>
+                <h1 id="pageTitleId">Sorry, we can't find that page</h1>
             </div>
             <div class="open-validation__error">
                 <p>The page might have been moved or deleted. Or you may have followed a broken link or mis-typed the web address.</p>

@@ -1,90 +1,30 @@
+{ 
+"id":"4",
+"formVersion":"1",
+"provisionGroup":"family Support",
+"provisionGroupId":"PCID4",
+"provisionsType":[
 {
-    "id": "4",
-    "formVersion": "1",
-    "provisionGroup": "Family Support",
-    "provisionGroupId": "PGID4",
-    "provisionsType": [
-        {
-            "provisionTypeNumber": 1,
-            "provisionTypeLabel": "Family Support",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Family Support",
-                    "SpecificProvision": "Regular (at least weekly) contact between education settings to establish positive relationships and communication.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID25",
-                    "provisionStatementId": "PGID4_PTID25_PS1"
-                },
-                {
-                    "TypeOfProvision": "Family Support",
-                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member to establish positive communication and ensure that there is a joint approach.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID25",
-                    "provisionStatementId": "PGID4_PTID25_PS2"
-                },
-                {
-                    "TypeOfProvision": "Family Support",
-                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member family member/carer/social worker to establish positive communication and ensure that there is a joint approach. Also, regular (possibly once or twice per week) meetings with parent/carer(s) taking longer than 15 minutes.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID25",
-                    "provisionStatementId": "PGID4_PTID25_PS3"
-                },
-                {
-                    "TypeOfProvision": "Family Support",
-                    "SpecificProvision": "Regular, joint agreed brief contact between key staff and family member family member/carer/social worker to establish positive communication and ensure that there is a joint approach. . Also, regular (nearly daily) meetings with parent/carer(s) family member/carer/social worker taking longer than 15 minutes.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "1",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "14.8764",
-                    "AnnualAmount": "580.1796",
-                    "ProvisionTypeId": "PTID25",
-                    "provisionStatementId": "PGID4_PTID25_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 2,
-            "provisionTypeLabel": "Family Intervention (pre-16)",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Family Intervention (pre-16)",
-                    "SpecificProvision": "Intervention support for parents such as increased input from Setting’s Family Support Worker, parenting course offered, parent counselling with outside agency providers. This is offered as at least 6 sessions equivalent across the year.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0.13215859030837",
-                    "Code": "G",
-                    "CostPerHr": "10.37",
-                    "Total": "1.3704845814978",
-                    "AnnualAmount": "53.4488986784141",
-                    "ProvisionTypeId": "PTID26",
-                    "provisionStatementId": "PGID4_PTID26_PS1"
-                }
-            ]
-        }
-    ],
-    "_rid": "XIk4ALcGQzUUAAAAAAAAAA==",
-    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUUAAAAAAAAAA==/",
-    "_etag": "\"000044e5-0000-1100-0000-61d874ea0000\"",
-    "_attachments": "attachments/",
-    "_ts": 1641575658
-}
+"provisionTypeNumber": 1,
+"provisionTypeLabel": "Family Support",
+"provisions": [
+{
+"typeOfProvision":"Family Support","specificProvision":"Regular contact between education setting and family to establish positive relationships and communication and discuss what might be happening at home","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID4-1","provisionStatementId":"PCID4_PTID4-1_PS1"}, 
+{
+"typeOfProvision":"Family Support","specificProvision":"Regular, joint agreed brief contact between key staff and family member to establish positive communication and ensure that there is a joint approach.","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID4-1","provisionStatementId":"PCID4_PTID4-1_PS2"}, 
+{
+"typeOfProvision":"Family Support","specificProvision":"Regular, joint agreed brief contact between key staff and family member family member, carer, or social worker to establish positive communication and ensure that there is a joint approach. Also, regular (possibly once or twice per week) meetings with parent or carer(s) taking longer than 15 minutes.","level":"B","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID4-1","provisionStatementId":"PCID4_PTID4-1_PS3"}, 
+{
+"typeOfProvision":"Family Support","specificProvision":"Regular, joint agreed brief contact between key staff and family member, carer, or social worker to establish positive communication and ensure that there is a joint approach. Also, regular (nearly daily) meetings with parent or carer(s) family member, carer or social worker taking longer than 15 minutes.","level":"C","hoursPerWeek":"1","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID4-1","provisionStatementId":"PCID4_PTID4-1_PS4"}
+
+]
+}, 
+{
+"provisionTypeNumber": 2,
+"provisionTypeLabel": "Family Intervention (pre-16)",
+"provisions": [
+{
+"typeOfProvision":"Family Intervention (pre-16)","specificProvision":"Intervention support for parents such as increased input from Setting’s Family Support Worker, parenting course offered, parent counselling with outside agency providers. This is offered as at least 6 sessions equivalent across the year","level":"C","hoursPerWeek":"0.13186813","calculationOfHoursPerWeek":"6/45.5","hoursForCalculation":"6","code":"G","provisionTypeId":"PTID4-2","provisionStatementId":"PCID4_PTID4-2_PS1"}
+
+]
+}]}

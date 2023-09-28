@@ -6,10 +6,11 @@ import uk.gov.bristol.send.pages.AccordionPage;
 
 public class StepUtils {
 
-    private static final String NEED_NOT_SELECTED = "Save the assessment to record or update the highest level of need";
-    private static final String NEED_LEVEL_A = "Block A";
-    private static final String NEED_LEVEL_B = "Block B";
-    private static final String NEED_LEVEL_C = "Block C";
+    private static final String NEED_NOT_SELECTED = "Save the assessment to record or update the planned provision level you will have access to";
+    private static final String NEED_LEVEL_T = "Ordinarily Available Provision";
+    private static final String NEED_LEVEL_A = "You may select provisions";
+    private static final String NEED_LEVEL_B = "You may select provisions";
+    private static final String NEED_LEVEL_C = "You may select provisions";
 
     protected <T extends AccordionPage> void assertSelectionCleared(T page) {
         Assert.assertEquals(NEED_NOT_SELECTED, page.getNeedNotSelected());
@@ -32,7 +33,7 @@ public class StepUtils {
 
             page.selectStatementTargeted();
             page.clickSaveButton();
-            Assert.assertEquals(page.getClass().toString(), NEED_NOT_SELECTED, page.getNeedNotSelected());
+            Assert.assertEquals(page.getClass().toString(), NEED_LEVEL_T, page.getSelectedNeedLevel());
 
         } catch (SENDException ex) {
             if (!"Level unavailable to select".equals(ex.getMessage())) {

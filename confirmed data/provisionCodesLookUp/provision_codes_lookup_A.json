@@ -1,0 +1,18 @@
+{
+    "id": "1",
+    "formVersion": "1",
+    "Type": "A",
+    "Description": "1:1 dedicated Teaching assistant/Support staff  ",
+    "CostPerHour": "13.98",
+    "HnbBudget": "BG7",
+    "WeeklyCapInHoursForThisType": "25",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 25 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wBAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wBAAAAAAAAAA==/",
+    "_etag": "\"0d001089-0000-1100-0000-63234f5d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258461
+}

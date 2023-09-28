@@ -9,7 +9,7 @@
       </header>
         <div class="open-validation">
             <div class="open-validation__title">
-                <h1 id="page-title"><@spring.message "application.send.failure.title"/></h1>
+                <h1 id="pageTitleId"><@spring.message "application.send.failure.title"/></h1>
             </div>
             <div class="open-validation__error">
              	<p><@spring.message "application.pdfdownload.failure.body1"/></p>                     

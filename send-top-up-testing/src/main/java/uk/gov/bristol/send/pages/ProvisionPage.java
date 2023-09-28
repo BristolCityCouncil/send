@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
 
 @Component
-public class ProvisionPage extends BasePage {
-
+public abstract class ProvisionPage extends BasePage {
 
     @Autowired
     private Assessment assessment;
@@ -26,5 +25,7 @@ public class ProvisionPage extends BasePage {
 
         return dropdown.getFirstSelectedOption().getAttribute("title");
     }
+
+    public abstract void selectByIndex(String provisionType, String indexStr);
 
 }

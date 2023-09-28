@@ -1,0 +1,18 @@
+{
+    "id": "11",
+    "formVersion": "1",
+    "Type": "Q",
+    "Description": "Resource/service or provision that needs to be stated individually on funding summary sheet and individually costed. ",
+    "CostPerHour": "",
+    "HnbBudget": "",
+    "WeeklyCapInHoursForThisType": "",
+    "WeeklyCapInHoursForDifferentTypes": "",
+    "PopUp": "Your application has indicated a resource that will need individually costing. Please indicate this on the summary sheet, add the amount if known and then this application will be individually considered. This cost may be funded by a Health provider  ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wLAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wLAAAAAAAAAA==/",
+    "_etag": "\"c300e54e-0000-1100-0000-62d6bb360000\"",
+    "_attachments": "attachments/",
+    "_ts": 1658239798
+}

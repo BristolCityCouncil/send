@@ -1,0 +1,18 @@
+{
+    "id": "9",
+    "formVersion": "1",
+    "Type": "K",
+    "Description": "CORE service (not commissioned by School) from Health Provider/NHS",
+    "CostPerHour": "0",
+    "HnbBudget": "0",
+    "WeeklyCapInHoursForThisType": "",
+    "WeeklyCapInHoursForDifferentTypes": "",
+    "PopUp": "Thir provision is funded by another service eg Health or Social Care ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wJAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wJAAAAAAAAAA==/",
+    "_etag": "\"c300784a-0000-1100-0000-62d6bb100000\"",
+    "_attachments": "attachments/",
+    "_ts": 1658239760
+}

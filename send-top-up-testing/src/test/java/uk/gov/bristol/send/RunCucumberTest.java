@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = { "pretty",
-                "html:target/site/cucumber-report.html"},
+        plugin = { "json:target/cucumber/cucumber-report.json", "html:target/cucumber/cucumber.html", "pretty" },
         tags = "@expCommInter or @validation",
         features = "classpath:features",
         glue = "uk.gov.bristol.send.stepdefs")

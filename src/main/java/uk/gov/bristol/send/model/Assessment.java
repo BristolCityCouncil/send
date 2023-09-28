@@ -1,12 +1,16 @@
 package uk.gov.bristol.send.model;
 
+import java.util.List;
+
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.Id;
+
 import com.azure.spring.data.cosmos.core.mapping.Container;
 import com.azure.spring.data.cosmos.core.mapping.GeneratedValue;
 import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.joda.time.DateTime;
-import org.springframework.data.annotation.Id;
-import java.util.List;
+
+import uk.gov.bristol.send.fileupload.model.UploadedFileInfo;
 
 
 @Container(containerName = "assessments")
@@ -23,7 +27,17 @@ public class Assessment {
     @JsonProperty("_ts")
     private String modifiedDate;
     private List<NeedStatement> selectedNeedStatements;
-    private List<SelectedProvision> selectedProvisions;
+    private List<SelectedProvision> selectedProvisions;   
+    private String provisionReviewStatus;
+   
+    private String totalAnnualCost;
+    private boolean totalHourlyCapExceeded;
+    private boolean typeHourlyCapExceeded;
+    private String uploadFolderId;
+    private List<UploadedFileInfo> uploadedFilesInfo;
+    
+    private String submittedDate;
+    private String applicationStatus;
 
     public Assessment() {
     }
@@ -99,8 +113,75 @@ public class Assessment {
     public void setSelectedProvisions(List<SelectedProvision> selectedProvisions) {
         this.selectedProvisions = selectedProvisions;
     }    
+    
+	public String getProvisionReviewStatus() {
+		return provisionReviewStatus;
+	}
 
-    @Override
+	public void setProvisionReviewStatus(String provisionReviewStatus) {
+		this.provisionReviewStatus = provisionReviewStatus;
+	}		
+
+	public String getTotalAnnualCost() {
+		return totalAnnualCost;
+	}
+
+	public void setTotalAnnualCost(String totalAnnualCost) {
+		this.totalAnnualCost = totalAnnualCost;
+	}		
+
+	public boolean isTotalHourlyCapExceeded() {
+		return totalHourlyCapExceeded;
+	}
+
+	public void setTotalHourlyCapExceeded(boolean totalHourlyCapExceeded) {
+		this.totalHourlyCapExceeded = totalHourlyCapExceeded;
+	}		
+
+	public boolean isTypeHourlyCapExceeded() {
+		return typeHourlyCapExceeded;
+	}
+
+	public void setTypeHourlyCapExceeded(boolean typeHourlyCapExceeded) {
+		this.typeHourlyCapExceeded = typeHourlyCapExceeded;
+	}
+		
+	public String getUploadFolderId() {
+        if(uploadFolderId == null || uploadFolderId.trim().isEmpty()){
+            this.uploadFolderId = this.upn + " " + this.schoolName;
+        }
+		return uploadFolderId;
+	}
+
+	public void setUploadFolderId(String uploadFolderId) {
+		this.uploadFolderId = uploadFolderId;
+	}	
+
+	public List<UploadedFileInfo> getUploadedFilesInfo() {
+		return uploadedFilesInfo;
+	}
+
+	public void setUploadedFilesInfo(List<UploadedFileInfo> uploadedFilesInfo) {
+		this.uploadedFilesInfo = uploadedFilesInfo;
+	}		
+
+	public String getSubmittedDate() {
+		return submittedDate;
+	}
+
+	public void setSubmittedDate(String submittedDate) {
+		this.submittedDate = submittedDate;
+	}
+
+	public String getApplicationStatus() {
+		return applicationStatus;
+	}
+
+	public void setApplicationStatus(String applicationStatus) {
+		this.applicationStatus = applicationStatus;
+	}
+
+	@Override
     public String toString() {
         return "AssessmentEntity [id=" + id + ", formVersion=" + formVersion + ", UPN=" + upn + ", owner=" + owner
                 + ", status=" + status + ", modifiedDate=" + modifiedDate + "]\n";

@@ -10,34 +10,34 @@
     "subCategory": [
         {
             "subCategoryId": "A2SA4SC1",
-            "subCategoryLabel": "Independence as a learner",
+            "subCategoryLabel": "Conforming to expectations",
             "statementGroup": [
                 {
                     "statementGroupNumber": "A2SA4SC1SG1",
                     "statements": [
                         {
                             "statementNumber": "A2SA4SC1SG1STE1",
-                            "statementLabel": "Generally aware of what they don't understand. Tries to solve the problem independently and then seeks help as needed.",
+                            "statementLabel": "Has not received any fixed term exclusions and behaviour monitoring shows more positive 'points' on record than negative.",
                             "statementLevel": "e"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG1STT1",
-                            "statementLabel": "Sometimes checks or asks for help but not consistently and may struggle with a task for a while before asking.",
+                            "statementLabel": "Has not received any fixed term exclusions. Behaviour monitoring shows some negative behaviour points and possibly internal exclusions in certain areas but also a good number of positive behaviour 'points' in comparison to peers.",
                             "statementLevel": "t"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG1STA1",
-                            "statementLabel": "Doesn't automatically ask for help. Tends to know that they don't understand what they are supposed to be doing but is uncomfortable to ask.",
+                            "statementLabel": "Has received some (>5) internal exclusions or equivalent sanctions which is significant compared to peers. Behaviour monitoring shows a greater number of negative than positive behaviour 'points'.",
                             "statementLevel": "a"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG1STB1",
-                            "statementLabel": "Doesn’t ask for help or clarification. Not always aware that they do not understand or know what they are supposed to be doing. If someone checks their understanding they may stop, but not ask for help/repetition",
+                            "statementLabel": "Has had some (<5) fixed term exclusions for behaviour.",
                             "statementLevel": "b"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG1STC1",
-                            "statementLabel": "Never asks for help, just carries on. Tries to work it out for themselves even if what they think is right is often wrong.",
+                            "statementLabel": "Has had some (>5) fixed term exclusions relating to behaviour. Is at risk of permanent exclusion from school.",
                             "statementLevel": "c"
                         }
                     ]
@@ -47,27 +47,132 @@
                     "statements": [
                         {
                             "statementNumber": "A2SA4SC1SG2STE1",
-                            "statementLabel": "Is happy to work independently without the need for reassurance at each step in their learning.",
+                            "statementLabel": "Conforms to behavioural expectations in the setting they are in. No incidents of physical or verbal aggression are recorded.",
                             "statementLevel": "e"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG2STT1",
-                            "statementLabel": "Usually checks when they aren’t sure what to do. May look nervous or worried and need prompting. Needs to be sure before continuing.",
+                            "statementLabel": "Generally conforms to behavioural expectations in the setting they are in. Single incidents of physical or verbal aggression relate to exceptional circumstances, for example one difficult relationship or a traumatic life event.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STT2",
+                            "statementLabel": "Can swear or shout but rarely in a targeted way towards others. Usually when upset or distressed.",
                             "statementLevel": "t"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG2STA1",
-                            "statementLabel": "Frequently seeks reassurance before starting any task. This relates to 'learnt helplessness' and he/she could do more on his/her own.",
+                            "statementLabel": "Is recorded as frequently throwing objects or lashing out when distressed (without physical aggression towards people)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STA2",
+                            "statementLabel": "When distressed or annoyed by someone will often swear or use abusive language (though not racist/homophobic or other derogatory language)",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STA3",
+                            "statementLabel": "Can often walk out of the room in distress or when overwhelmed though will return independently or with minimal prompting.",
                             "statementLevel": "a"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG2STB1",
-                            "statementLabel": "Always asks for help or reassurance before starting on any task but then will continue more independently for some time.",
+                            "statementLabel": "When distressed displays fight, flight, freeze responses without cognitive regulation. Is physically aggressive towards people on occasion when very distressed (at least once a week).",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STB2",
+                            "statementLabel": "Frequently leaves the room in a dysregulated or overwhelmed state. Requires others to support them to regulate and return and does not always achieve this.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STB3",
+                            "statementLabel": "Is frequently verbally aggressive and abusive using racist/homophobic or other derogatory offensive language towards others.",
                             "statementLevel": "b"
                         },
                         {
                             "statementNumber": "A2SA4SC1SG2STC1",
-                            "statementLabel": "Continuously asks for help and reassurance. Will not continue independently.",
+                            "statementLabel": "Is frequently physically aggressive towards people (at least once a day) or has intervention which isolates them as a result of a history of this level of aggression and hence prevents the incidents.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG2STC2",
+                            "statementLabel": "Risk assessments indicate that they will need significant supervision/environmental modifications due to extremely risky behaviour.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC1SG3",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC1SG3STE1",
+                            "statementLabel": "Will allow others to take control. Will accept being led or being asked to make choices. Is not overly dominated by others. Will also be a leader if this is appropriate in the situation.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG3STT1",
+                            "statementLabel": "Likes to dominate and take control in situations but can be reminded to share and listen. Understands the need to comply with adult/staff expectations and demands.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG3STT2",
+                            "statementLabel": "Can be passive and hence dominated by others in peer groups. Would still hold boundaries with this however and would not cross boundaries of expectations/right and wrong or legal boundaries.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG3STA1",
+                            "statementLabel": "Needs to feel a sense of control in situations (perhaps in order to feel safe due to ACES or linked to Autism type traits). Will accept being able to make a choice as giving him/her that control. If he/she feels he/she has no control then his/her behaviour can escalate.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG3STB1",
+                            "statementLabel": "Responds negatively to direct commands and overt demands. Will avoid, abscond and frequently lash out if asked/told to do something he/she does not want to do.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG3STC1",
+                            "statementLabel": "Avoids all adult demands upon him/her even if this is about something he/she might want to do. Responses to demand are so extreme that adults are concerned about keeping him/her and others physically safe.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC1SG4",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC1SG4STE1",
+                            "statementLabel": "Conforms to societal expectations. Follows legal boundaries. Can travel and access the community safely. Can follow behavioural expectations in all contexts in the community and employment.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STT1",
+                            "statementLabel": "Generally conforms to expectations. Keeps themself and others safe. However, does not look to others for cues about socially expected behaviour. Can behave in unexpected ways, make errors or misjudgments on ocassion.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STA1",
+                            "statementLabel": "Behaviour is not unsafe but can be perceived as rude, threatening or intimidating by others. Behaviour is such that it would impact on their opportunities in employment.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STA2",
+                            "statementLabel": "Finds it dfficult to understand societal norms and expectations around behaviour despite intervention to support with this. Can be fixed/rigid in thinking about rules and expectations.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STB1",
+                            "statementLabel": "Has a criminal record and/or displays anti–social behaviour out of the education setting due to behaviour that challenges. This also affects employment possibilities.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STB2",
+                            "statementLabel": "Cannot conform to expectations on transport or in the community without prompting and support by others.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC1SG4STC1",
+                            "statementLabel": "Has no understanding or interest in societal behavioural norms. Deliberately contradicts these or denies these exist/apply.",
                             "statementLevel": "c"
                         }
                     ]
@@ -76,34 +181,179 @@
         },
         {
             "subCategoryId": "A2SA4SC2",
-            "subCategoryLabel": "Following adult expectations with learning",
+            "subCategoryLabel": "Emotional regulation and impulse control",
             "statementGroup": [
                 {
-                    "statementGroupNumber": "A2SA4SC2SG3",
+                    "statementGroupNumber": "A2SA4SC2SG5",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC2SG3STE1",
-                            "statementLabel": "Follows the same routines and expectations and the other learners in their group.",
+                            "statementNumber": "A2SA4SC2SG5STE1",
+                            "statementLabel": "Can understand and name their own emotions and uses facial expression and words to communicate this.",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC2SG3STT1",
-                            "statementLabel": "Will accept following adult instruction though is occasionally reluctant and frustrated.",
+                            "statementNumber": "A2SA4SC2SG5STT1",
+                            "statementLabel": "Has some gaps in emotional understanding and skills that are needed to be able to communicate feelings in a socially expected way.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC2SG3STA1",
-                            "statementLabel": "Prefers to follow own agenda and is very reluctant to take instruction from others in terms of learning though will concede with adult support.",
+                            "statementNumber": "A2SA4SC2SG5STT2",
+                            "statementLabel": "Has some mild language, communication or learning difficulties that impact upon their abilty to describe/express emotions though they have good emotional understanding in general.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG5STA1",
+                            "statementLabel": "Emotional literacy skills are immature or there are gaps in emotional development due to Autism or experience of ACEs for example. The child/young person presents as someone 2/3 years younger than their chronological age in terms of emotional development (understanding and regulation)",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC2SG3STB1",
-                            "statementLabel": "Without individual direction will follow his/her own agenda.",
+                            "statementNumber": "A2SA4SC2SG5STB1",
+                            "statementLabel": "Emotional literacy skills are very immature. Cannot name emotions of him/herself or others. Presents as/is assessed as having significant gaps in early emotional development. Is presenting as a young child (<4 years)",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC2SG3STC1",
-                            "statementLabel": "Refuses to comply with adult direction and will only follow own agenda if unsupported.",
+                            "statementNumber": "A2SA4SC2SG5STB2",
+                            "statementLabel": "Significant/moderate language, communication and learning difficulties are such that this is a barrier to making progress with emotional literacy skills as expected for his/her age. These difficulties affect expression and understanding of emotions and also his/her ability to access teaching and learning in this area.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG5STC1",
+                            "statementLabel": "Cannot identify physiological or emotional feelings and responses and is hence overwhelmed by emotions. Cannot use cognitive skills to regulate emotions. Is constantly hypervigilant and in a high state of arousal/anxiety.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG5STC2",
+                            "statementLabel": "Is non-verbal and/or has learning difficulties that mean he/she cannot express any emotions verbally and most communicated through behaviour.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC2SG6",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC2SG6STE1",
+                            "statementLabel": "When faced with a difficult or potentially overwhelming emotion has some effective positive strategies to help calm and regulate/sooth him/herself.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STT1",
+                            "statementLabel": " Applies some successful coping strategies in the face of difficult or potentially overwhelming emotions though has a small range of options.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STT2",
+                            "statementLabel": "Displays some frustration linked to language or social communication needs as can’t express emotional needs verbally. Can withdraw or display angry behaviour (without hurting others).",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STA1",
+                            "statementLabel": "Finds it difficult to self-regulate independently. Can become very distressed and leave the room on ocassion. Triggers for this are known.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STA2",
+                            "statementLabel": "Is anxious and unsettled on a weekly basis. This presents as extremely withdrawn, vigilant or acting out behaviour.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STB1",
+                            "statementLabel": "Cannot self-regulate independently. They can seemingly suddenly become dysregulated without obvious triggers on a daily basis.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STB2",
+                            "statementLabel": "They become dysregulated on a daily basis and finds it difficult to calm down even with adult support.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STC1",
+                            "statementLabel": "Dysregulates more than once a day the situation mostly escalates before he/she can begin to calm down. Presents as a toddler might when distressed. Triggers are in the context and more immediate and are not all understood by staff.",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG6STC2",
+                            "statementLabel": "Has developmental trauma and/or has experienced more than 5 ACEs and this trauma is having ongoing impact in nearly all areas of social, emotional and mental health.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC2SG7",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC2SG7STE1",
+                            "statementLabel": "Is aware of others in their environment and emotions of others around them but this is not disruptive to their focus or well being.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG7STT1",
+                            "statementLabel": "Is hypervigilant in observing the behaviour of others to the extent that this is a significant distraction at times but they can be easily distracted/redirected back to learning.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG7STA1",
+                            "statementLabel": " Will notice everything occurring in the room between other people or if someone enters the room for example. Seems anxious and on edge, perhaps fearful. Is easily distracted from learning.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG7STB1",
+                            "statementLabel": "Is very hypervigilant and this is very distracting to all engagement with learning.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG7STC1",
+                            "statementLabel": "So fearful and hypervigilant that they are unable to access any learning. Needs to feel safe as a priority. Is likely to have experiences ACEs and may be living in fear at present.",
+                            "statementLevel": "c"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC2SG8",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC2SG8STE1",
+                            "statementLabel": "They can think before they react, pausing before responses Is not impulsive and reflecting on situations so that his/her responses are controlled and measured.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STT1",
+                            "statementLabel": "Is sometimes impulsive in behaviour but is able to regulate to the extent that he/she is not physically and/or verbally aggressive towards others.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STT2",
+                            "statementLabel": "Is sometimes impulsive in behaviour and absconds but returns within a reasonable length of time or when supported to do so.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STA1",
+                            "statementLabel": "Is impulsive in behaviour on a weekly basis and this results in absconding or verbal aggression",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STA2",
+                            "statementLabel": "He/she says that she cannot control impulsivity independently but responds to support to calm down and slow down.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STB1",
+                            "statementLabel": "Is impulsive in behaviour on a daily basis and this results in absconding and/or verbal aggression and occasionally physical aggression.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STB2",
+                            "statementLabel": "They say that they cannot control anger and can't control lashing out/being verbally abusive or running away. Describes a ‘red mist’ or ‘blank’ mind at the time of incidents (Could be linked to ADHD diagnosis and/or trauma/ACES).",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STC1",
+                            "statementLabel": "Is impulsive in behaviour throughout the day and this can result in absconding, verbal and/or physical aggression",
+                            "statementLevel": "c"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC2SG8STC2",
+                            "statementLabel": "Says that they cannot control anger and how this always leads to physical or severe verbal aggression. Describes a ‘red mist’ or ‘blank’ mind at the time of incidents (Could be linked to ADHD diagnosis and/or trauma/ACES).",
                             "statementLevel": "c"
                         }
                     ]
@@ -112,84 +362,109 @@
         },
         {
             "subCategoryId": "A2SA4SC3",
-            "subCategoryLabel": "Organisation for learning",
+            "subCategoryLabel": "Emotional well-being ",
             "statementGroup": [
                 {
-                    "statementGroupNumber": "A2SA4SC3SG4",
+                    "statementGroupNumber": "A2SA4SC3SG9",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC3SG4STE1",
-                            "statementLabel": "When faced with a task, can see how to break it down into steps and will then work through this independently in a logical manner.",
+                            "statementNumber": "A2SA4SC3SG9STE1",
+                            "statementLabel": "Has a positive and realistic sense of themselves. Can talk about their strengths but also things they find difficult.",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG4STT1",
-                            "statementLabel": "Can organise a task or tasks into a series of logical steps and work through these steps. but cannot explain the thought process behind this.",
+                            "statementNumber": "A2SA4SC3SG9STT1",
+                            "statementLabel": "Will not automatically notice or point out positive qualities or achievements but responds warmly to praise if others notice and can build a more positive view of themselves particularly as a learner.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG4STA1",
-                            "statementLabel": "Can independently organise a tasks into a series of steps but regularly makes small errors with this.",
+                            "statementNumber": "A2SA4SC3SG9STT2",
+                            "statementLabel": "Can be sad at times but experiences joy and pleasure in several parts of their life.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG9STA1",
+                            "statementLabel": "Consistently speaks negatively of themself despite praise and encouragement. There is considerable discrepancy between where they would like to be and what they are achieving at this point. These unrealistic expectations further compound a poor sense of self.",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG4STB1",
-                            "statementLabel": "Cannot independently organise a task into a sequence of steps and prioritise these",
+                            "statementNumber": "A2SA4SC3SG9STA2",
+                            "statementLabel": "Presents as anxious and/or of low mood on occasion. Is underachieving as a result.. Does not often laugh and experience joy.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG9STB1",
+                            "statementLabel": "Talks about not being able to do things and being 'rubbish' at doing things to the extent that this is a significant barrier to him/her making progress (self-fulfilling prophecy). This is in line with some genuine learning or other difficulties. IT is likely there he/she has had some ACEs.",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG4STC1",
-                            "statementLabel": "Is chaotic in his/her approach to learning tasks",
+                            "statementNumber": "A2SA4SC3SG9STB2",
+                            "statementLabel": "Is frequently of very low mood.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG9STB3",
+                            "statementLabel": "Is diagnosed as having clinical depression or other mental illness.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG9STC1",
+                            "statementLabel": "Has negative thoughts and a very poor self-concept/self-esteem. May have spoken about or displayed self-harm or in extreme cases expressed suicidal ideologies.",
                             "statementLevel": "c"
                         }
                     ]
                 },
                 {
-                    "statementGroupNumber": "A2SA4SC3SG5",
+                    "statementGroupNumber": "A2SA4SC3SG10",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC3SG5STE1",
-                            "statementLabel": "Can organise him/herself ready for task or lesson including sorting equipment. Is skilled at using a smart phone to support with scheduling",
+                            "statementNumber": "A2SA4SC3SG10STE1",
+                            "statementLabel": "Has a positive sense of their ability to make changes to their own life to make things better (internal local of control)",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG5STT1",
-                            "statementLabel": "Can occasionally forget equipment.",
+                            "statementNumber": "A2SA4SC3SG10STT1",
+                            "statementLabel": "Sometimes can seem passive about making positive changes in their life. Makes comments that imply they accept the way things are.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG5STT2",
-                            "statementLabel": "Is able to organise him/herself to travel on public transport independently to school/college",
+                            "statementNumber": "A2SA4SC3SG10STA1",
+                            "statementLabel": " Gives up easily when things are difficult and blames others for their difficulties as a first course of response. Does not make reflections about what they could change.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG10STB1",
+                            "statementLabel": "Does not hold any belief that change is possible and that they have any power to make things better. Believe that things happen to them and are out of their control to change (external locus of control)",
+                            "statementLevel": "b"
+                        }
+                    ]
+                },
+                {
+                    "statementGroupNumber": "A2SA4SC3SG11",
+                    "statements": [
+                        {
+                            "statementNumber": "A2SA4SC3SG11STE1",
+                            "statementLabel": "Has a typical response to a traumatic experience. Follows expect patterns of grief for example.",
+                            "statementLevel": "e"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC3SG11STT1",
+                            "statementLabel": "Has a typical response to a traumatic experience however that experience was an extreme/unusual/unexpected loss/trauma and has resulted in a complex grief response.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG5STA1",
-                            "statementLabel": "When faced with a problem, does not applying basic problem solving skills to try to break the problem down or think about first steps.",
+                            "statementNumber": "A2SA4SC3SG11STA1",
+                            "statementLabel": "Has experienced a bereavement/loss or separation over 1 year previously and does not appear to be adjusting to and coping with this loss.",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG5STA2",
-                            "statementLabel": "May be anxious about travelling to school/college independently and find it difficult to organise money etc but with encouragement can manage this safely.",
-                            "statementLevel": "a"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC3SG5STA3",
-                            "statementLabel": "Cannot travel safely and independently to his/her pre-16 educational setting.",
-                            "statementLevel": "a"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC3SG5STB1",
-                            "statementLabel": "Has difficulties with decision making e.g. what food to buy, how to stay healthy.",
+                            "statementNumber": "A2SA4SC3SG11STB1",
+                            "statementLabel": "Has had a significant life-changing traumatic experience/loss and over a year after the event, the situation is causing a barrier to learning/social inclusion/mental health which is apparent on a daily basis.",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC3SG5STC1",
-                            "statementLabel": "Finds it difficult to learn simple life skills sequences such as cooking, washing, and shopping.",
-                            "statementLevel": "c"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC3SG5STC2",
-                            "statementLabel": "Cannot travel safely and independently to his/her post-16 educational setting.",
+                            "statementNumber": "A2SA4SC3SG11STC1",
+                            "statementLabel": "Dissociates from the situation and appears absent and stares.",
                             "statementLevel": "c"
                         }
                     ]
@@ -198,64 +473,54 @@
         },
         {
             "subCategoryId": "A2SA4SC4",
-            "subCategoryLabel": "Flexible thinking",
+            "subCategoryLabel": "Emotional development and emotional literacy",
             "statementGroup": [
                 {
-                    "statementGroupNumber": "A2SA4SC4SG6",
+                    "statementGroupNumber": "A2SA4SC4SG12",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC4SG6STE1",
-                            "statementLabel": "Has a range of interests that do not cause any barrier to learning and at times enhance it.",
+                            "statementNumber": "A2SA4SC4SG12STE1",
+                            "statementLabel": "Can understand and name his/her own emotions and uses facial expression and words to communicate this.",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC4SG6STT1",
-                            "statementLabel": "Has strong areas of interests and is prone to distraction if the areas of interested are visible or mentioned. However, he/she is able to maintain focus on the learning in hand with minimal prompting or redirection.",
+                            "statementNumber": "A2SA4SC4SG12STT1",
+                            "statementLabel": "Has some gaps in emotional understanding and skills needed to be able to communicate feelings.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC4SG6STA1",
-                            "statementLabel": "Has a range of special interests and he/she is easily distracted by these.",
+                            "statementNumber": "A2SA4SC4SG12STT2",
+                            "statementLabel": "Has some mild language, communication or learning difficulties that impact upon his/her abilty to describe/express emotions though he/she has good emotional understanding in general.",
+                            "statementLevel": "t"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG12STA1",
+                            "statementLabel": "Emotional literacy skills are immature or there are gaps in emotional development due to Autism or experience of ACEs for example. The child/young person presents as someone 2/3 years younger than their chronological age in terms of emotional development (understanding and regulation)",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC4SG6STB1",
-                            "statementLabel": "Has very few (1/2) special interests and prefers to engage only in activities relating to these or those on a schedule.",
+                            "statementNumber": "A2SA4SC4SG12STA2",
+                            "statementLabel": "Has some mild language, communication or learning difficulties that impact upon his/her abilty to describe/express emotions and his/her emotional understanding in general.",
+                            "statementLevel": "a"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG12STB1",
+                            "statementLabel": "Emotional literacy skills are very immature. Cannot name emotions of him/herself or others. Presents as/is assessed as having significant gaps in early emotional development (e.g. Boxall profile/Thrive). Is presenting as a young child (<4 years)",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC4SG6STC1",
-                            "statementLabel": "Has very few (1/2) special interests and will only engage in activities relating to these or those on a 'now and next' schedule",
+                            "statementNumber": "A2SA4SC4SG12STB2",
+                            "statementLabel": "Significant/moderate language, communication and learning difficulties are such that this is a barrier to making progress with emotional literacy skills as expected for his/her age. These difficulties affect expression and understanding of emotions and also his/her ability to access teaching and learning in this area.",
+                            "statementLevel": "b"
+                        },
+                        {
+                            "statementNumber": "A2SA4SC4SG12STC1",
+                            "statementLabel": "Cannot identify physiological or emotional feelings and responses and is hence overwhelmed by emotions. Cannot use cognitive skills to regulate emotions. Is constantly hypervigilant and in a high state of arousal/anxiety.",
                             "statementLevel": "c"
-                        }
-                    ]
-                },
-                {
-                    "statementGroupNumber": "A2SA4SC4SG7",
-                    "statements": [
-                        {
-                            "statementNumber": "A2SA4SC4SG7STE1",
-                            "statementLabel": "Can be flexible and imaginative in his/her learning.",
-                            "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC4SG7STT1",
-                            "statementLabel": "Lacks flexibility and creativity in thinking",
-                            "statementLevel": "t"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC4SG7STA1",
-                            "statementLabel": "Rigidity of thinking at times leads to some barriers to learning and issues with social problem solving.",
-                            "statementLevel": "a"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC4SG7STB1",
-                            "statementLabel": "Tends to have 'all or nothing' thinking and lack of flexibility impacts upon access to some areas of the curriculum",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC4SG7STC1",
-                            "statementLabel": "Is very rigid in thinking. Has no flexibility of thought .This stifles his/her imagination to the extent that it is a significant barrier to learning.",
+                            "statementNumber": "A2SA4SC4SG12STC2",
+                            "statementLabel": "Is non-verbal and/or has learning difficulties that mean he/she cannot express any emotions verbally and most communicated through behaviour.",
                             "statementLevel": "c"
                         }
                     ]
@@ -264,196 +529,84 @@
         },
         {
             "subCategoryId": "A2SA4SC5",
-            "subCategoryLabel": "Attention and concentration",
+            "subCategoryLabel": "Anxiety",
             "statementGroup": [
                 {
-                    "statementGroupNumber": "A2SA4SC5SG8",
+                    "statementGroupNumber": "A2SA4SC5SG13",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC5SG8STE1",
-                            "statementLabel": "Attends and concentrates for as long as is expected in the educational setting.",
+                            "statementNumber": "A2SA4SC5SG13STE1",
+                            "statementLabel": "Can accept changes to routine and schedule. Can be supported by different people including substitute staff.",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC5SG8STT1",
-                            "statementLabel": "Can fidget or seem restless/bored if asked to sit still for over 20 minutes. Is easily distracted but can be easily reengaged. Could be linked to an ADHD diagnosis.",
+                            "statementNumber": "A2SA4SC5SG13STT1",
+                            "statementLabel": "Shows distress if faced with unpredictable changes in daily routines. Finds transitions difficult to manage unless warned. Calms with support. A visual timetable helps.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC5SG8STA1",
-                            "statementLabel": "Finds it difficult to concentrate and stay in his/her seat and on task for longer than 15 minutes (or the time expected at his/her age) at any one time. Is easily distracted and is difficult to refocus.",
-                            "statementLevel": "a"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC5SG8STB1",
-                            "statementLabel": "Finds it difficult to concentrate and stay in his/her seat and on task for longer than 5- 10 minutes at any one time. Is easily distracted and is difficult to refocus.",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC5SG8STB2",
-                            "statementLabel": "Despite accessing a practical/vocational course linked to an area of interest, attention and concentration remains a significant issue.",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC5SG8STC1",
-                            "statementLabel": "Severe concentration and attention difficulties. Find it very difficult to sit to a differentiated task for any length of time. Is hypervigilant or distracted by sensory stimuli for example.",
-                            "statementLevel": "c"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC5SG8STC2",
-                            "statementLabel": "Focus and attention is such an issue that despite accessing a practical/vocational course linked to an area of interest, he/she will not independently stay on track with any task.",
-                            "statementLevel": "c"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "subCategoryId": "A2SA4SC6",
-            "subCategoryLabel": "Accepting challenge with learning",
-            "statementGroup": [
-                {
-                    "statementGroupNumber": "A2SA4SC6SG9",
-                    "statements": [
-                        {
-                            "statementNumber": "A2SA4SC6SG9STE1",
-                            "statementLabel": "Will accept reasonable challenge with learning and shows interest in learning new things.",
-                            "statementLevel": "e"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC6SG9STT1",
-                            "statementLabel": "Reluctant to accept risks or challenge with learning. Needs prompting and encouragement to do so.",
+                            "statementNumber": "A2SA4SC5SG13STT2",
+                            "statementLabel": "Is upset by change unless warned. In which case they will tolerate it to some extent.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG9STA1",
-                            "statementLabel": "Finds any new learning or challenge with learning anxiety provoking.",
+                            "statementNumber": "A2SA4SC5SG13STA1",
+                            "statementLabel": "Finds change distressing and experiences very high stress, with difficulty communicating this. High reliance on familiar routines.",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG9STB1",
-                            "statementLabel": "Will not accept risks or challenge with learning. Has to work in comfort zone but then will comply with small increments of challenge.",
+                            "statementNumber": "A2SA4SC5SG13STB1",
+                            "statementLabel": "Is resistant to all change even if warned of this change.and will become dysregulated I the face of change.",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG9STC1",
-                            "statementLabel": "All new learning is perceived to be challenging or is challenging and this learner obstructs and avoids that challenge hence progression is slow.",
+                            "statementNumber": "A2SA4SC5SG13STC1",
+                            "statementLabel": "Absence from school is concerning and linked to school based anxiety. At risk of significant underachievement.",
                             "statementLevel": "c"
                         }
                     ]
                 },
                 {
-                    "statementGroupNumber": "A2SA4SC6SG10",
+                    "statementGroupNumber": "A2SA4SC5SG14",
                     "statements": [
                         {
-                            "statementNumber": "A2SA4SC6SG10STE1",
-                            "statementLabel": "Sees mistakes as learning points",
+                            "statementNumber": "A2SA4SC5SG14STE1",
+                            "statementLabel": "Has some worries, stresses and anxieties but also good independent coping strategies to manage these or seek support in an expected way.",
                             "statementLevel": "e"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG10STT1",
-                            "statementLabel": "May be slightly upset by making a mistake but bounces back and tries again.",
+                            "statementNumber": "A2SA4SC5SG14STT1",
+                            "statementLabel": "Has worries, stresses or anxiety and/or can become upset at times though is attending school and can focus on learning. Is easily distracted or calmed by others perhaps with a short period of time out.",
                             "statementLevel": "t"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG10STA1",
-                            "statementLabel": "Could be described as perfectionist and finds it difficult to accept making mistakes without getting upset.",
+                            "statementNumber": "A2SA4SC5SG14STA1",
+                            "statementLabel": "Has worries, stresses or anxiety that can present as a barrier to them focusing on learning sometimes. Is preoccupied at times.",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC6SG10STB1",
-                            "statementLabel": "Is described as having low resilience as a learner. Is easily frustrated and gives up. However, has some preferred subjects where he/she shows better resilience.",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC6SG10STB2",
-                            "statementLabel": "Rather than make a mistake will avoid attempting tasks he/she believes he/she cannot do well.",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC6SG10STC1",
-                            "statementLabel": "Is described as having very poor resilience as a learner. Gives up or becomes frustrated very easily.",
-                            "statementLevel": "c"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC6SG10STC2",
-                            "statementLabel": "Rather than make a mistake, will avoid all tasks.",
-                            "statementLevel": "c"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "subCategoryId": "A2SA4SC7",
-            "subCategoryLabel": "Motivation and aspiration",
-            "statementGroup": [
-                {
-                    "statementGroupNumber": "A2SA4SC7SG11",
-                    "statements": [
-                        {
-                            "statementNumber": "A2SA4SC7SG11STE1",
-                            "statementLabel": "Has some motivation/aspiration to engage with learning. This is intrinsic (internally held)",
-                            "statementLevel": "e"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG11STT1",
-                            "statementLabel": "Is motivated to learn to some extent. This is mostly reinforced by external forces eg pleasing parents or teachers or gaining rewards.",
-                            "statementLevel": "t"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG11STA1",
-                            "statementLabel": "Motivation (and attendance) is poor for certain subjects/ aspects of the curriculum. Engages with some subjects/aspects.",
+                            "statementNumber": "A2SA4SC5SG14STA2",
+                            "statementLabel": "Is sometimes resistant to attending school due to worries, stresses or anxieties.",
                             "statementLevel": "a"
                         },
                         {
-                            "statementNumber": "A2SA4SC7SG11STB1",
-                            "statementLabel": "Has joined a college course from an alternative learning provider and finds it difficult to adjust to formal education and training and college life though is motivated to do so.",
+                            "statementNumber": "A2SA4SC5SG14STB1",
+                            "statementLabel": "Is often preoccupied, distracted or ruminating due to worries, stresses or anxiety. Is unable to focus on learning when this is the case.",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC7SG11STC1",
-                            "statementLabel": "Has joined a college course from an alternative learning provider and finds it difficult to adjust to formal education and training and college life and is not highly motivated to do so.",
-                            "statementLevel": "c"
-                        }
-                    ]
-                },
-                {
-                    "statementGroupNumber": "A2SA4SC7SG12",
-                    "statements": [
-                        {
-                            "statementNumber": "A2SA4SC7SG12STE1",
-                            "statementLabel": "Has aspirations for the future in terms of education, training and employment.",
-                            "statementLevel": "e"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG12STT1",
-                            "statementLabel": "Does not hold aspirations for the future in terms of education and training but accepts that he/she needs an education and hence attends and participates to some extent.",
-                            "statementLevel": "t"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG12STA1",
-                            "statementLabel": "Is only engaged in subjects directly related to chosen career path or specialist interest and disengages with everything else.",
-                            "statementLevel": "a"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG12STB1",
-                            "statementLabel": "Is not motivated to engage in any adult-led learning when at school. Is disengaged and can truant.",
+                            "statementNumber": "A2SA4SC5SG14STB2",
+                            "statementLabel": "Can be absent from school due to level of worry, stress or anxiety experienced (EBSA). This occurs frequently.",
                             "statementLevel": "b"
                         },
                         {
-                            "statementNumber": "A2SA4SC7SG12STB2",
-                            "statementLabel": "Is only interested in school for the social/sport aspects. Shows no interest in formal learning.",
-                            "statementLevel": "b"
-                        },
-                        {
-                            "statementNumber": "A2SA4SC7SG12STC1",
-                            "statementLabel": "Is not motivated to come to school and attendance is very poor.",
+                            "statementNumber": "A2SA4SC5SG14STC1",
+                            "statementLabel": "Experiences high levels of worry, stress or anxiety on a nearly daily basis. This is a significant barrier to access to learning. This could be related to ACEs or neuro-diversity. Is not independently able to apply coping strategies apart from avoidance.",
                             "statementLevel": "c"
                         },
                         {
-                            "statementNumber": "A2SA4SC7SG12STC2",
-                            "statementLabel": "Does not hold aspirations for the future in terms of employment or training.",
+                            "statementNumber": "A2SA4SC5SG14STC2",
+                            "statementLabel": "At risk of being not in education or training (NEET)due to level of anxiety experienced",
                             "statementLevel": "c"
                         }
                     ]
@@ -463,7 +616,7 @@
     ],
     "_rid": "XIk4AOtbRRAEAAAAAAAAAA==",
     "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAEAAAAAAAAAA==/",
-    "_etag": "\"6007049c-0000-1100-0000-61b233550000\"",
+    "_etag": "\"100010ee-0000-1100-0000-64a2f6f40000\"",
     "_attachments": "attachments/",
-    "_ts": 1639068501
+    "_ts": 1688401652
 }

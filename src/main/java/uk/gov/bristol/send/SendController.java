@@ -1,5 +1,6 @@
 package uk.gov.bristol.send;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import uk.gov.bristol.send.exceptions.SendAuthServiceException;
 import uk.gov.bristol.send.exceptions.SendException;
 import uk.gov.bristol.send.exceptions.SendPDFDownloadException;
+import uk.gov.bristol.send.fileupload.model.UploadedFileInfo;
+import uk.gov.bristol.send.fileupload.service.SharepointService;
 import uk.gov.bristol.send.model.Assessment;
 import uk.gov.bristol.send.model.Need;
 import uk.gov.bristol.send.model.NeedStatement;
@@ -33,6 +37,8 @@ import uk.gov.bristol.send.model.Provision;
 import uk.gov.bristol.send.model.SelectedProvision;
 import uk.gov.bristol.send.service.AssessmentService;
 import uk.gov.bristol.send.service.AuthenticationService;
+import uk.gov.bristol.send.service.ConfigService;
+import uk.gov.bristol.send.service.EmailService;
 import uk.gov.bristol.send.service.NeedService;
 import uk.gov.bristol.send.service.PDFService;
 import uk.gov.bristol.send.service.ProvisionService;
@@ -57,24 +63,37 @@ public class SendController {
 
     @Autowired
     PDFService pdfService;
+    
+    @Autowired
+    ConfigService configService;
+    
+    @Autowired
+    EmailService emailService;
+    
+	@Autowired
+	private SharepointService sharepointService;
 
     @Value("${yourAssessments.assessments.new.upn.upnInUse}")
     private String UPN_IN_USE;
 
     private static final String pathPrefix = "/top-up-assessment";
+    private static final String DEV_PHASE_DEFAULT = StringUtils.EMPTY;
 
 
-    public SendController(AuthenticationService authenticationService, AssessmentService assessmentService, NeedService needService, ProvisionService provisionService, PDFService pdfService){
+    public SendController(AuthenticationService authenticationService, AssessmentService assessmentService, NeedService needService, ProvisionService provisionService, PDFService pdfService, ConfigService configService, EmailService emailService, SharepointService sharepointService){
         super();
         this.authenticationService = authenticationService;
         this.assessmentService = assessmentService;
         this.needService = needService;   
         this.provisionService = provisionService; 
-        this.pdfService = pdfService;        
+        this.pdfService = pdfService;
+        this.configService = configService;
+        this.emailService = emailService;
+    	this.sharepointService = sharepointService;
     }
 
     @RequestMapping(value = { "/" }, method = RequestMethod.GET)
-    public String goHome(HttpServletRequest request, Model model) {  
+    public String goHome(HttpServletRequest request, Model model) {          
         return "redirect:" + pathPrefix;
     }    
 
@@ -87,7 +106,8 @@ public class SendController {
             model.addAttribute("yourAssessments", yourAssessments);
             model.addAttribute("currentUser", owner);
             model.addAttribute("upnError", "");
-            model.addAttribute("pathPrefix", pathPrefix);
+            model.addAttribute("pathPrefix", pathPrefix);                                
+            
         } catch (Exception e) {           
             throw new SendException("Unable to get assessments from database" + e.getMessage() );           
         }
@@ -99,6 +119,7 @@ public class SendController {
 	public String newAssessment(HttpServletRequest request, Model model, String upn, String schoolName) {
 		Owner owner = getLoggedInUser(request);
 		String returnView = "home";
+		
 		try {
 			if (!assessmentService.isUpnAvailable(upn)) {
 				model.addAttribute("upnError", UPN_IN_USE);
@@ -107,13 +128,16 @@ public class SendController {
 				model.addAttribute("currentUser", owner);
 				model.addAttribute("upn", upn);
                 model.addAttribute("pathPrefix", pathPrefix);
+              
 			} else if ((assessmentService.checkUpnPattern(upn)) && (schoolName.trim().length() > 2)) {
 				List<NeedStatement> selectNeedStatements = List.of();
 				List<SelectedProvision> selectedProvisions = List.of();
 				Assessment assessment = new Assessment(1, upn, owner.getOwnerEmail(), "new", schoolName,
 						selectNeedStatements, selectedProvisions);
 				assessmentService.createNewAssessment(assessment);
-				returnView = singleAssessment(request, model, assessment.getId());
+				
+				returnView = overview(request, model, assessment.getId());						
+				
 			}
 
 		} catch (Exception e) {
@@ -170,6 +194,7 @@ public class SendController {
             model.addAttribute("currentUser", owner);
             model.addAttribute("selectedProvisions", selectedProvisions);
             model.addAttribute("pathPrefix", pathPrefix);
+           
         } catch (Exception e) {
             throw new SendException("Unable to get assessments from database: " + e.getMessage() );  
         }
@@ -178,7 +203,7 @@ public class SendController {
 
 
     @RequestMapping(value = pathPrefix + "/needs", params = { "assessmentId", "subAreaId" }, method = RequestMethod.GET)
-    public String doNeeds(HttpServletRequest request, Model model, @RequestParam("assessmentId") String assessmentId, @RequestParam("subAreaId") String subAreaId) {
+    public String doNeeds(HttpServletRequest request, Model model, @RequestParam("assessmentId") String assessmentId, @RequestParam("subAreaId") String subAreaId ) {
     	Owner owner = getLoggedInUser(request);
         try {
             Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());    
@@ -200,6 +225,7 @@ public class SendController {
             model.addAttribute("maximumNeedLevel", maximumNeedLevel);           
             model.addAttribute("hasSelectedProvisions", assessmentService.areProvisionsSelectedForSubArea(subAreaId, assessment));            
             model.addAttribute("pathPrefix", pathPrefix);
+           
           
         } catch (Exception e) {
             throw new SendException("Unable to get needs from database: " + e.getMessage() );
@@ -243,6 +269,7 @@ public class SendController {
             model.addAttribute("selectedProvisions", selectedProvisions);
             model.addAttribute("selectedProvisionIds", selectedProvisionIds);
             model.addAttribute("pathPrefix", pathPrefix);
+           
         } catch (Exception e) {           
             throw new SendException("Unable to get provisions from database: " + e.getMessage() );
         }
@@ -312,7 +339,137 @@ public class SendController {
     }
     
     @RequestMapping(value = { pathPrefix + "/overview" }, method = RequestMethod.GET)
-    public String overview(HttpServletRequest request, Model model, @RequestParam String assessmentId, @RequestParam String devPhase ) {
+    public String overview(HttpServletRequest request, Model model, @RequestParam String assessmentId ) {
+    	Owner owner = getLoggedInUser(request);
+        try {
+            Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());
+            // Redirect user if they're not the assessment owner            
+            if (!new String(assessment.getOwner()).equals(owner.getOwnerEmail())) {
+                return "redirect:" + pathPrefix;
+            }           
+            
+            model.addAttribute("assessment", assessment);
+            model.addAttribute("pathPrefix", pathPrefix);
+            model.addAttribute("currentUser", owner);
+        } catch (Exception e) {
+            throw new SendException("Unable to get assessments from database: " + e.getMessage() );  
+        }
+        return "overview";
+    }
+    
+    @RequestMapping(value = { pathPrefix + "/provisionReview" }, method = RequestMethod.GET)
+    public String provisionReview(HttpServletRequest request, Model model, @RequestParam String assessmentId) {
+    	Owner owner = getLoggedInUser(request);
+        try {
+            Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());
+          
+            // Redirect user if they're not the assessment owner            
+            if (!new String(assessment.getOwner()).equals(owner.getOwnerEmail())) {
+                return "redirect:" + pathPrefix;
+            }                     
+            
+            List<NeedStatement> selectedNeedStatements = needService.getSelectedNeedStatementsGroupByAreaId(assessment.getSelectedNeedStatements());           
+            List<SelectedProvision> selectedProvisions = assessmentService.getSelectedProvisionsGroupByProvisionStatementId(assessment.getSelectedProvisions());
+            Map<String, String> needLevels = needService.findNeedLevelForSubAreas(selectedNeedStatements);       
+   
+            //Flag it if there is any Additional and Different Provision in the selected List 
+            for(SelectedProvision selectedProvision : selectedProvisions) {
+               if (selectedProvision.getProvisionGroup().equalsIgnoreCase("Additional and Different provision")) {
+            	   selectedProvision.setAdditionalProvision(true);
+            	   model.addAttribute("hasAdditionalProvision", "true");
+               }
+            }
+         
+            model.addAttribute("needStatements", selectedNeedStatements);           
+            model.addAttribute("provisions", selectedProvisions);
+            model.addAttribute("assessment", assessment);
+            model.addAttribute("needLevels", needLevels);           
+            model.addAttribute("pathPrefix", pathPrefix);
+            model.addAttribute("currentUser", owner);
+        } catch (Exception e) {
+            throw new SendException("Unable to get assessment from database: " + e.getMessage() );  
+        }
+        
+        return "provisionreview";
+    }
+      
+    @RequestMapping(value = { pathPrefix + "/confirmProvisionReview" }, params = { "assessmentId", "tickedProvisions"}, method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK) 
+    public void confirmProvisionReview(HttpServletRequest request, Model model, @RequestParam("assessmentId") String assessmentId, @RequestParam("tickedProvisions") String tickedProvisions) {           
+    	Owner owner = getLoggedInUser(request);
+    	
+        try{
+           
+        	Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());
+        	
+        	List<SelectedProvision> selectedProvisions = assessmentService.getSelectedProvisionsGroupByProvisionStatementId(assessment.getSelectedProvisions());
+
+            // Calculate CAPS and Total cost for the selected provisions with the ticked ones, which are Requesting For Funding
+        	for(SelectedProvision selectedProvision : selectedProvisions) {
+        		selectedProvision.setRequestingFunding(false);
+            } 
+        	
+        	if(StringUtils.isNotEmpty(tickedProvisions)) {
+	            // Create a list of string pairs
+	            String[] ticked = tickedProvisions.split(",");
+	            for(int i=0; i<ticked.length; i++){               
+	                int cutoff = ticked[i].lastIndexOf("_");                             
+	                assessment = assessmentService.updateAssessmentWithRequestingFundingProvisions( assessment,  selectedProvisions, ticked[i].substring(cutoff+1),  ticked[i].substring(0, cutoff));   
+	            }
+	            
+	        	// Retrieve selected provisions which are Requesting For Funding           
+	            selectedProvisions = assessmentService.getSelectedProvisionsRequestingForFunding(selectedProvisions);                      
+	      	
+	            assessmentService.calculateTotalWeeklyHourPerCodeForSelectedProvisions(assessment, selectedProvisions);
+	            
+	            //Calculation is performed only if weekly CAPS are not exceeded 
+	            if(!assessment.isTypeHourlyCapExceeded()) {
+	            	assessmentService.calculateTotalProvisionsAnnualCost(assessment, selectedProvisions);
+	            } else {
+	            	assessment.setTotalAnnualCost(null);
+	            }
+        	} else {
+        		assessment.setTotalAnnualCost("0.00");
+        		assessment.setTypeHourlyCapExceeded(false);
+        		assessment.setTotalHourlyCapExceeded(false);        		
+        	}
+                      
+            assessment.setProvisionReviewStatus("Confirmed");
+            assessmentService.saveAssessment(assessment);
+               
+        }catch(Exception e){
+            throw new SendException("Unable to update Provision Review Status in database: " + e.getMessage() );
+        }
+           
+    }
+    
+    @RequestMapping(value = { pathPrefix + "/uploadSupportDocuments" }, method = RequestMethod.GET)
+    public String uploadSupportDocuments(HttpServletRequest request, Model model, @RequestParam String assessmentId) {
+    	Owner owner = getLoggedInUser(request);
+        try {
+            Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());
+            // Redirect user if they're not the assessment owner            
+            if (!new String(assessment.getOwner()).equals(owner.getOwnerEmail())) {
+                return "redirect:" + pathPrefix;
+            }           
+            
+            Map<String, String> subtypes = configService.getSubtypes();
+                                   
+            List<UploadedFileInfo> uploadedFiles = sharepointService.getFileListForUPN(assessment.getUpn(), assessment.getUploadFolderId());
+                       
+            model.addAttribute("subtypes", subtypes);
+            model.addAttribute("uploadedFiles", uploadedFiles);           
+            model.addAttribute("assessment", assessment);
+            model.addAttribute("pathPrefix", pathPrefix);
+            model.addAttribute("currentUser", owner);
+        } catch (Exception e) {
+            throw new SendException("Unable to get assessments from database: " + e.getMessage() );  
+        }
+        return "uploadsupportdocuments";
+    }
+    
+    @RequestMapping(value = { pathPrefix + "/submitYourApplication" }, method = RequestMethod.GET)
+    public String submitYourApplication(HttpServletRequest request, Model model, @RequestParam String assessmentId ) {
     	Owner owner = getLoggedInUser(request);
         try {
             Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());
@@ -320,19 +477,90 @@ public class SendController {
             if (!new String(assessment.getOwner()).equals(owner.getOwnerEmail())) {
                 return "redirect:" + pathPrefix;
             }
-            // Return to error page if the page is NOT assessed with the correct devPhase Parameter 
-            if(StringUtils.isEmpty(devPhase) || !devPhase.equalsIgnoreCase("two")) {
-            	return "error";
-            }
+                                       
             
             model.addAttribute("assessment", assessment);
             model.addAttribute("pathPrefix", pathPrefix);
+            model.addAttribute("currentUser", owner);
+            
         } catch (Exception e) {
             throw new SendException("Unable to get assessments from database: " + e.getMessage() );  
         }
-        return "overview";
+        return "submityourapplication";
     }
+    
+    @RequestMapping(value = { pathPrefix + "/submitApplication" }, params = {"assessmentId"}, method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    public String submitApplication(HttpServletRequest request, Model model, @RequestParam("assessmentId") String assessmentId){
+        //Do an owner check before preceding
+    	Owner owner = getLoggedInUser(request);
+        try{
+           
+            Assessment assessment = assessmentService.getAssessmentByIdForOwner(assessmentId, owner.getOwnerEmail());   
+            
+            //This extra validation is just for the robustness of the application to avoid the application getting submitted without accepting TC.
+            
+            if(StringUtils.isEmpty(request.getParameter("selecttc"))){
+            	 model.addAttribute("assessment", assessment);
+                 model.addAttribute("pathPrefix", pathPrefix);    
+                 model.addAttribute("currentUser", owner);
+            	 return "submityourapplication";
+            }
+                                          
+            //Generate and Upload the PDF
+            
+            List<NeedStatement> selectedNeedStatements = needService.getSelectedNeedStatementsGroupByAreaId(assessment.getSelectedNeedStatements());            
+            List<SelectedProvision> selectedProvisions = assessment.getSelectedProvisions();
+            
+            // Retrieve selected provisions which are Requesting For Funding           
+            selectedProvisions = assessmentService.getSelectedProvisionsRequestingForFunding(selectedProvisions);
+            
+            Date submittedDate = new Date();
 
+            Map<String, Object> pdfModel = new HashMap<>();        
+            pdfModel.put("ownerName", owner.getOwnerName());
+            pdfModel.put("needStatements", selectedNeedStatements);
+            pdfModel.put("yourAssessment", assessment);
+            pdfModel.put("provisions", selectedProvisions);           
+            pdfModel.put("submittedDate", submittedDate);
+                                     
+            pdfService.generateAndUploadSubmissionPdf(assessment.getUpn(), assessment.getUploadFolderId(), pdfModel); 
+            
+            //Update Assessment with submission status and date
+            
+            assessment.setApplicationStatus("Submitted");
+            DateTime dt = new DateTime(submittedDate);
+            assessment.setSubmittedDate(dt.toString("dd/MM/yyyy"));
+            assessmentService.saveAssessment(assessment);
+            
+            //Send Email
+            try { 
+	            Map<String, Object> emailModel = new HashMap<>();
+	            
+	    		emailModel.put("submittedDate", new Date());	    		
+	    		emailModel.put("yourAssessment", assessment);	    		
+	    		emailModel.put("ownerEmail", owner.getOwnerEmail());
+	    		
+	    		emailService.sendEmail(emailModel);
+            } catch(Exception e){                       
+                //No need to throw back exception, as even if Sending Email fails , Application Submission should continue
+                LOGGER.error("Unable to send Email: " + e.getMessage());
+            }   
+            
+            //setting data for confirmation
+            model.addAttribute("assessment", assessment);
+            model.addAttribute("pathPrefix", pathPrefix); 
+            model.addAttribute("submittedDate", submittedDate);
+            model.addAttribute("currentUser", owner);
+                       
+        }catch (Exception e) {
+            throw new SendException("Unable to submit Application: " + e.getMessage() );  
+        }
+              
+        return "confirmation";
+      
+    }
+    
     
 	private Owner getLoggedInUser(HttpServletRequest request) {
 		Owner owner;

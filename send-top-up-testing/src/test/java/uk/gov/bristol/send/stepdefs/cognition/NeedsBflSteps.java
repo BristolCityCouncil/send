@@ -35,6 +35,42 @@ public class NeedsBflSteps extends StepUtils {
     @Autowired
     private OrganisationForLearningPage organisationForLearningPage;
 
+
+    @When("user selects Independence as a learner {string}")
+    public void selectIndependenceNeedLevel(String level) {
+        independenceLearnerPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Following adult expectations {string}")
+    public void selectFollowingNeedLevel(String level) {
+        followingAdultPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Organisation for learning {string}")
+    public void selectOrganisationNeedLevel(String level) {
+        organisationForLearningPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Flexible thinking {string}")
+    public void selectFlexibleNeedLevel(String level) {
+        flexibleThinkingPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Attention and concentration {string}")
+    public void selectAttentionNeedLevel(String level) {
+        attentionConcentrationPage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Accepting challenge with learning {string}")
+    public void selectAcceptingNeedLevel(String level) {
+        acceptingChallengePage.selectNeedsLevel(level);
+    }
+
+    @When("user selects Motivation and aspiration {string}")
+    public void selectMotivationNeedLevel(String level) {
+        motivationAspirationPage.selectNeedsLevel(level);
+    }
+
     @Then("the Behaviours for learning level of need is identified as {string}")
     public void the_behaviour_learning_level_of_need_is_identified_as(String string) {
         Assert.assertEquals(string, acceptingChallengePage.getSelectedNeedLevel());

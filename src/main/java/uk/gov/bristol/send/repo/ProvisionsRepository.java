@@ -14,9 +14,9 @@ import java.util.List;
 public interface ProvisionsRepository extends CosmosRepository<Provision, String> {    
     Optional<Provision> findById(String id);
  
-    @Query("SELECT p.id AS id, p.provisionGroup AS provisionGroup, p.provisionGroupId AS provisionGroupId, ps.SpecificProvision AS specificProvision, ps.provisionStatementId AS provisionStatementId, t.provisionTypeNumber AS provisionTypeNumber, ps.ProvisionTypeId AS provisionTypeId, t.provisionTypeLabel AS provisionTypeLabel, ps.Level AS level, ps.formVersion as formVersion FROM provisions p JOIN t IN p.provisionsType JOIN ps IN t.provisions")
+    @Query("SELECT p.id AS id, p.provisionGroup AS provisionGroup, p.provisionGroupId AS provisionGroupId, ps.specificProvision AS specificProvision, ps.provisionStatementId AS provisionStatementId, t.provisionTypeNumber AS provisionTypeNumber, ps.provisionTypeId AS provisionTypeId, t.provisionTypeLabel AS provisionTypeLabel, ps.level AS level, ps.formVersion as formVersion FROM provisions p JOIN t IN p.provisionsType JOIN ps IN t.provisions")
     List<Provision> findAll();
 
-    @Query("SELECT p.id AS id, p.provisionGroup AS provisionGroup, p.provisionGroupId AS provisionGroupId, ps.SpecificProvision AS specificProvision, ps.provisionStatementId AS provisionStatementId, t.provisionTypeNumber AS provisionTypeNumber, ps.ProvisionTypeId AS provisionTypeId, t.provisionTypeLabel AS provisionTypeLabel, ps.Level AS level, ps.formVersion as formVersion FROM provisions p JOIN t IN p.provisionsType JOIN ps IN t.provisions WHERE ps.ProvisionStatementId = @provisionStatementId")
+    @Query("SELECT p.id AS id, p.provisionGroup AS provisionGroup, p.provisionGroupId AS provisionGroupId, ps.specificProvision AS specificProvision, ps.provisionStatementId AS provisionStatementId, t.provisionTypeNumber AS provisionTypeNumber, ps.provisionTypeId AS provisionTypeId, t.provisionTypeLabel AS provisionTypeLabel, ps.level AS level, ps.formVersion as formVersion, ps.code AS code, ps.hoursPerWeek AS hoursPerWeek FROM provisions p JOIN t IN p.provisionsType JOIN ps IN t.provisions WHERE ps.provisionStatementId = @provisionStatementId")
     List<Provision> findProvisionsByStatementId(@Param("provisionStatementId") String provisionStatementId); 
 }

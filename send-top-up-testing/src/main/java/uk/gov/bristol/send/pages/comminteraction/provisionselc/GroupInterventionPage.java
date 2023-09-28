@@ -8,38 +8,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.SENDException;
-import uk.gov.bristol.send.pages.ProvisionPage;
 
 @Component
 public class GroupInterventionPage extends SpecialistProfessionalPage {
 
-    @FindBy(id = "dropdown-PTID5")
-    private WebElement generalisationDD;
+    @FindBy(id = "dropdown-PTID2-1")
+    private WebElement dropDown1;
 
-    @FindBy(id = "dropdown-PTID6")
-    private WebElement interventionDD;
+    @FindBy(id = "dropdown-PTID2-2")
+    private WebElement dropDown2;
 
-    @FindBy(id = "dropdown-PTID7")
-    private WebElement smallGroupDD;
-
-    @FindBy(id = "dropdown-PTID8")
-    private WebElement socialEmotionalDD;
-
-    @FindBy(id = "dropdown-PTID9")
-    private WebElement post16TutoringDD;
-
-    @FindBy(id = "dropdown-PTID10")
-    private WebElement post16SupportDD;
+    @FindBy(id = "dropdown-PTID2-3")
+    private WebElement dropDown3;
 
     @Autowired
     private Assessment assessment;
 
-    private static final String GENERALISATION = "Generalisation and reinforcement";
-    private static final String INTERVENTION = "1:1 Intervention";
-    private static final String SMALL_GROUP = "Small group Intervention";
-    private static final String SOCIAL_EMOTIONAL = "Intervention for social and emotional learning";
-    private static final String POST_16_TUTORING = "Post-16 tutoring";
-    private static final String POST_16_SUPPORT = "Post-16 exam support";
+    private static final String OPTION_1 = "Generalisation and reinforcement";
+    private static final String OPTION_2 = "1:1 Intervention";
+    private static final String OPTION_3 = "Small group Intervention";
 
 
     public GroupInterventionPage(WebDriver webDriver) {
@@ -50,23 +37,14 @@ public class GroupInterventionPage extends SpecialistProfessionalPage {
     public void selectByIndex(String provisionType, String indexStr) {
         String provisionText = null;
         switch (provisionType) {
-            case GENERALISATION:
-                provisionText = selectByIndex(generalisationDD, indexStr);
+            case OPTION_1:
+                provisionText = selectByIndex(dropDown1, indexStr);
                 break;
-            case INTERVENTION:
-                provisionText = selectByIndex(interventionDD, indexStr);
+            case OPTION_2:
+                provisionText = selectByIndex(dropDown2, indexStr);
                 break;
-            case SMALL_GROUP:
-                provisionText = selectByIndex(smallGroupDD, indexStr);
-                break;
-            case SOCIAL_EMOTIONAL:
-                provisionText = selectByIndex(socialEmotionalDD, indexStr);
-                break;
-            case POST_16_TUTORING:
-                provisionText = selectByIndex(post16TutoringDD, indexStr);
-                break;
-            case POST_16_SUPPORT:
-                provisionText = selectByIndex(post16SupportDD, indexStr);
+            case OPTION_3:
+                provisionText = selectByIndex(dropDown3, indexStr);
                 break;
             default : throw new SENDException("Provision type was not correctly supplied");
         }

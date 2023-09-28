@@ -10,28 +10,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Component
 public class SpecialistProfessionalPage extends ProvisionPage {
 
-    @FindBy(id = "dropdown-PTID1")
-    private WebElement adviceSupportDD;
+    @FindBy(id = "dropdown-PTID1-1")
+    private WebElement dropDown1;
 
-    @FindBy(id = "dropdown-PTID2")
-    private WebElement overseeingDD;
-
-    @FindBy(id = "dropdown-PTID3")
-    private WebElement directSupportDD;
-
-    @FindBy(id = "dropdown-PTID4")
-    private WebElement multiLiaisonDD;
 
     @Autowired
     private Assessment assessment;
 
-    private static final String ADVICE_SUPPORT = "Specialist professional advice and support 1";
-    private static final String OVERSEEING_INTERVENTION = "Specialist professional supervision/overseeing of intervention";
-    private static final String DIRECT_SUPPORT = "Specialist professional direct support";
-    private static final String MULTI_LIAISON = "Multi-professional liaison";
+    private static final String OPTION_1 = "Specialist professional advice, supervision or support";
 
     public SpecialistProfessionalPage(WebDriver webDriver) {
         super(webDriver);
@@ -41,17 +33,8 @@ public class SpecialistProfessionalPage extends ProvisionPage {
     public void selectByIndex(String provisionType, String indexStr) {
         String provisionText = null;
         switch (provisionType) {
-            case ADVICE_SUPPORT:
-                provisionText = selectByIndex(adviceSupportDD, indexStr);
-                break;
-            case OVERSEEING_INTERVENTION:
-                provisionText = selectByIndex(overseeingDD, indexStr);
-                break;
-            case DIRECT_SUPPORT:
-                provisionText = selectByIndex(directSupportDD, indexStr);
-                break;
-            case MULTI_LIAISON:
-                provisionText = selectByIndex(multiLiaisonDD, indexStr);
+            case OPTION_1:
+                provisionText = selectByIndex(dropDown1, indexStr);
                 break;
             default : throw new SENDException("Provision type was not correctly supplied");
         }
@@ -62,7 +45,9 @@ public class SpecialistProfessionalPage extends ProvisionPage {
     }
 
     protected void setAssessmentProvision(String provisionType, String provisionText) {
-        assessment.setElcProvisions(provisionType, provisionText);
+        Map<String, String> provisionMap = new HashMap<>();
+        provisionMap.put(provisionType, provisionText);
+        assessment.setAllProvisions(provisionMap);
     }
 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="aui bcc-aui" lang="">
+<html class="aui bcc-aui" lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://style.bristol.gov.uk/css/anti-aui.css" />
     <link rel="stylesheet" href="https://style.bristol.gov.uk/css/custom.css" />
     <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/fileupload.css" />
     <link rel="icon" type="image/png" href="/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
   </head>

@@ -3,12 +3,12 @@ package uk.gov.bristol.send.stepdefs.summary;
 import org.junit.Assert;
 import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.Utils;
-import uk.gov.bristol.send.pages.ELCProvisionPage;
+import uk.gov.bristol.send.pages.NeedsPage;
+import uk.gov.bristol.send.pages.ProvisionPage;
 import uk.gov.bristol.send.pages.summary.CommunicationInteractionPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.lang.StringUtils;
 import org.openqa.selenium.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -21,10 +21,9 @@ public class CommunicationInteractionSteps {
     private CommunicationInteractionPage communicationInteractionPage;
 
     @Autowired
-    private ELCProvisionPage elcProvisionPage;
-
-    @Autowired
     private Assessment assessment;
+
+    private static final String DISABLED = "disabled";
 
     @Given("user clicks link for Expressive language and communication need")
     public void click_link_elc_need() {
@@ -32,10 +31,16 @@ public class CommunicationInteractionSteps {
         Utils.driverWait(2000);
     }
 
+    @Given("user clicks link for Receptive language and communication need")
+    public void click_link_rlc_need() {
+        communicationInteractionPage.clickRlcNeedsLink();
+        Utils.driverWait(1000);
+    }
+
     @Then("Communication and interaction Provisions links are disabled")
     public void communication_interaction_provision_links_disabled() {
-        String isElcEnabled = communicationInteractionPage.getElcProvisionsLink().getAttribute("disabled");
-        String isRlcEnabled = communicationInteractionPage.getRlcProvisionsLink().getAttribute("disabled");
+        String isElcEnabled = communicationInteractionPage.getElcProvisionsLink().getAttribute(DISABLED);
+        String isRlcEnabled = communicationInteractionPage.getRlcProvisionsLink().getAttribute(DISABLED);
 
         Assert.assertEquals("true", isElcEnabled);
         Assert.assertEquals("true", isRlcEnabled);
@@ -52,7 +57,7 @@ public class CommunicationInteractionSteps {
         // Possible more than one Provision so Exception and title check needed.
         try {
             String provisionTitle = communicationInteractionPage.getElcProvisionSelectedType();
-            Assert.assertNotEquals(provisionTitle, assessment.getElcProvisionType());
+            Assert.assertNotEquals(provisionTitle, assessment.getAllProvisions(NeedsPage.ELC).get(provisionTitle));
         } catch (NoSuchElementException ex) {
             Assert.assertTrue(true);
         }
@@ -61,16 +66,38 @@ public class CommunicationInteractionSteps {
     @Given("user clicks link for Expressive language and communication provision")
     public void click_link_elc_provision() {
         communicationInteractionPage.clickElcProvisionsLink();
+        Assert.assertTrue("Page title not correct", communicationInteractionPage.getPageTitle().contains("Expressive language and communication"));
+        assessment.setNeedsPage(NeedsPage.ELC);
+    }
+
+    @Given("user clicks link for Receptive language and communication provision")
+    public void click_link_rlc_provision() {
+        communicationInteractionPage.clickRlcProvisionsLink();
+        Assert.assertTrue("Page title not correct", communicationInteractionPage.getPageTitle().contains("Receptive language and communication"));
+        assessment.setNeedsPage(NeedsPage.RLC);
     }
 
     @Then("all saved Expressive language and communication Provisions displayed on Summary")
     public void all_elc_provisions_displayed() {
         Map<String, String> elcSummaryProvisions = communicationInteractionPage.getElcSummaryProvisions();
+
         Assert.assertEquals("Saved Provisions and Summary Provisions are different sizes",
-                assessment.getElcProvisions().keySet().size(), elcSummaryProvisions.keySet().size());
+                assessment.getAllProvisions(NeedsPage.ELC).keySet().size(), elcSummaryProvisions.keySet().size());
 
         Assert.assertEquals("Saved and Summary Provisions have different values",
-                elcSummaryProvisions, assessment.getElcProvisions());
+                elcSummaryProvisions, assessment.getAllProvisions(NeedsPage.ELC));
+
+    }
+
+    @Then("all saved Receptive language and communication Provisions displayed on Summary")
+    public void all_rlc_provisions_displayed() {
+        Map<String, String> elcSummaryProvisions = communicationInteractionPage.getRlcSummaryProvisions();
+
+        Assert.assertEquals("Saved Provisions and Summary Provisions are different sizes",
+                assessment.getAllProvisions(NeedsPage.RLC).keySet().size(), elcSummaryProvisions.keySet().size());
+
+        Assert.assertEquals("Saved and Summary Provisions have different values",
+                elcSummaryProvisions, assessment.getAllProvisions(NeedsPage.RLC));
 
     }
 
@@ -81,7 +108,8 @@ public class CommunicationInteractionSteps {
         Assert.assertTrue(provisionType.contains(expectedProvision));
 
         String provisionText = communicationInteractionPage.getElcProvisionSelectedText();
-        Assert.assertEquals(provisionText, assessment.getElcProvisions().get(provisionType));
+        Assert.assertEquals(provisionText, assessment.getAllProvisions(NeedsPage.ELC).get(provisionType));
+
     }
 
     @Then("selected need level under Communication and interaction on the Summary is {string}")

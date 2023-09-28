@@ -1,5 +1,11 @@
 package uk.gov.bristol.send.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -9,23 +15,18 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
-
-import static org.junit.jupiter.api.Assertions.assertSame;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.mockito.Mock;
-
-import static org.mockito.Mockito.when;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import uk.gov.bristol.send.SendUtilities;
 import uk.gov.bristol.send.TestDataInitializer;
 import uk.gov.bristol.send.model.Provision;
+import uk.gov.bristol.send.model.ProvisionCodesLookUp;
 import uk.gov.bristol.send.model.ProvisionLookUp;
-import uk.gov.bristol.send.repo.ProvisionsRepository;
+import uk.gov.bristol.send.repo.ProvisionCodesLookUpRepository;
 import uk.gov.bristol.send.repo.ProvisionsLookUpRepository;
+import uk.gov.bristol.send.repo.ProvisionsRepository;
 
 
 @MockBean(ProvisionsRepository.class)
@@ -44,6 +45,8 @@ public class ProvisionServiceTest {
     private final String VALID_SUBAREA_ID = "expressiveCommunication";
 
     private final String INVALID_SUBAREA_ID = "invalidSubAreaId";
+    private final String INVALID_STATEMENT_ID = "invalidStatementId";
+    private final String INVALID_PROVISION_CODE = "invalidCode";
 
 
     @Mock
@@ -57,6 +60,9 @@ public class ProvisionServiceTest {
 
     @MockBean
     ProvisionsLookUpRepository provisionsLookUpRepository;
+    
+    @MockBean
+    ProvisionCodesLookUpRepository provisionCodesLookUpRepository;
 
     @MockBean
     SendUtilities sendUtilities;
@@ -72,6 +78,9 @@ public class ProvisionServiceTest {
 
     @Mock
     List<ProvisionLookUp> listProvisionsLookUp; 
+    
+    @Mock
+    List<ProvisionCodesLookUp> listProvisionsCodesLookUp; 
 
     @Mock
     Iterator<Provision> mockIterator;
@@ -79,7 +88,7 @@ public class ProvisionServiceTest {
 
     @BeforeAll
     public void setUp() {
-        provisionService = new ProvisionService(provisionsRepository, provisionsLookUpRepository, sendUtilities);
+        provisionService = new ProvisionService(provisionsRepository, provisionsLookUpRepository, sendUtilities, provisionCodesLookUpRepository);
         testDataInitializer = new TestDataInitializer();
     }
 
@@ -192,5 +201,55 @@ public class ProvisionServiceTest {
         returnedProvisions = provisionService.getProvisionsForSubArea(VALID_SUBAREA_ID, "A"); 
         assertSame(returnedProvisions.size(), 1);
     }    
+    
+
+    @Test
+    public void whenGetProvisionForStatement_provisionsFound_returnsOnlyOneProvisionWithMatchedStatement() throws Exception {
+        ArrayList<Provision> provisions = testDataInitializer.initProvisions();  
+        when(provisionsRepository.findProvisionsByStatementId("PGID1_PTID1_PS1")).thenReturn(provisions);    
+        
+        Provision matchedProvision = provisionService.getProvisionForStatement("PGID1_PTID1_PS1");
+               
+        assertSame("PGID1_PTID1_PS1", matchedProvision.getProvisionStatementId());
+               
+    }  
+
+    @Test
+    public void whenGetProvisionForStatement_invalidStatement_throwsException() throws Exception {
+        ArrayList<Provision> provisions = testDataInitializer.initProvisions();  
+        when(provisionsRepository.findProvisionsByStatementId("PGID1_PTID1_PS1")).thenReturn(provisions);    
+        
+        Exception thrown = assertThrows(Exception.class, () -> {
+            provisionService.getProvisionForStatement(INVALID_STATEMENT_ID);            
+        });
+        assertTrue(thrown.getMessage().contains("No provisions found for given StatementId: " + INVALID_STATEMENT_ID));   
+       
+    } 
+    
+    @Test
+    public void whenGetProvisionCodesLookUp_provisionsCodesLookUpFound_returnsMatchedProvisionCodesLookUp() throws Exception {
+        ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = testDataInitializer.initProvisionCodesLookUp();
+        
+        when(provisionCodesLookUpRepository.findProvisionCodesLookUpByType("A")).thenReturn(provisionCodesLookUp);    
+        
+        ProvisionCodesLookUp matchedProvisionCodesLookUp = provisionService.getProvisionCodesLookUp("A");
+               
+        assertEquals(25.00, matchedProvisionCodesLookUp.getWeeklyCapInHoursForThisType().doubleValue());
+        assertEquals(13.98, matchedProvisionCodesLookUp.getCostPerHour().doubleValue());
+               
+    }  
+    
+    @Test
+    public void whenGetProvisionCodesLookUp_invalidCode_throwsException() throws Exception {
+        ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = testDataInitializer.initProvisionCodesLookUp();
+        
+        when(provisionCodesLookUpRepository.findProvisionCodesLookUpByType("A")).thenReturn(provisionCodesLookUp);    
+                       
+        Exception thrown = assertThrows(Exception.class, () -> {
+        	 provisionService.getProvisionCodesLookUp(INVALID_PROVISION_CODE);          
+        });
+        assertTrue(thrown.getMessage().contains("No provisions Codes LookUp found for given type: " + INVALID_PROVISION_CODE));   
+       
+    }  
     
 }

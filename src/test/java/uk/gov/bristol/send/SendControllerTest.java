@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -33,6 +34,7 @@ import org.springframework.validation.support.BindingAwareModelMap;
 
 import uk.gov.bristol.send.exceptions.SendException;
 import uk.gov.bristol.send.exceptions.SendPDFDownloadException;
+import uk.gov.bristol.send.fileupload.service.SharepointService;
 import uk.gov.bristol.send.model.Assessment;
 import uk.gov.bristol.send.model.Need;
 import uk.gov.bristol.send.model.NeedStatement;
@@ -42,6 +44,8 @@ import uk.gov.bristol.send.model.SelectedProvision;
 import uk.gov.bristol.send.repo.AssessmentsRepository;
 import uk.gov.bristol.send.service.AssessmentService;
 import uk.gov.bristol.send.service.AuthenticationService;
+import uk.gov.bristol.send.service.ConfigService;
+import uk.gov.bristol.send.service.EmailService;
 import uk.gov.bristol.send.service.NeedService;
 import uk.gov.bristol.send.service.PDFService;
 import uk.gov.bristol.send.service.ProvisionService;
@@ -82,6 +86,8 @@ public class SendControllerTest {
 
     private final String[] SELECTED_PROVISION_IDS = {"PGID3_PTID22_PS1", "PGID4_PTID25_PS3"};
 
+    private final String TICKED_PROVISIONS = "PGID3_PTID22_PS1,PGID4_PTID25_PS3,";
+
     private final String PATH_PREFIX = "/top-up-assessment";
 
     @Mock
@@ -101,6 +107,15 @@ public class SendControllerTest {
 
     @MockBean
     PDFService pdfService;
+    
+    @MockBean
+    ConfigService configService;
+    
+    @MockBean
+    EmailService emailService;
+    
+    @MockBean
+    SharepointService sharepointService;
 
     @MockBean
     SendUtilities sendUtilities;
@@ -165,7 +180,7 @@ public class SendControllerTest {
 
     @BeforeAll
     public void setUp() {
-        sendController = new SendController(authenticationService, assessmentService, needService, provisionService, pdfService);
+        sendController = new SendController(authenticationService, assessmentService, needService, provisionService, pdfService, configService, emailService, sharepointService);
         bindingAwareModelMap = new BindingAwareModelMap();
         spyBindingAwareModelMap = Mockito.spy(bindingAwareModelMap);
         sendController.setLogger(log);
@@ -186,15 +201,16 @@ public class SendControllerTest {
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("yourAssessments", listAssessments); 
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("currentUser", owner);
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("upnError", BLANK_ERROR_STRING);
-        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);       
+        
     }
 
     @Test
     public void whenNewAssessment_createsAssessment_returnsAssessment() throws Exception{        
         setUpLogAndServices();
         when(assessmentService.getAssessmentByIdForOwner(null, OWNER_EMAIL)).thenReturn(assessment);
-        assertSame(sendController.newAssessment(mockHttpServletRequest, spyBindingAwareModelMap, VALID_UPN, SCHOOL_NAME), "summary");         
-        assertEquals(7, spyBindingAwareModelMap.size());       
+        assertSame(sendController.newAssessment(mockHttpServletRequest, spyBindingAwareModelMap, VALID_UPN, SCHOOL_NAME), "overview");         
+        assertEquals(3, spyBindingAwareModelMap.size());       
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("needAreas", listNeeds); 
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("needSubAreas", filteredListNeeds);        
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);
@@ -393,8 +409,8 @@ public class SendControllerTest {
     @Test
     public void whenOverview_findsAssessments_returnsOverview() throws Exception{        
         setUpLogAndServices();        
-        assertSame(sendController.overview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID, "two"), "overview"); 
-        assertEquals(2, spyBindingAwareModelMap.size()); 
+        assertSame(sendController.overview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "overview"); 
+        assertEquals(3, spyBindingAwareModelMap.size()); 
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
         Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX); 
     }
@@ -405,18 +421,132 @@ public class SendControllerTest {
         when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
         
         assertThrows(SendException.class, () -> {
-        	assertSame(sendController.singleAssessment(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
+        	assertSame(sendController.overview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
         	 
         });
         
     }
     
     @Test
-    public void whenOverview_invalidPhase_returnsError() throws Exception{        
+    public void whenProvisionReview_cannotFindAssessment_returnsFailure() throws Exception{
+        sendController.setLogger(log);               
+        when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
+        
+        assertThrows(SendException.class, () -> {
+        	assertSame(sendController.provisionReview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
+        	 
+        });
+        
+    }    
+    
+    @Test
+    public void whenProvisionReview_findsAssessments_returnsProvisionReview() throws Exception{        
         setUpLogAndServices();        
-        assertSame(sendController.overview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID, "one"), "error");        
+        assertSame(sendController.provisionReview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "provisionreview"); 
+        assertEquals(6, spyBindingAwareModelMap.size()); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);                      
+    }
+    
+    @Test
+    public void whenConfirmProvisionReview_cannotFindAssessment_throwsSendException() throws Exception{
+        sendController.setLogger(log);               
+        when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
+        
+        assertThrows(SendException.class, () -> {
+        	sendController.confirmProvisionReview(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID, TICKED_PROVISIONS); 
+        	 
+        });
+        
+    }      
+    
+    @Test
+    public void whenUploadSupportDocuments_cannotFindAssessment_returnsFailure() throws Exception{
+        sendController.setLogger(log);               
+        when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
+        
+        assertThrows(SendException.class, () -> {
+        	assertSame(sendController.uploadSupportDocuments(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
+        	 
+        });
+        
+    }
+   
+    
+    @Test
+    public void whenUploadSupportDocuments_findsAssessments_returnsUploadsupportdocuments() throws Exception{        
+        setUpLogAndServices();        
+        assertSame(sendController.uploadSupportDocuments(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "uploadsupportdocuments"); 
+        assertEquals(5, spyBindingAwareModelMap.size()); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);                      
+    }
+    
+    @Test
+    public void whenSubmitYourApplication_findsAssessments_returnsSubmitYourApplication() throws Exception{        
+        setUpLogAndServices();        
+        assertSame(sendController.submitYourApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "submityourapplication"); 
+        assertEquals(3, spyBindingAwareModelMap.size()); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);                      
+    }
+    
+    @Test
+    public void whenSubmitYourApplication_cannotFindAssessment_returnsFailure() throws Exception{
+        sendController.setLogger(log);               
+        when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
+        
+        assertThrows(SendException.class, () -> {
+        	assertSame(sendController.submitYourApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
+        	 
+        });
+        
     }
 
+    
+    @Test
+    public void whenSubmitApplication_findsAssessments_returnsConfirm() throws Exception{        
+        setUpLogAndServices();       
+        when(mockHttpServletRequest.getParameter("selecttc")).thenReturn("on");
+        assertSame(sendController.submitApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "confirmation"); 
+        assertEquals(4, spyBindingAwareModelMap.size()); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);
+        verify(assessmentService, times(1)).saveAssessment(assessment);
+    }
+    
+    @Test
+    public void whenSubmitApplication_findsAssessments_callsConfirmationEmail() throws Exception{        
+        setUpLogAndServices();       
+        when(mockHttpServletRequest.getParameter("selecttc")).thenReturn("on");        
+        sendController.submitApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID);
+        verify(emailService, times(1)).sendEmail(any());
+       
+    }
+      
+    @Test
+    public void whenSubmitApplication_notSelectedTC_noSubmission() throws Exception{        
+        setUpLogAndServices();       
+        when(mockHttpServletRequest.getParameter("selecttc")).thenReturn(null);
+        assertSame(sendController.submitApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "submityourapplication"); 
+        assertEquals(3, spyBindingAwareModelMap.size()); 
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("assessment", assessment);        
+        Mockito.verify(spyBindingAwareModelMap, Mockito.atLeastOnce()).addAttribute("pathPrefix", PATH_PREFIX);                      
+    }
+    
+    @Test
+    public void whenSubmitApplication_cannotFindAssessment_returnsFailure() throws Exception{
+    	setUpLogAndServices();
+    	when(mockHttpServletRequest.getParameter("selecttc")).thenReturn("on");
+        when(assessmentService.getAssessmentByIdForOwner(VALID_ASSESSMENT_ID, OWNER_EMAIL)).thenThrow(new Exception());        
+        
+        assertThrows(SendException.class, () -> {
+        	assertSame(sendController.submitApplication(mockHttpServletRequest, spyBindingAwareModelMap, VALID_ASSESSMENT_ID), "sendfailure"); 
+        	 
+        });
+        
+    }
+     
     public void setUpLogAndServices() throws Exception{
         // Stubbing for tests where the Ids are all valid. 
         // Use this stub for all tests then override where a different is required for invalid data.

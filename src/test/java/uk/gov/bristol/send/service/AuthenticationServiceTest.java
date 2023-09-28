@@ -33,17 +33,13 @@ public class AuthenticationServiceTest {
 
     private final String MS_ID_TOKEN_NAME = "x-ms-token-aad-id-token";
     private final String MS_ID_TOKEN_INVALID = "asdfnotvalidtokenwoacidmtne";
-    /** TODO 
-     *  I was only able to find one valid example user token. 
-     *  For now, this will allow tests to pass and project to build. If using AD authentication, once you have a valid user token,
-     *  set this as either default.user.token or found.user.token in src/test/resources/application.properties and src/main/resources/application.properties
-     *  then change the user name and email for one of the users below to match.
-     **/  
-    private final String FOUND_USER_NAME = "Abe Lincoln";
-    private final String FOUND_USER_EMAIL = "abeli@microsoft.com";
+    //TODO change the found user token for a generic one where given_name + family_name does not equal name claim
+    //TODO it must also have email address claim filled in. 
+    private final String FOUND_USER_NAME = "";
+    private final String FOUND_USER_EMAIL = "";    
     private final String DEFAULT_USER_NAME = "Abe Lincoln";
     private final String DEFAULT_USER_EMAIL = "abeli@microsoft.com";
-
+  
     private String MS_ID_TOKEN_FOUND; 
     private String MS_ID_TOKEN_DEFAULT;
     
@@ -58,9 +54,10 @@ public class AuthenticationServiceTest {
         authenticationService = new AuthenticationService(); 
         Properties properties = new Properties();    
 
+        // TODO: shouldn't need to load from a properties file or have authenticationService.setDefaultUserToken. 
         // Been unable to get the class under test to read the /src/main/resources/application.properties file, even though that works at runtime. 
         try{
-            // This will load file in /src/test/resources not /src/main/resources
+            // this will load file in /src/test/resources not /src/main/resources
             properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("application.properties")); 
             MS_ID_TOKEN_FOUND = properties.getProperty("found.user.token");
             MS_ID_TOKEN_DEFAULT = properties.getProperty("default.user.token");

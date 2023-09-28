@@ -1,5 +1,6 @@
 package uk.gov.bristol.send.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class SelectedProvision{
     private String subAreaId;
@@ -8,6 +9,9 @@ public class SelectedProvision{
     private String provisionStatementId;
     private String specificProvision;
     private String provisionTypeLabel;
+    @JsonIgnore
+    private boolean additionalProvision;   
+    private boolean requestingFunding;
  
     public SelectedProvision() {
     }
@@ -67,6 +71,22 @@ public class SelectedProvision{
 
 	public void setProvisionTypeLabel(String provisionTypeLabel) {
 		this.provisionTypeLabel = provisionTypeLabel;
-	} 
-     
+	}
+
+	public boolean isAdditionalProvision() {
+		return additionalProvision;
+	}
+
+	public void setAdditionalProvision(boolean additionalProvision) {
+		this.additionalProvision = additionalProvision;
+	}
+
+    public boolean isRequestingFunding() {
+        return requestingFunding;
+    }
+
+    public void setRequestingFunding(boolean requestingFunding) {
+        this.requestingFunding = requestingFunding;
+    }
+
 }

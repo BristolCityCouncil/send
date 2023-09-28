@@ -114,7 +114,10 @@ public class NeedService {
               currentLevel = "B";
            }else if(level.equals("a") && !currentLevel.equals("B") && !currentLevel.equals("C")){
               currentLevel = "A";
-           }            
+           }    
+           else if(level.equals("t") && !currentLevel.equals("B") && !currentLevel.equals("C") && !currentLevel.equals("A")){
+               currentLevel = "T";
+            }    
         }    
         
         return currentLevel;

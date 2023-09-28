@@ -10,28 +10,23 @@ import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.SENDException;
 import uk.gov.bristol.send.pages.ProvisionPage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Component
 public class FamilySupportSuiPage extends ProvisionPage {
 
-    @FindBy(id = "dropdown-PTID25")
-    private WebElement familySupportDD;
+    @FindBy(id = "dropdown-PTID4-1")
+    private WebElement dropDown1;
 
-    @FindBy(id = "dropdown-PTID28")
-    private WebElement breakTimeDD;
-
-    @FindBy(id = "dropdown-PTID29")
-    private WebElement supportPre16DD;
-
-    @FindBy(id = "dropdown-PTID30")
-    private WebElement supportPost16DD;
+    @FindBy(id = "dropdown-PTID4-2")
+    private WebElement dropDown2;
 
     @Autowired
     private Assessment assessment;
 
-    private static final String FAMILY_SUPPORT = "Family Support";
-    private static final String BREAKTIME_SUPPORT = "break time support";
-    private static final String SUPPORT_PRE16 = "support over transitions in current setting (pre-16)";
-    private static final String SUPPORT_POST16 = "Support over transitions post-16";
+    private static final String OPTION_1 = "Family Support";
+    private static final String OPTION_2 = "Family Intervention (pre-16)";
 
     public FamilySupportSuiPage(WebDriver webDriver) {
         super(webDriver);
@@ -41,17 +36,11 @@ public class FamilySupportSuiPage extends ProvisionPage {
     public void selectByIndex(String provisionType, String indexStr) {
         String provisionText = null;
         switch (provisionType) {
-            case FAMILY_SUPPORT:
-                provisionText = selectByIndex(familySupportDD, indexStr);
+            case OPTION_1:
+                provisionText = selectByIndex(dropDown1, indexStr);
                 break;
-            case BREAKTIME_SUPPORT:
-                provisionText = selectByIndex(breakTimeDD, indexStr);
-                break;
-            case SUPPORT_PRE16:
-                provisionText = selectByIndex(supportPre16DD, indexStr);
-                break;
-            case SUPPORT_POST16:
-                provisionText = selectByIndex(supportPost16DD, indexStr);
+            case OPTION_2:
+                provisionText = selectByIndex(dropDown2, indexStr);
                 break;
             default : throw new SENDException("Provision type was not correctly supplied");
         }
@@ -59,6 +48,8 @@ public class FamilySupportSuiPage extends ProvisionPage {
     }
 
     protected void setAssessmentProvision(String provisionType, String provisionText) {
-        assessment.setSuiProvisions(provisionType, provisionText);
+        Map<String, String> provisionMap = new HashMap<>();
+        provisionMap.put(provisionType, provisionText);
+        assessment.setAllProvisions(provisionMap);
     }
 }

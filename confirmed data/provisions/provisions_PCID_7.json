@@ -1,232 +1,68 @@
+{ 
+"id":"7",
+"formVersion":"1",
+"provisionGroup":"Health care",
+"provisionGroupId":"PCID7",
+"provisionsType":[
 {
-    "id": "7",
-    "formVersion": "1",
-    "provisionGroup": "Health care",
-    "provisionGroupId": "PGID7",
-    "provisionsType": [
-        {
-            "provisionTypeNumber": 1,
-            "provisionTypeLabel": "Medical care",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Medical care",
-                    "SpecificProvision": "Support for students who are managing their own medication.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID35",
-                    "provisionStatementId": "PGID7_PTID35_PS1"
-                },
-                {
-                    "TypeOfProvision": "Medical care",
-                    "SpecificProvision": "Administration of non-emergency/prescribed medication.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID35",
-                    "provisionStatementId": "PGID7_PTID35_PS2"
-                },
-                {
-                    "TypeOfProvision": "Medical care",
-                    "SpecificProvision": "Emergency medication i.e. for seizures following care plan recommendations.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0",
-                    "Code": "Q",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID35",
-                    "provisionStatementId": "PGID7_PTID35_PS3"
-                },
-                {
-                    "TypeOfProvision": "Medical care",
-                    "SpecificProvision": "Other medical procedures i.e. suction for tracheotomy, gastrostomy etc",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0",
-                    "Code": "Q",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID35",
-                    "provisionStatementId": "PGID7_PTID35_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 2,
-            "provisionTypeLabel": "Support at meal times",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Support at meal times",
-                    "SpecificProvision": "Staff to oversee and occasionally remind about eating skills every lunchtime.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID36",
-                    "provisionStatementId": "PGID7_PTID36_PS1"
-                },
-                {
-                    "TypeOfProvision": "Support at meal times",
-                    "SpecificProvision": "Shared staff supervision around meal times eg to cut up or puree food due to choke risk.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "5",
-                    "Code": "C",
-                    "CostPerHr": "1.27",
-                    "Total": "6.35",
-                    "AnnualAmount": "247.65",
-                    "ProvisionTypeId": "PTID36",
-                    "provisionStatementId": "PGID7_PTID36_PS2"
-                },
-                {
-                    "TypeOfProvision": "Support at meal times",
-                    "SpecificProvision": "Dedicated staff supervision around meal times eg to cut up or puree food due to choke risk. This will be ongoing.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "5",
-                    "Code": "B",
-                    "CostPerHr": "12.7",
-                    "Total": "63.5",
-                    "AnnualAmount": "2476.5",
-                    "ProvisionTypeId": "PTID36",
-                    "provisionStatementId": "PGID7_PTID36_PS3"
-                },
-                {
-                    "TypeOfProvision": "Support at meal times",
-                    "SpecificProvision": "Staff support to prepare food and feed him/her once a day",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "5",
-                    "Code": "B",
-                    "CostPerHr": "12.7",
-                    "Total": "63.5",
-                    "AnnualAmount": "2476.5",
-                    "ProvisionTypeId": "PTID36",
-                    "provisionStatementId": "PGID7_PTID36_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 3,
-            "provisionTypeLabel": "Intimate care",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Intimate care",
-                    "SpecificProvision": "(Year R) Staff to give some reminders and support with a toileting routine including the use of visual scheduling or encouraging regular toilet visits as necessary.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID37",
-                    "provisionStatementId": "PGID7_PTID37_PS1"
-                },
-                {
-                    "TypeOfProvision": "Intimate care",
-                    "SpecificProvision": "(Year 1+) Staff to support with access to bathroom or dressing/undressing to use the toilet but child/young person is continent.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "2",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "29.7528",
-                    "AnnualAmount": "1160.3592",
-                    "ProvisionTypeId": "PTID37",
-                    "provisionStatementId": "PGID7_PTID37_PS2"
-                },
-                {
-                    "TypeOfProvision": "Intimate care",
-                    "SpecificProvision": "(Year 1+) Staff to support with access to bathroom, dressing/undressing to use the toilet and some cleaning and support with changing if necessary.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "74.382",
-                    "AnnualAmount": "2900.898",
-                    "ProvisionTypeId": "PTID37",
-                    "provisionStatementId": "PGID7_PTID37_PS3"
-                },
-                {
-                    "TypeOfProvision": "Intimate care",
-                    "SpecificProvision": "Staff to change pads in an adapted change room on a regular daily basis as part of a care plan.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "10",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "148.764",
-                    "AnnualAmount": "5801.796",
-                    "ProvisionTypeId": "PTID37",
-                    "provisionStatementId": "PGID7_PTID37_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 4,
-            "provisionTypeLabel": "Personal care",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Personal care",
-                    "SpecificProvision": "Staff to remind him/her about washing hands.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID38",
-                    "provisionStatementId": "PGID7_PTID38_PS1"
-                },
-                {
-                    "TypeOfProvision": "Personal care",
-                    "SpecificProvision": "(Year 1+) Staff to support with encouraging a toileting routine including prompting and the use of visual schedules.",
-                    "Grade": "2",
-                    "Level": "B",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID38",
-                    "provisionStatementId": "PGID7_PTID38_PS2"
-                },
-                {
-                    "TypeOfProvision": "Personal care",
-                    "SpecificProvision": "(Year 2+) Staff to support with encouraging a toileting routine including prompting and the use of visual schedules.",
-                    "Grade": "3",
-                    "Level": "C",
-                    "Hours": "1.25",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "18.5955",
-                    "AnnualAmount": "725.2245",
-                    "ProvisionTypeId": "PTID38",
-                    "provisionStatementId": "PGID7_PTID38_PS3"
-                }
-            ]
-        }
-    ],
-    "_rid": "XIk4ALcGQzUXAAAAAAAAAA==",
-    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUXAAAAAAAAAA==/",
-    "_etag": "\"0800f52c-0000-1100-0000-61d48c810000\"",
-    "_attachments": "attachments/",
-    "_ts": 1641319553
-}
+"provisionTypeNumber": 1,
+"provisionTypeLabel": "Medical care",
+"provisions": [
+{
+"typeOfProvision":"Medical care","specificProvision":"Support for students who are managing their own medication","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-1","provisionStatementId":"PCID7_PTID7-1_PS1"}, 
+{
+"typeOfProvision":"Medical care","specificProvision":"Administration of non-emergency or prescribed medication","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-1","provisionStatementId":"PCID7_PTID7-1_PS2"}, 
+{
+"typeOfProvision":"Medical care","specificProvision":"A personalised planned evacuation process with the necessary equipment","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-1","provisionStatementId":"PCID7_PTID7-1_PS3"}, 
+{
+"typeOfProvision":"Medical care","specificProvision":"Emergency medication i.e. for seizures following care plan recommendations","level":"B","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID7-1","provisionStatementId":"PCID7_PTID7-1_PS4"}, 
+{
+"typeOfProvision":"Medical care","specificProvision":"Other medical procedures i.e. suction for tracheotomy, gastrostomy etc.","level":"C","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"Q","provisionTypeId":"PTID7-1","provisionStatementId":"PCID7_PTID7-1_PS5"}
+
+]
+}, 
+{
+"provisionTypeNumber": 2,
+"provisionTypeLabel": "Support at meal times",
+"provisions": [
+{
+"typeOfProvision":"Support at meal times","specificProvision":"Adapted equipment eg cutlery and crockery","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-2","provisionStatementId":"PCID7_PTID7-2_PS1"}, 
+{
+"typeOfProvision":"Support at meal times","specificProvision":"Staff to oversee and occasionally remind or propmt about eating skills every lunchtime.","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-2","provisionStatementId":"PCID7_PTID7-2_PS2"}, 
+{
+"typeOfProvision":"Support at meal times","specificProvision":"Shared staff supervision around meal times, e.g. to cut up or puree food due to choke risk","level":"A","hoursPerWeek":"5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"C","provisionTypeId":"PTID7-2","provisionStatementId":"PCID7_PTID7-2_PS3"}, 
+{
+"typeOfProvision":"Support at meal times","specificProvision":"Dedicated staff supervision around meal times, e.g. to cut up or puree food due to choke risk. This will be ongoing.","level":"B","hoursPerWeek":"5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"B","provisionTypeId":"PTID7-2","provisionStatementId":"PCID7_PTID7-2_PS4"}, 
+{
+"typeOfProvision":"Support at meal times","specificProvision":"Staff support to prepare food and feed him/her/them once a day","level":"C","hoursPerWeek":"6","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"B","provisionTypeId":"PTID7-2","provisionStatementId":"PCID7_PTID7-2_PS5"}
+
+]
+}, 
+{
+"provisionTypeNumber": 3,
+"provisionTypeLabel": "Intimate care",
+"provisions": [
+{
+"typeOfProvision":"Intimate care","specificProvision":"(Year R) Staff to give some reminders and support with a toileting routine, including the use of visual scheduling or encouraging regular toilet visits as necessary","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-3","provisionStatementId":"PCID7_PTID7-3_PS1"}, 
+{
+"typeOfProvision":"Intimate care","specificProvision":"(Year 1+) Staff to support with access to bathroom, dressing or undressing to use the toilet but child or young person is continent","level":"A","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID7-3","provisionStatementId":"PCID7_PTID7-3_PS2"}, 
+{
+"typeOfProvision":"Intimate care","specificProvision":"(Year 1+) Staff to support with access to bathroom, dressing or undressing to use the toilet and some cleaning and support with changing if necessary","level":"B","hoursPerWeek":"5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID7-3","provisionStatementId":"PCID7_PTID7-3_PS3"}, 
+{
+"typeOfProvision":"Intimate care","specificProvision":"Staff to change pads in an adapted change room on a regular daily basis as part of a care plan","level":"C","hoursPerWeek":"10","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID7-3","provisionStatementId":"PCID7_PTID7-3_PS4"}
+
+]
+}, 
+{
+"provisionTypeNumber": 4,
+"provisionTypeLabel": "Personal care",
+"provisions": [
+{
+"typeOfProvision":"Personal care","specificProvision":"Staff to remind child or young person about washing hands","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-4","provisionStatementId":"PCID7_PTID7-4_PS1"}, 
+{
+"typeOfProvision":"Personal care","specificProvision":"(Year 1+) Staff to support with encouraging a toileting routine, including prompting and the use of visual schedules","level":"B","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID7-4","provisionStatementId":"PCID7_PTID7-4_PS2"}, 
+{
+"typeOfProvision":"Personal care","specificProvision":"(Year 2+) Staff to support with encouraging a toileting routine, including prompting and the use of visual schedules","level":"C","hoursPerWeek":"1.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID7-4","provisionStatementId":"PCID7_PTID7-4_PS3"}
+
+]
+}]}

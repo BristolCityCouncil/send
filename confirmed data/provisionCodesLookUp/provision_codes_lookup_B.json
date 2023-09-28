@@ -1,0 +1,18 @@
+{
+    "id": "2",
+    "formVersion": "1",
+    "Type": "B",
+    "Description": "1:1 dedicated Lunchtime/breaktime assistant ",
+    "CostPerHour": "11.78",
+    "HnbBudget": "BG4",
+    "WeeklyCapInHoursForThisType": "5",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 5 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wCAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wCAAAAAAAAAA==/",
+    "_etag": "\"0d004389-0000-1100-0000-63234f660000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258470
+}

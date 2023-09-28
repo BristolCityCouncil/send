@@ -3,15 +3,18 @@ package uk.gov.bristol.send.service;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import java.util.stream.Collectors;
 
-import uk.gov.bristol.send.model.Provision;
-import uk.gov.bristol.send.model.ProvisionLookUp;
-import uk.gov.bristol.send.repo.ProvisionsRepository;
-import uk.gov.bristol.send.repo.ProvisionsLookUpRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import uk.gov.bristol.send.SendUtilities;
+import uk.gov.bristol.send.model.Provision;
+import uk.gov.bristol.send.model.ProvisionCodesLookUp;
+import uk.gov.bristol.send.model.ProvisionLookUp;
+import uk.gov.bristol.send.repo.ProvisionCodesLookUpRepository;
+import uk.gov.bristol.send.repo.ProvisionsLookUpRepository;
+import uk.gov.bristol.send.repo.ProvisionsRepository;
 
 
 @Service
@@ -25,11 +28,15 @@ public class ProvisionService {
 
     @Autowired
     SendUtilities sendUtilities;
+    
+    @Autowired
+    ProvisionCodesLookUpRepository provisionCodesLookUpRepository;
 
-    public ProvisionService(ProvisionsRepository provisionsRepository, ProvisionsLookUpRepository provisionsLookUpRepository, SendUtilities sendUtilities) {
+    public ProvisionService(ProvisionsRepository provisionsRepository, ProvisionsLookUpRepository provisionsLookUpRepository, SendUtilities sendUtilities, ProvisionCodesLookUpRepository provisionCodesLookUpRepository) {
         this.provisionsRepository = provisionsRepository;
         this.provisionsLookUpRepository = provisionsLookUpRepository;
         this.sendUtilities = sendUtilities;
+        this.provisionCodesLookUpRepository = provisionCodesLookUpRepository;
     }
 
 
@@ -88,6 +95,27 @@ public class ProvisionService {
         }
 
     }   
-   
-
+    
+    public Provision getProvisionForStatement(String provisionStatementId) throws Exception {
+    	List<Provision> matchedProvisionList = provisionsRepository.findProvisionsByStatementId(provisionStatementId);
+    	
+    	if (!matchedProvisionList.isEmpty()) {
+            return matchedProvisionList.get(0);
+        } else {
+        	throw new Exception("No provisions found for given StatementId: " + provisionStatementId);
+        }
+    	    	
+    }
+    
+    public ProvisionCodesLookUp getProvisionCodesLookUp(String type) throws Exception {
+    	List<ProvisionCodesLookUp> matchedProvisionCodesLookUpList = provisionCodesLookUpRepository.findProvisionCodesLookUpByType(type);
+    	
+    	if (!matchedProvisionCodesLookUpList.isEmpty()) {
+            return matchedProvisionCodesLookUpList.get(0);
+        } else {
+        	throw new Exception("No provisions Codes LookUp found for given type: " + type);
+        }
+    	
+    }
+ 
 }

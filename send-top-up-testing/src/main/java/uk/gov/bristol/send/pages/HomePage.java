@@ -1,6 +1,5 @@
 package uk.gov.bristol.send.pages;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,8 +41,11 @@ public class HomePage {
     @FindBy(id = "submit")
     private WebElement createNew;
 
-    @FindBy(linkText = "View or edit assessment")
+    @FindBy(linkText = "Edit")
     private WebElement viewEditLink;
+
+    @FindBy(linkText = "Delete")
+    private WebElement deleteLink;
 
     @FindBy(id = "schoolNameInvalid")
     private WebElement schoolInvalidMsg;
@@ -54,24 +56,33 @@ public class HomePage {
     @FindBy(id = "upnInvalid")
     private WebElement upnInvalidMsg;
 
-    //TODO: set the home url for test environments here
-    private static final String DEV_URL = "";
-    private static final String UAT_URL = "";
+    @FindBy(className = "info__title")
+    private WebElement assessmentUPN;
+
     private String applicationURL = "";
 
     private WebDriver webDriver;
+
+    private boolean phaseTwo;
+
+    private static final String DEFAULT_URL = "https://bcuatappbcaw005-send.azurewebsites.net/top-up-assessment";
 
     public HomePage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
 
-        String runEnv = System.getProperty("runEnv");
-        if ("DEV".equalsIgnoreCase(runEnv)) {
-            WebDriverManager.chromedriver().setup();
-            applicationURL = DEV_URL;
-        } else {
-            applicationURL = UAT_URL;
+        applicationURL = System.getProperty("baseURL");
+        if (applicationURL == null) {
+            applicationURL = DEFAULT_URL;
         }
+    }
+
+    public void setApplicationURL(String applicationURL){
+        this.applicationURL = applicationURL;
+    }
+
+    public String getApplicationURL(){
+        return this.applicationURL;
     }
 
     public void typeUPN(String valueIn) {
@@ -92,6 +103,9 @@ public class HomePage {
         nextButton.click();
     }
 
+    public WebElement getCreateNewButton() {
+        return createNew;
+    }
     public void clickCreateNew() {
         createNew.click();
     }
@@ -100,9 +114,14 @@ public class HomePage {
         viewEditLink.click();
     }
 
+    public void clickDelete() {
+        deleteLink.click();
+    }
+
     public String getSchoolErrorMsg() {
         return schoolInvalidMsg.getText();
     }
+
     public String getUpnExistsMsg() {
         return upnExistsMsg.getText();
     }
@@ -111,7 +130,23 @@ public class HomePage {
         return upnInvalidMsg.getText();
     }
 
+    public WebElement getAssessmentUPN() {
+        return assessmentUPN;
+    }
+
+    public void setPhaseTwo(boolean phaseTwo){
+        this.phaseTwo = phaseTwo;
+    }
+
     public void load(){
+
+        if((phaseTwo) && (!applicationURL.contains("devPhase=two"))){
+            applicationURL = applicationURL + "?devPhase=two";
+        }
+
+        if((!phaseTwo) && (applicationURL.contains("devPhase=two"))){
+            applicationURL = applicationURL.replace("devPhase=two", "devPhase=");
+        }
         this.webDriver.get(applicationURL);
 
         if (webDriver.getCurrentUrl().contains("login.microsoftonline.com")) {

@@ -8,22 +8,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.SENDException;
-import uk.gov.bristol.send.pages.ProvisionPage;
 
 @Component
 public class FamilySupportPage extends SpecialistProfessionalPage {
 
-    @FindBy(id = "dropdown-PTID25")
-    private WebElement familySupportDD;
+    @FindBy(id = "dropdown-PTID4-1")
+    private WebElement dropDown1;
 
-    @FindBy(id = "dropdown-PTID26")
-    private WebElement familyInterventionDD;
+    @FindBy(id = "dropdown-PTID4-2")
+    private WebElement dropDown2;
 
     @Autowired
     private Assessment assessment;
 
-    private static final String FAMILY_SUPPORT = "Family Support";
-    private static final String FAMILY_INTERVENTION = "Family Intervention (pre-16)";
+    private static final String OPTION_1 = "Family Support";
+    private static final String OPTION_2 = "Family Intervention (pre-16)";
 
     public FamilySupportPage(WebDriver webDriver) {
         super(webDriver);
@@ -33,11 +32,11 @@ public class FamilySupportPage extends SpecialistProfessionalPage {
     public void selectByIndex(String provisionType, String indexStr) {
         String provisionText = null;
         switch (provisionType) {
-            case FAMILY_SUPPORT:
-                provisionText = selectByIndex(familySupportDD, indexStr);
+            case OPTION_1:
+                provisionText = selectByIndex(dropDown1, indexStr);
                 break;
-            case FAMILY_INTERVENTION:
-                provisionText = selectByIndex(familyInterventionDD, indexStr);
+            case OPTION_2:
+                provisionText = selectByIndex(dropDown2, indexStr);
                 break;
             default : throw new SENDException("Provision type was not correctly supplied");
         }

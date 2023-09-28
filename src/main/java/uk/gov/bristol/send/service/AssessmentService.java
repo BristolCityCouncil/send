@@ -1,23 +1,30 @@
 package uk.gov.bristol.send.service;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-import java.lang.Iterable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import uk.gov.bristol.send.SendUtilities;
+import uk.gov.bristol.send.fileupload.bean.FileUpload;
+import uk.gov.bristol.send.fileupload.bean.FileUploadResponse;
+import uk.gov.bristol.send.fileupload.model.UploadedFileInfo;
 import uk.gov.bristol.send.model.Assessment;
 import uk.gov.bristol.send.model.NeedStatement;
 import uk.gov.bristol.send.model.Provision;
+import uk.gov.bristol.send.model.ProvisionCodesLookUp;
 import uk.gov.bristol.send.model.SelectedProvision;
 import uk.gov.bristol.send.repo.AssessmentsRepository;
-
-import uk.gov.bristol.send.SendUtilities;
 
 @Service
 public class AssessmentService {
@@ -30,12 +37,19 @@ public class AssessmentService {
 
     @Autowired
     SendUtilities sendUtilities;
+    
+    @Autowired
+    ProvisionService provisionService;
 
+    private static final Double DEFAULT_WEEKLY_CAP_FOR_DIFFERENT_TYPES = 32.00;
+    private static final Double EMPTY_HOURS_PER_WEEK = 0.00;  
+    private static final Double TOTAL_WEEKS_ANNUM = 45.5;
 
-    public AssessmentService(AssessmentsRepository assessmentsRepository, SendUtilities sendUtilities, NeedService needService) {
+    public AssessmentService(AssessmentsRepository assessmentsRepository, SendUtilities sendUtilities, NeedService needService, ProvisionService provisionService) {
         this.assessmentsRepository = assessmentsRepository;
         this.sendUtilities = sendUtilities;
         this.needService = needService;
+        this.provisionService = provisionService;
     }
 
     public List<Assessment> getAllAssessments() throws Exception {
@@ -249,6 +263,25 @@ public class AssessmentService {
             throw new Exception("Could not update assessment with removed provisions");
         }
     }
+    
+    public Assessment updateAssessmentWithRequestingFundingProvisions(Assessment assessment, List<SelectedProvision> selectedProvisions, String subAreaId, String provisionStatementId) throws Exception{    	        
+	    // get the selected provisions matching subArea and statement, to update the assessment.	
+	   	    
+	    for(SelectedProvision selectedProvision : selectedProvisions) {
+	    	if(selectedProvision.getSubAreaId().startsWith(subAreaId) && selectedProvision.getProvisionStatementId().startsWith(provisionStatementId)) {
+	    		selectedProvision.setRequestingFunding(true);
+	    	} 
+        }   
+	    assessment.setSelectedProvisions(selectedProvisions);
+
+        final Assessment newAssessment = assessmentsRepository.save(assessment);
+        
+        if (newAssessment != null) {
+            return newAssessment;
+        } else {
+            throw new Exception("Could not update assessment with requesting Funding provisions");
+        }
+    }    
 
 
     public String[] getSelectedProvisionIdsForSubArea(String subAreaId, Assessment assessment){
@@ -302,6 +335,21 @@ public class AssessmentService {
     	return (!selectedProvisions.isEmpty() ) ? true : false;
     	
     }
+    
+    public List<SelectedProvision> getSelectedProvisionsGroupByProvisionStatementId(List<SelectedProvision> selectedProvisions ) {	   
+        selectedProvisions.sort(Comparator.comparing(a -> String.valueOf(a.getProvisionStatementId())));   
+	   
+	    return selectedProvisions;	   
+    }
+    
+    public List<SelectedProvision> getSelectedProvisionsRequestingForFunding(List<SelectedProvision> selectedProvisions ) {	       	
+        selectedProvisions = selectedProvisions
+	            .stream()
+	            .filter(s -> s.isRequestingFunding() )	            
+	            .collect(Collectors.toList()); 
+	   
+	    return selectedProvisions;	   
+    }
 
 
     public Boolean checkUpnPattern(String upn) throws Exception {
@@ -318,5 +366,105 @@ public class AssessmentService {
     public void deleteAssessment(Assessment assessment){
     	assessmentsRepository.delete(assessment);
     }
+    
+    public void saveAssessment(Assessment assessment){
+    	assessmentsRepository.save(assessment);
+    }
+    
+    public void calculateTotalProvisionsAnnualCost(Assessment assessment, List<SelectedProvision> selectedProvisions)
+			throws Exception {		
+		final DecimalFormat df = new DecimalFormat("0.00");
+		Double totalCostPerWeek = 0.00;
+		Double totalHoursPerWeek = 0.00; 
+		Double totalAnnualCost = 0.00; 
+		Double weeklyCapInHoursForDifferentTypes = 0.00;
+		
+		for(SelectedProvision selectedProvision : selectedProvisions) {
+			Provision provision = provisionService.getProvisionForStatement(selectedProvision.getProvisionStatementId());
+			ProvisionCodesLookUp provisionCodesLookUp = provisionService.getProvisionCodesLookUp(provision.getCode());
+			weeklyCapInHoursForDifferentTypes = provisionCodesLookUp.getWeeklyCapInHoursForDifferentTypes() != null ? provisionCodesLookUp.getWeeklyCapInHoursForDifferentTypes() : DEFAULT_WEEKLY_CAP_FOR_DIFFERENT_TYPES;
+			
+			Double  hoursPerWeek = StringUtils.isNotEmpty(provision.getHoursPerWeek()) && NumberUtils.isParsable(provision.getHoursPerWeek())? Double.parseDouble(provision.getHoursPerWeek()) : EMPTY_HOURS_PER_WEEK;
+			totalHoursPerWeek += hoursPerWeek; 
+			
+			Double costPerHr = provisionCodesLookUp.getCostPerHour();
+			Double costPerWeek = hoursPerWeek * costPerHr;
+			totalCostPerWeek += costPerWeek;
+		}           
+		
+		//Calculation is performed only if weekly CAPS are not exceeded 
+		if(totalHoursPerWeek > weeklyCapInHoursForDifferentTypes) {
+			assessment.setTotalHourlyCapExceeded(true);
+			assessment.setTotalAnnualCost(null);
+		} else {          
+			assessment.setTotalHourlyCapExceeded(false);
+		    totalAnnualCost = totalCostPerWeek * TOTAL_WEEKS_ANNUM;
+		    assessment.setTotalAnnualCost(df.format(totalAnnualCost));
+		}
+	}
+    
+    public void calculateTotalWeeklyHourPerCodeForSelectedProvisions(Assessment assessment, List<SelectedProvision> selectedProvisions)
+			throws Exception {		
+		assessment.setTypeHourlyCapExceeded(false);
+		
+		for(int i=0; i< selectedProvisions.size();i++) {
+			Provision provision = provisionService.getProvisionForStatement(selectedProvisions.get(i).getProvisionStatementId());
+			ProvisionCodesLookUp provisionCodesLookUp = provisionService.getProvisionCodesLookUp(provision.getCode());
+			Double  hoursPerWeek = StringUtils.isNotEmpty(provision.getHoursPerWeek()) && NumberUtils.isParsable(provision.getHoursPerWeek()) ? Double.parseDouble(provision.getHoursPerWeek()) : EMPTY_HOURS_PER_WEEK;
+			String code = provision.getCode();
+			
+			for(int j= 0; j< selectedProvisions.size();j++) {
+				provision = provisionService.getProvisionForStatement(selectedProvisions.get(j).getProvisionStatementId());
+				if(code.equals(provision.getCode()) && j!= i) {				
+					hoursPerWeek  = hoursPerWeek + (StringUtils.isNotEmpty(provision.getHoursPerWeek()) &&  NumberUtils.isParsable(provision.getHoursPerWeek())? Double.parseDouble(provision.getHoursPerWeek()) : EMPTY_HOURS_PER_WEEK);
+				}				
+			}
+			
+			if(provisionCodesLookUp.getWeeklyCapInHoursForThisType() !=null && hoursPerWeek > provisionCodesLookUp.getWeeklyCapInHoursForThisType()) {
+				assessment.setTypeHourlyCapExceeded(true);
+				return;
+			}
+			
+		}    
+		
+	}
+	
+	public List<UploadedFileInfo> deleteUploadedFileInfo(Assessment assessment, List<UploadedFileInfo> uploadedFiles, String id) throws Exception {
+		// get the Uploaded FileInfo except the matching id and update the assessment with the updated List	
+	    List<UploadedFileInfo> updatedUploadedFiles = uploadedFiles
+    	            .stream()
+    	            .filter(s -> !(s.getId().equals(id)) )	            
+    	            .collect(Collectors.toList());  
+	    
+	    assessment.setUploadedFilesInfo(updatedUploadedFiles);
+		saveAssessment(assessment);
+	    
+	    return updatedUploadedFiles;
+	    		   
+    }
+
+    public String getUploadFolderIdForUPN(Assessment assessment){        
+        return assessment.getUploadFolderId();
+    }
+	
+	public void saveUploadedFileInfo(Assessment assessment, FileUploadResponse fileUploadReresponse, FileUpload fileUpload) throws Exception{
+		List<UploadedFileInfo> uploadedFiles = assessment.getUploadedFilesInfo();
+		if(uploadedFiles == null) {
+			uploadedFiles = new ArrayList<UploadedFileInfo>();
+		}
+		
+		UploadedFileInfo uploadedFileInfo = new UploadedFileInfo();
+		
+		uploadedFileInfo.setId(fileUploadReresponse.getId());
+		uploadedFileInfo.setDocumentTypeName(fileUpload.getUploadDocumentType());
+		uploadedFileInfo.setFileSize(fileUploadReresponse.getFileSize());
+		uploadedFileInfo.setFileName(fileUploadReresponse.getFileName());		
+		uploadedFileInfo.setFileContentType(StringUtils.substringAfterLast(fileUploadReresponse.getFileName(), "."));		
+						
+		uploadedFiles.add(uploadedFileInfo);
+					
+		assessment.setUploadedFilesInfo(uploadedFiles);
+		saveAssessment(assessment);
+	}
 
 }

@@ -33,3 +33,11 @@ build/
 .vscode/
 /src/test/resources/send_test1.trace.db
 /src/test/resources/send_test1.lock.db
+/src/main/java/uk/gov/bristol/send/SharepointRunner.java
+/*.yml
+/launch.json
+/mvnw
+/mvnw.cmd
+/package-lock.json
+/SEND-release.yml
+/send-top-up-testing/azure-pipelines.yml

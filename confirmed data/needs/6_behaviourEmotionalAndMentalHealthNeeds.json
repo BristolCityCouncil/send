@@ -319,7 +319,7 @@
                         },
                         {
                             "statementNumber": "A3SA6SC3SG7STA5",
-                            "statementLabel": "Will notice everything occurring in the room between other people or if someone enters the room for example. Seems anxious and on edge, perhaps fearful. Is easily distracted from learning.",
+                            "statementLabel": " Will notice everything occurring in the room between other people or if someone enters the room for example. Seems anxious and on edge, perhaps fearful. Is easily distracted from learning.",
                             "statementLevel": "a"
                         },
                         {
@@ -430,17 +430,17 @@
                     "statements": [
                         {
                             "statementNumber": "A3SA6SC4SG9STE1",
-                            "statementLabel": "Can accept changes to routine and schedule.",
+                            "statementLabel": " Can accept changes to routine and schedule.",
                             "statementLevel": "e"
                         },
                         {
                             "statementNumber": "A3SA6SC4SG9STT1",
-                            "statementLabel": "Shows distress if faced with unpredictable changes in daily routines. Finds transitions difficult to manage but calms with support. A visual timetable helps.",
+                            "statementLabel": " Shows distress if faced with unpredictable changes in daily routines. Finds transitions difficult to manage but calms with support. A visual timetable helps.",
                             "statementLevel": "t"
                         },
                         {
                             "statementNumber": "A3SA6SC4SG9STA1",
-                            "statementLabel": "Is upset by change unless warned. In which case he/she will tolerate it to some extent.",
+                            "statementLabel": "Is upset by change unless warned. In which can he/she will tolerate it to some extent.",
                             "statementLevel": "a"
                         },
                         {
@@ -450,7 +450,7 @@
                         },
                         {
                             "statementNumber": "A3SA6SC4SG9STC1",
-                            "statementLabel": "Absence from school is concerning and linked to school based anxiety. At risk of significant underachievement. At risk of being not in education or training (NEET)",
+                            "statementLabel": " Absence from school is concerning and linked to school based anxiety. At risk of significant underachievement. At risk of being not in education or training (NEET)",
                             "statementLevel": "c"
                         }
                     ]
@@ -465,7 +465,7 @@
                         },
                         {
                             "statementNumber": "A3SA6SC4SG10STA1",
-                            "statementLabel": "Is upset by change unless warned. In which case he/she will tolerate it to some extent.",
+                            "statementLabel": "Is upset by change unless warned. In which can he/she will tolerate it to some extent.",
                             "statementLevel": "a"
                         },
                         {
@@ -485,7 +485,7 @@
     ],
     "_rid": "XIk4AOtbRRAGAAAAAAAAAA==",
     "_self": "dbs/XIk4AA==/colls/XIk4AOtbRRA=/docs/XIk4AOtbRRAGAAAAAAAAAA==/",
-    "_etag": "\"61070b83-0000-1100-0000-61b236100000\"",
+    "_etag": "\"100059ef-0000-1100-0000-64a2f78a0000\"",
     "_attachments": "attachments/",
-    "_ts": 1639069200
+    "_ts": 1688401802
 }

@@ -8,38 +8,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.SENDException;
-import uk.gov.bristol.send.pages.ProvisionPage;
 
 @Component
 public class AdditionalStaffPage extends SpecialistProfessionalPage {
 
-    @FindBy(id = "dropdown-PTID11")
-    private WebElement generalInClassDD;
+    @FindBy(id = "dropdown-PTID3-1")
+    private WebElement dropDown1;
 
-    @FindBy(id = "dropdown-PTID12")
-    private WebElement generalInLessonDD;
+    @FindBy(id = "dropdown-PTID3-2")
+    private WebElement dropDown2;
 
-    @FindBy(id = "dropdown-PTID21")
-    private WebElement post16SupportDD;
+    @FindBy(id = "dropdown-PTID3-3")
+    private WebElement dropDown3;
 
-    @FindBy(id = "dropdown-PTID22")
-    private WebElement supportPre16DD;
+    @FindBy(id = "dropdown-PTID3-4")
+    private WebElement dropDown4;
 
-    @FindBy(id = "dropdown-PTID23")
-    private WebElement supportPost16DD;
+    @FindBy(id = "dropdown-PTID3-10")
+    private WebElement dropDown5;
 
-    @FindBy(id = "dropdown-PTID24")
-    private WebElement lifeSkillsDD;
+    @FindBy(id = "dropdown-PTID3-13")
+    private WebElement dropDown6;
 
     @Autowired
     private Assessment assessment;
 
-    private static final String GENERAL_CLASS = "General in class learning support pre-16";
-    private static final String GENERAL_LESSON = "General In lesson learning support post-16";
-    private static final String POST16_SUPPORT = "Pre-16 support";
-    private static final String SUPPORT_PRE16 = "Support over transition between educational setting (pre-16)";
-    private static final String SUPPORT_POST16 = "Support over transition between educational settings (post-16)";
-    private static final String LIFE_SKILLS = "Life skills/functional skills provision";
+
+    private static final String OPTION_1 = "General In class learning support pre-16";
+    private static final String OPTION_2 = "General In lesson learning support post-16";
+    private static final String OPTION_3 = "In-Class staff support for social interaction";
+    private static final String OPTION_4 = "In-Class staff support for social, emotional needs and development";
+    private static final String OPTION_5 = "Post-16 support";
+    private static final String OPTION_6 = "Life skills/functional skills provision";
 
     public AdditionalStaffPage(WebDriver webDriver) {
         super(webDriver);
@@ -49,23 +49,23 @@ public class AdditionalStaffPage extends SpecialistProfessionalPage {
     public void selectByIndex(String provisionType, String indexStr) {
         String provisionText = null;
         switch (provisionType) {
-            case GENERAL_CLASS:
-                provisionText = selectByIndex(generalInClassDD, indexStr);
+            case OPTION_1:
+                provisionText = selectByIndex(dropDown1, indexStr);
                 break;
-            case GENERAL_LESSON:
-                provisionText = selectByIndex(generalInLessonDD, indexStr);
+            case OPTION_2:
+                provisionText = selectByIndex(dropDown2, indexStr);
                 break;
-            case POST16_SUPPORT:
-                provisionText = selectByIndex(post16SupportDD, indexStr);
+            case OPTION_3:
+                provisionText = selectByIndex(dropDown3, indexStr);
                 break;
-            case SUPPORT_PRE16:
-                provisionText = selectByIndex(supportPre16DD, indexStr);
+            case OPTION_4:
+                provisionText = selectByIndex(dropDown4, indexStr);
                 break;
-            case SUPPORT_POST16:
-                provisionText = selectByIndex(supportPost16DD, indexStr);
+            case OPTION_5:
+                provisionText = selectByIndex(dropDown5, indexStr);
                 break;
-            case LIFE_SKILLS:
-                provisionText = selectByIndex(lifeSkillsDD, indexStr);
+            case OPTION_6:
+                provisionText = selectByIndex(dropDown6, indexStr);
                 break;
             default : throw new SENDException("Provision type was not correctly supplied");
         }

@@ -1,5 +1,6 @@
 package uk.gov.bristol.send.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -26,9 +27,14 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import uk.gov.bristol.send.SendUtilities;
 import uk.gov.bristol.send.TestDataInitializer;
+import uk.gov.bristol.send.fileupload.bean.FileUpload;
+import uk.gov.bristol.send.fileupload.bean.FileUploadResponse;
+import uk.gov.bristol.send.fileupload.controller.UploadTestDataInitializer;
+import uk.gov.bristol.send.fileupload.model.UploadedFileInfo;
 import uk.gov.bristol.send.model.Assessment;
 import uk.gov.bristol.send.model.NeedStatement;
 import uk.gov.bristol.send.model.Provision;
+import uk.gov.bristol.send.model.ProvisionCodesLookUp;
 import uk.gov.bristol.send.model.SelectedProvision;
 import uk.gov.bristol.send.repo.AssessmentsRepository;
 
@@ -40,6 +46,8 @@ public class AssessmentServiceTest {
     private AssessmentService assessmentService;
 
     private TestDataInitializer testDataInitializer;
+    
+    private UploadTestDataInitializer uploadTestDataInitializer;
 
     private final String VALID_UPN = "A123456789012B";
 
@@ -61,6 +69,9 @@ public class AssessmentServiceTest {
 
     @MockBean
     NeedService needService;
+    
+    @MockBean
+    ProvisionService provisionService;
 
     @MockBean
     SendUtilities sendUtilities;
@@ -98,8 +109,9 @@ public class AssessmentServiceTest {
 
     @BeforeAll
     public void setUp() {
-        assessmentService = new AssessmentService(assessmentsRepository, sendUtilities, needService);
+        assessmentService = new AssessmentService(assessmentsRepository, sendUtilities, needService, provisionService);
         testDataInitializer = new TestDataInitializer();
+        uploadTestDataInitializer = new UploadTestDataInitializer();
         when(emptyList.size()).thenReturn(0);
     }
 
@@ -108,6 +120,7 @@ public class AssessmentServiceTest {
         assessmentService = null;
         testDataInitializer = null;
         sendUtilities = null;
+        uploadTestDataInitializer = null;
     }
 
     @Test
@@ -546,7 +559,7 @@ public class AssessmentServiceTest {
          // Check the assessment, making sure Only one selected provision removed as other selected Provision though belong to the same subArea but different statement remain selected.
          assert(updatedAssessment.getSelectedProvisions()).size() == 1;        
       
-    }
+    }   
 
     @Test
     public void whenUpdateAssessmentWithRemovedProvision_FailedUpdate_throwsException() throws Exception{    	             
@@ -557,6 +570,226 @@ public class AssessmentServiceTest {
          
          assertTrue(thrown.getMessage().contains("Could not update assessment with removed provisions"));     
     }
+    
+    @Test
+    public void whenGetSelectedProvisionsGroupByProvisionStatementId_returnsCorrectGroupedList() {
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(1);
+         Provision provision3 =  provisions.get(2);
+                 
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision3.getLevel(),
+        		 provision3.getProvisionGroup(), provision3.getProvisionStatementId(),provision3.getSpecificProvision(),provision3.getProvisionTypeLabel()));        
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+        		 
+         assessment.setSelectedProvisions(selectedProvisions);
+         
+         selectedProvisions = assessmentService.getSelectedProvisionsGroupByProvisionStatementId(assessment.getSelectedProvisions());               
+		 //making sure though added in a different order, the selected provision are grouped together based on  the Provision Group
+         assertSame("Supervision or coaching of staff by professionals.", selectedProvisions.get(1).getSpecificProvision());
+         assertSame(SUB_AREA_ID_TWO, selectedProvisions.get(1).getSubAreaId());
+            
+    } 
+    
+    
+    @Test
+    public void whenGetSelectedProvisionsRequestingWithCheckedProvisions_returnsListRequestingForFunding() {
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(1);
+         Provision provision3 =  provisions.get(2);
+                 
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision3.getLevel(),
+        		 provision3.getProvisionGroup(), provision3.getProvisionStatementId(),provision3.getSpecificProvision(),provision3.getProvisionTypeLabel()));        
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision1.getProvisionGroup(), provision2.getProvisionStatementId(),provision2.getSpecificProvision(),provision2.getProvisionTypeLabel()));
+         
+         selectedProvisions.get(2).setRequestingFunding(true);
+        		 
+         assessment.setSelectedProvisions(selectedProvisions);
+         
+         selectedProvisions = assessmentService.getSelectedProvisionsRequestingForFunding(assessment.getSelectedProvisions());               		 
+         assert(selectedProvisions).size() == 1;            
+            
+    } 
+    
+    @Test
+    public void whenupdateAssessmentWithRequestingFundingProvisions__updatesAssessment() throws Exception{
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(1);
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision2.getProvisionGroup(), provision2.getProvisionStatementId(),provision2.getSpecificProvision(),provision2.getProvisionTypeLabel()));
+                  
+         assessment.setSelectedProvisions(selectedProvisions);				 
+        
+                  
+         when(assessmentsRepository.save(assessment)).thenReturn(assessment);   
+         
+         
+         Assessment updatedAssessment = assessmentService.updateAssessmentWithRequestingFundingProvisions(assessment,assessment.getSelectedProvisions(),SUB_AREA_ID_ONE, PROVISION_STATEMENT_ID);
+         
+         // Check the updated assessment with matching SubArea and statement for Requesting Funding flag. Should be marked as  true for  matching and false for non matching
+         assertTrue(updatedAssessment.getSelectedProvisions().get(0).isRequestingFunding());  
+         assertFalse(updatedAssessment.getSelectedProvisions().get(1).isRequestingFunding());  
+      
+    }
+    
+    @Test
+    public void whenCalculateTotalProvisionsAnnualCost_updatedTotalAnnualCost() throws Exception{
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+         ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = testDataInitializer.initProvisionCodesLookUp();
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(1);        
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision2.getProvisionGroup(), provision2.getProvisionStatementId(),provision2.getSpecificProvision(),provision2.getProvisionTypeLabel()));
+                  
+         assessment.setSelectedProvisions(selectedProvisions);		
+         
+         when(provisionService.getProvisionForStatement(provision1.getProvisionStatementId())).thenReturn(provision1); 
+         when(provisionService.getProvisionForStatement(provision2.getProvisionStatementId())).thenReturn(provision2); 
+         when(provisionService.getProvisionCodesLookUp(provision1.getCode())).thenReturn(provisionCodesLookUp.get(0));
+         when(provisionService.getProvisionCodesLookUp(provision2.getCode())).thenReturn(provisionCodesLookUp.get(1));
+         
+         assessmentService.calculateTotalProvisionsAnnualCost(assessment,selectedProvisions);
+                 
+         assertEquals(1708.07, Double.parseDouble(assessment.getTotalAnnualCost()));  
+              
+    }
+    
+    @Test
+    public void whenCalculateTotalProvisionsAnnualCost_TotalWeeklyHourCapExceeded_failedToUpdateTotalAnnualCost() throws Exception{
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+         ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = testDataInitializer.initProvisionCodesLookUp();
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(2);        
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision2.getProvisionGroup(), provision2.getProvisionStatementId(),provision2.getSpecificProvision(),provision2.getProvisionTypeLabel()));
+                  
+         assessment.setSelectedProvisions(selectedProvisions);		
+         
+         when(provisionService.getProvisionForStatement(provision1.getProvisionStatementId())).thenReturn(provision1); 
+         when(provisionService.getProvisionForStatement(provision2.getProvisionStatementId())).thenReturn(provision2); 
+         when(provisionService.getProvisionCodesLookUp(provision1.getCode())).thenReturn(provisionCodesLookUp.get(0));
+         when(provisionService.getProvisionCodesLookUp(provision2.getCode())).thenReturn(provisionCodesLookUp.get(1));
+         
+         assessmentService.calculateTotalProvisionsAnnualCost(assessment,selectedProvisions);
+         assertTrue(assessment.isTotalHourlyCapExceeded());
+                 
+         assertEquals(null, assessment.getTotalAnnualCost());  
+              
+    }
+    @Test
+    public void whenCalculateTotalWeeklyHourPerCodeForSelectedProvisions_WeeklyHourCapExceededForType_UpdateFlag() throws Exception{
+    	 List<Assessment> assessments = testDataInitializer.initAssessments();
+         ArrayList<Provision> provisions = testDataInitializer.initProvisions(); 
+         ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = testDataInitializer.initProvisionCodesLookUp();
+                  
+         List<SelectedProvision> selectedProvisions = new ArrayList<SelectedProvision>();  
+         Assessment assessment = assessments.get(0);
+         
+         Provision provision1 =  provisions.get(0);
+         Provision provision2 =  provisions.get(3);        
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_ONE, provision1.getLevel(),
+        		 provision1.getProvisionGroup(), provision1.getProvisionStatementId(),provision1.getSpecificProvision(),provision1.getProvisionTypeLabel()));
+         
+         selectedProvisions.add(new SelectedProvision(SUB_AREA_ID_TWO, provision2.getLevel(),
+        		 provision2.getProvisionGroup(), provision2.getProvisionStatementId(),provision2.getSpecificProvision(),provision2.getProvisionTypeLabel()));
+                  
+         assessment.setSelectedProvisions(selectedProvisions);		
+         
+         when(provisionService.getProvisionForStatement(provision1.getProvisionStatementId())).thenReturn(provision1); 
+         when(provisionService.getProvisionForStatement(provision2.getProvisionStatementId())).thenReturn(provision2); 
+         when(provisionService.getProvisionCodesLookUp(provision1.getCode())).thenReturn(provisionCodesLookUp.get(0));
+         when(provisionService.getProvisionCodesLookUp(provision2.getCode())).thenReturn(provisionCodesLookUp.get(1));
+         
+         assessmentService.calculateTotalWeeklyHourPerCodeForSelectedProvisions(assessment,selectedProvisions);
+                 
+         assertTrue(assessment.isTypeHourlyCapExceeded());
+              
+    }
+    
+    @Test
+	public void whenSaveUploadedFileInfo_validData_saveUploadedFileInfoToAssessment() throws Exception {
+		List<Assessment> assessments = testDataInitializer.initAssessments();
+
+		FileUpload fileUpload = uploadTestDataInitializer.initFileUpload();
+		FileUploadResponse fileUploadResponse = uploadTestDataInitializer.initFileUploadSuccessResponse();
+
+		Assessment assessment = assessments.get(0);
+		assessmentService.saveUploadedFileInfo(assessment, fileUploadResponse, fileUpload);
+		
+		verify(assessmentsRepository, times(1)).save(assessment);
+		assertTrue(assessment.getUploadedFilesInfo().size() == 1);
+		
+	}
+    
+    @Test
+ 	public void whenDeleteUploadedFileInfo_validData_deleteUploadedFileInfoFromAssessment() throws Exception {
+ 		List<Assessment> assessments = testDataInitializer.initAssessments();
+
+ 		FileUpload fileUpload = uploadTestDataInitializer.initFileUpload();
+ 		FileUploadResponse fileUploadResponse = uploadTestDataInitializer.initFileUploadSuccessResponse();
+ 		
+		Assessment assessment = assessments.get(0);
+		assessmentService.saveUploadedFileInfo(assessment, fileUploadResponse, fileUpload);
+		
+		UploadedFileInfo uploadedFileInfo1 = uploadTestDataInitializer.initUploadedFileInfo("101", "Whole school provision map (mandatory)", "Whole school provision map (mandatory)");
+		UploadedFileInfo uploadedFileInfo2 = uploadTestDataInitializer.initUploadedFileInfo("102", "Application form (mandatory)", "Application form (mandatory).pdf");
+
+		List<UploadedFileInfo> uploadedFiles = new ArrayList<UploadedFileInfo>();
+		uploadedFiles.add(uploadedFileInfo1);
+		uploadedFiles.add(uploadedFileInfo2);	
+ 		
+ 		assessmentService.deleteUploadedFileInfo(assessment, uploadedFiles, "101");
+ 		 		
+ 		verify(assessmentsRepository, times(2)).save(assessment);
+ 		assertTrue(assessment.getUploadedFilesInfo().size() == 1);
+ 		
+ 	}
 
     @Test
     public void whenCheckUpnPattern_Valid_returnsTrue() throws Exception {
@@ -586,6 +819,12 @@ public class AssessmentServiceTest {
     public void whenDeleteAssessment_ValidAssessment_CallsDeleteOnRepo() throws Exception{    	                      
          assessmentService.deleteAssessment(assessment);
          verify(assessmentsRepository, times(1)).delete(assessment);
+    }
+    
+    @Test
+    public void whenSaveAssessment_ValidAssessment_CallsSaveOnRepo() throws Exception{    	                      
+         assessmentService.saveAssessment(assessment);
+         verify(assessmentsRepository, times(1)).save(assessment);
     }
 
 }

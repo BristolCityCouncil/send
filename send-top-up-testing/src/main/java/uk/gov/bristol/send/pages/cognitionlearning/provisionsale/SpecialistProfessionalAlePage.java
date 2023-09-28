@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
 import uk.gov.bristol.send.pages.comminteraction.provisionselc.SpecialistProfessionalPage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Component
 public class SpecialistProfessionalAlePage extends SpecialistProfessionalPage {
 
@@ -18,6 +21,8 @@ public class SpecialistProfessionalAlePage extends SpecialistProfessionalPage {
 
     @Override
     protected void setAssessmentProvision(String provisionType, String provisionText) {
-        assessment.setAleProvisions(provisionType, provisionText);
+        Map<String, String> provisionMap = new HashMap<>();
+        provisionMap.put(provisionType, provisionText);
+        assessment.setAllProvisions(provisionMap);
     }
 }

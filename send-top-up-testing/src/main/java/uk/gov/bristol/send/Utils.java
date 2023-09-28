@@ -37,4 +37,14 @@ public class Utils {
     public static void jsScrollIntoView(WebDriver webDriver, WebElement webElement){
         ((JavascriptExecutor)webDriver).executeScript("arguments[0].scrollIntoView();", webElement);
     }
+
+    /** 
+     * Use this to add phase params to the url. Putting this in Utils as it may need to become more sophisticated in future. 
+     */
+    public static String setDevPhase(String path, String phase){
+        if(!path.contains("devPhase=")){
+            path = path + "&devPhase=two";
+        }
+        return path;
+    }
 }

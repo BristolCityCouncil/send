@@ -3,14 +3,19 @@
 
   <div class="row-fluid">
     <div class="span12">
-
-      <header class="step-header">
-        <h1 class="step-header__title">
-          <@spring.message "application.title"/>
-        </h1>
-      </header>
-
-      <h2><@spring.message "yourAssessments.assessments.new.title"/></h2>
+		
+    	<div>         
+           <nav aria-label="Breadcrumb">
+				<ul aria-label="Breadcrumb" class="breadcrumb" role="navigation">
+	                 <li class="active" aria-current="page">
+	                	<@spring.message "breadcrumb.home.label"/>
+	                </li>											
+            	</ul>	
+            </nav>              		           			       	          	        
+        </div>
+      <h1  class="padded"><@spring.message "yourAssessments.assessments.new.title"/></h1>
+	   
+                
       <form id="newAssessment" action="${pathPrefix}" method="post" onsubmit="return validateUpn()" style="margin-bottom: 60px;">
         <#if upnError?has_content>
           <div id="upn-field" class="field field--error">
@@ -35,6 +40,7 @@
           <div id="schoolNameInvalid" class="field__message field__message--error"><@spring.message "yourAssessments.assessments.new.schoolName.invalid"/></div>          
         </div>
         <div class="field">
+                       
         <button id="submit" class="newcta newcta--primary"><@spring.message "yourAssessments.assessments.new.button.label"/></button>
         </div>
       </form>
@@ -50,7 +56,8 @@
 			<#assign warningMessage><@spring.messageArgs code="yourAssessments.assessment.delete.confirm" args=['${yourAssessment.upn}']/></#assign>
 			
             <div class="home-links">
-            	<a href="${pathPrefix}/summary?assessmentId=${yourAssessment.id}"><@spring.message "yourAssessments.assessment.edit.link"/></a>
+            	
+            	<a href="${pathPrefix}/overview?assessmentId=${yourAssessment.id}"><@spring.message "yourAssessments.assessment.edit.link"/></a>            	
             	<a href="javascript:void(0)" style="color:red;" onclick="javascript:confirmAssessmentRemoval('${pathPrefix}', '${yourAssessment.id}', '${warningMessage}')" id="removeAssessmentLink_${yourAssessment.id}"><@spring.message "yourAssessments.assessment.delete.link"/></a>
             </div>
           </div>

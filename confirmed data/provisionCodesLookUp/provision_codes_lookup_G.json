@@ -1,0 +1,18 @@
+{
+    "id": "7",
+    "formVersion": "1",
+    "Type": "G",
+    "Description": "Educational psychologist/ Speech and Language therapist/OT/counsellor/art therapist  etc (Commissioned)",
+    "CostPerHour": "80",
+    "HnbBudget": "average rate for an EP or SALT",
+    "WeeklyCapInHoursForThisType": "0.16",
+    "WeeklyCapInHoursForDifferentTypes": "",
+    "PopUp": "This provision can only be in place for a maximum of 16 hours a year.",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "5/45.5",
+    "_rid": "-iR-ANmiT2wHAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wHAAAAAAAAAA==/",
+    "_etag": "\"0d00508a-0000-1100-0000-63234f950000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258517
+}

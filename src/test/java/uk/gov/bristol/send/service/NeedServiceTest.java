@@ -204,7 +204,37 @@ public class NeedServiceTest {
         ns = needStatements.get(3);
         ns.setStatementLevel("a");
         needStatements.set(3, ns); 
-        assertSame(needService.findCurrentNeedLevel(needStatements), "A");      
+        assertSame(needService.findCurrentNeedLevel(needStatements), "A");  
+        
+        // set the highest level as T
+        ns = needStatements.get(0);
+        ns.setStatementLevel("t");
+        needStatements.set(0, ns); 
+        
+        ns = needStatements.get(1);
+        ns.setStatementLevel("t");
+        needStatements.set(1, ns); 
+        
+        ns = needStatements.get(2);
+        ns.setStatementLevel("t");
+        needStatements.set(2, ns); 
+        
+        ns = needStatements.get(3);
+        ns.setStatementLevel("t");
+        needStatements.set(3, ns); 
+        
+        ns = needStatements.get(4);
+        ns.setStatementLevel("t");
+        needStatements.set(4, ns); 
+        
+        assertSame(needService.findCurrentNeedLevel(needStatements), "T");  
+        
+        ns = needStatements.get(4);
+        ns.setStatementLevel("a");
+        needStatements.set(4, ns); 
+        
+        assertSame(needService.findCurrentNeedLevel(needStatements), "A"); 
+      
     }
 
     @Test

@@ -1,0 +1,18 @@
+{
+    "id": "3",
+    "formVersion": "1",
+    "Type": "C",
+    "Description": "Shared lunchtime/breaktime support/monitoring (<1:10) ",
+    "CostPerHour": "2.95",
+    "HnbBudget": "Assume BG4 shared with 4 children ",
+    "WeeklyCapInHoursForThisType": "5",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 5 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wDAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wDAAAAAAAAAA==/",
+    "_etag": "\"0d006d89-0000-1100-0000-63234f6f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258479
+}

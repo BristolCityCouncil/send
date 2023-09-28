@@ -16,11 +16,8 @@ public class Provision{
     private String specificProvision;
     private String grade;
     private String level;
-    private String hours;
-    private String code;
-    private String costPerHr;
-    private String total;
-    private String annualAmount;  
+    private String hoursPerWeek;
+    private String code;         
     private String provisionStatementId;
     private String provisionTypeId;
     private String provisionTypeLabel;
@@ -33,7 +30,7 @@ public class Provision{
     public Provision() {
     }
 
-    public Provision(int formVersion, String level,  String provisionGroupId, String provisionGroup,  String provisionTypeNumber, String provisionTypeId, String provisionTypeLabel, String provisionStatementId, String specificProvision){
+    public Provision(int formVersion, String level,  String provisionGroupId, String provisionGroup,  String provisionTypeNumber, String provisionTypeId, String provisionTypeLabel, String provisionStatementId, String specificProvision, String code, String hoursPerWeek){
         this.formVersion = formVersion;                         
         this.level = level;              
         this.provisionGroup = provisionGroup;
@@ -43,6 +40,8 @@ public class Provision{
         this.provisionTypeNumber = provisionTypeNumber;                
         this.specificProvision = specificProvision;
         this.provisionStatementId = provisionStatementId; 
+        this.code = code;
+        this.hoursPerWeek = hoursPerWeek;
     }
 
     public Provision(int formVersion) {
@@ -87,46 +86,22 @@ public class Provision{
 
     public void setLevel(String level) {
         this.level = level;
-    }
+    }   
 
-    public String getHours() {
-        return hours;
-    }
+    public String getHoursPerWeek() {
+		return hoursPerWeek;
+	}
 
-    public void setHours(String hours) {
-        this.hours = hours;
-    }
+	public void setHoursPerWeek(String hoursPerWeek) {
+		this.hoursPerWeek = hoursPerWeek;
+	}
 
-    public String getCode() {
+	public String getCode() {
         return code;
     }
 
     public void setCode(String code) {
         this.code = code;
-    }
-
-    public String getCostPerHr() {
-        return costPerHr;
-    }
-
-    public void setCostPerHr(String costPerHr) {
-        this.costPerHr = costPerHr;
-    }
-
-    public String getTotal() {
-        return total;
-    }
-
-    public void setTotal(String total) {
-        this.total = total;
-    }
-
-    public String getAnnualAmount() {
-        return annualAmount;
-    }
-
-    public void setAnnualAmount(String annualAmount) {
-        this.annualAmount = annualAmount;
     }
 
     public String getProvisionStatementId() {

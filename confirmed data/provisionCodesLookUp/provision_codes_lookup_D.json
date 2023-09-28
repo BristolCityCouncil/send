@@ -1,0 +1,18 @@
+{
+    "id": "4",
+    "formVersion": "1",
+    "Type": "D",
+    "Description": "1:1 Specialist/qualified teacher/ Tutor ",
+    "CostPerHour": "32.5",
+    "HnbBudget": "average in the range of 25 to 40 ",
+    "WeeklyCapInHoursForThisType": "15",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 10 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wEAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wEAAAAAAAAAA==/",
+    "_etag": "\"0d009d89-0000-1100-0000-63234f770000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258487
+}

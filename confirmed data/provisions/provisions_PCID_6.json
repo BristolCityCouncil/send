@@ -1,219 +1,43 @@
+{ 
+"id":"6",
+"formVersion":"1",
+"provisionGroup":"Safety",
+"provisionGroupId":"PCID6",
+"provisionsType":[
 {
-    "id": "6",
-    "formVersion": "1",
-    "provisionGroup": "Safety",
-    "provisionGroupId": "PGID6",
-    "provisionsType": [
-        {
-            "provisionTypeNumber": 1,
-            "provisionTypeLabel": "Safety On-site",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Safety On-site",
-                    "SpecificProvision": "A personalised planned evacuation process with the necessary equipment. . . Setting to be made physically safe from him/her climbing or absconding from the site.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "K",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID31",
-                    "provisionStatementId": "PGID6_PTID31_PS1"
-                },
-                {
-                    "TypeOfProvision": "Safety On-site",
-                    "SpecificProvision": "Provision defined within a risk assessment with regard to physical safety records an average low-medium risk of harm to him/herself or others. Support through adult supervision.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID31",
-                    "provisionStatementId": "PGID6_PTID31_PS2"
-                },
-                {
-                    "TypeOfProvision": "Safety On-site",
-                    "SpecificProvision": "Provision defined within a risk assessment with regard to physical safety records an average medium-high risk of harm to him/herself or others. Supported mostly through adult supervision.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID31",
-                    "provisionStatementId": "PGID6_PTID31_PS3"
-                },
-                {
-                    "TypeOfProvision": "Safety On-site",
-                    "SpecificProvision": "Provision defined within a risk assessment with regard to physical safety records an average high risk of harm to him/herself or others. Signfificant adaptations to the setting needed including eg locks, gates.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0",
-                    "Code": "K",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID31",
-                    "provisionStatementId": "PGID6_PTID31_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 2,
-            "provisionTypeLabel": "Physical Intervention",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Physical Intervention",
-                    "SpecificProvision": "Risk assessment in place following incident/s. Shared with all members of staff and strategies decided.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID32",
-                    "provisionStatementId": "PGID6_PTID32_PS1"
-                },
-                {
-                    "TypeOfProvision": "Physical Intervention",
-                    "SpecificProvision": "Two or three key staff trained in a physical intervention approach with training updated at least annually. Risk assessment revisited following incident/s.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "H",
-                    "CostPerHr": "50",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID32",
-                    "provisionStatementId": "PGID6_PTID32_PS2"
-                },
-                {
-                    "TypeOfProvision": "Physical Intervention",
-                    "SpecificProvision": "All Staff trained in a physical intervention approach with training updated at least annually. Risk assessment revisited following incident/s",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0",
-                    "Code": "H",
-                    "CostPerHr": "50",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID32",
-                    "provisionStatementId": "PGID6_PTID32_PS3"
-                },
-                {
-                    "TypeOfProvision": "Physical Intervention",
-                    "SpecificProvision": "All staff trained in a physical intervention approach.. Regular reviews may result in actions needed to reduce risk (such as separate lunch times for a limited period of time or working within a reduced group).",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0",
-                    "Code": "H",
-                    "CostPerHr": "50",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID32",
-                    "provisionStatementId": "PGID6_PTID32_PS4"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 3,
-            "provisionTypeLabel": "Safety off site pre-16",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Safety off site pre-16",
-                    "SpecificProvision": "Additional support for off-site activities. Individual risk assessment and plans of action in case child/young person leaves the site of the educational setting.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID33",
-                    "provisionStatementId": "PGID6_PTID33_PS1"
-                },
-                {
-                    "TypeOfProvision": "Safety off site pre-16",
-                    "SpecificProvision": "Individual supervision for all trips/sports off site",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "0.198237885462555",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "2.94906607929515",
-                    "AnnualAmount": "115.013577092511",
-                    "ProvisionTypeId": "PTID33",
-                    "provisionStatementId": "PGID6_PTID33_PS2"
-                },
-                {
-                    "TypeOfProvision": "Safety off site pre-16",
-                    "SpecificProvision": "2:1 support for safety during any off-site activities. Additional equipment/transport so that any behaviour instances can be managed effectively.",
-                    "Grade": "4",
-                    "Level": "C",
-                    "Hours": "0.198237885462555",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "2.94906607929515",
-                    "AnnualAmount": "115.013577092511",
-                    "ProvisionTypeId": "PTID33",
-                    "provisionStatementId": "PGID6_PTID33_PS3"
-                }
-            ]
-        },
-        {
-            "provisionTypeNumber": 4,
-            "provisionTypeLabel": "Safety off site post-16",
-            "provisions": [
-                {
-                    "TypeOfProvision": "Safety off site post-16",
-                    "SpecificProvision": "Additional support for off-site activities. Individual risk assessment and plans of action in case child/young person leaves the site of the educational setting.",
-                    "Grade": "1",
-                    "Level": "A",
-                    "Hours": "0",
-                    "Code": "L",
-                    "CostPerHr": "0",
-                    "Total": "0",
-                    "AnnualAmount": "0",
-                    "ProvisionTypeId": "PTID34",
-                    "provisionStatementId": "PGID6_PTID34_PS1"
-                },
-                {
-                    "TypeOfProvision": "Safety off site post-16",
-                    "SpecificProvision": "Staff to support the health and safety of Post 16 young person on arrival and departure to and from a college site.",
-                    "Grade": "2",
-                    "Level": "A",
-                    "Hours": "2.5",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "37.191",
-                    "AnnualAmount": "1450.449",
-                    "ProvisionTypeId": "PTID34",
-                    "provisionStatementId": "PGID6_PTID34_PS2"
-                },
-                {
-                    "TypeOfProvision": "Safety off site post-16",
-                    "SpecificProvision": "Individual supervision for trips/sports off site where these take place at least once a week.",
-                    "Grade": "3",
-                    "Level": "B",
-                    "Hours": "2",
-                    "Code": "A",
-                    "CostPerHr": "14.8764",
-                    "Total": "29.7528",
-                    "AnnualAmount": "1160.3592",
-                    "ProvisionTypeId": "PTID34",
-                    "provisionStatementId": "PGID6_PTID34_PS3"
-                }
-            ]
-        }
-    ],
-    "_rid": "XIk4ALcGQzUWAAAAAAAAAA==",
-    "_self": "dbs/XIk4AA==/colls/XIk4ALcGQzU=/docs/XIk4ALcGQzUWAAAAAAAAAA==/",
-    "_etag": "\"0800e22c-0000-1100-0000-61d48c4f0000\"",
-    "_attachments": "attachments/",
-    "_ts": 1641319503
-}
+"provisionTypeNumber": 1,
+"provisionTypeLabel": "Physical Intervention",
+"provisions": [
+{
+"typeOfProvision":"Physical Intervention","specificProvision":"Risk assessment in place signed by parents. Shared with all members of staff and strategies decided.","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID6-1","provisionStatementId":"PCID6_PTID6-1_PS1"}
+
+]
+}, 
+{
+"provisionTypeNumber": 2,
+"provisionTypeLabel": "Safety off site pre-16",
+"provisions": [
+{
+"typeOfProvision":"Safety off site pre-16","specificProvision":"Additional support for off-site activities. Individual risk assessment and plans of action in case child or young person leaves the site of the educational setting.","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID6-2","provisionStatementId":"PCID6_PTID6-2_PS1"}, 
+{
+"typeOfProvision":"Safety off site pre-16","specificProvision":"Individual supervision for all trips or sports off-site","level":"B","hoursPerWeek":"0.219780","calculationOfHoursPerWeek":"10/45.5","hoursForCalculation":"10","code":"A","provisionTypeId":"PTID6-2","provisionStatementId":"PCID6_PTID6-2_PS2"}, 
+{
+"typeOfProvision":"Safety off site pre-16","specificProvision":"2:1 support for safety during any off-site activities. Additional equipment or transport so that any behaviour instances can be managed effectively","level":"C","hoursPerWeek":"0.439560","calculationOfHoursPerWeek":"2x (10/45.5)","hoursForCalculation":"?20","code":"A","provisionTypeId":"PTID6-2","provisionStatementId":"PCID6_PTID6-2_PS3"}
+
+]
+}, 
+{
+"provisionTypeNumber": 3,
+"provisionTypeLabel": "Safety off site post-16",
+"provisions": [
+{
+"typeOfProvision":"Safety off site post-16","specificProvision":"Additional support for off-site activities. Individual risk assessment and plans of action in case child or young person leaves the site of the educational setting.","level":"A","hoursPerWeek":"0","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"L","provisionTypeId":"PTID6-3","provisionStatementId":"PCID6_PTID6-3_PS1"}, 
+{
+"typeOfProvision":"Safety off site post-16","specificProvision":"Staff to support the health and safety of Post-16 young person on arrival and departure to and from a college site","level":"A","hoursPerWeek":"2.5","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID6-3","provisionStatementId":"PCID6_PTID6-3_PS2"}, 
+{
+"typeOfProvision":"Safety off site post-16","specificProvision":"Individual supervision for trips or sports off-site where these take place at least once a week","level":"B","hoursPerWeek":"2","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID6-3","provisionStatementId":"PCID6_PTID6-3_PS3"}, 
+{
+"typeOfProvision":"Safety off site post-16","specificProvision":"2:1 supervision for trips or sports off-site where these take place at least once a week","level":"C","hoursPerWeek":"4","calculationOfHoursPerWeek":"","hoursForCalculation":"","code":"A","provisionTypeId":"PTID6-3","provisionStatementId":"PCID6_PTID6-3_PS4"}
+
+]
+}]}

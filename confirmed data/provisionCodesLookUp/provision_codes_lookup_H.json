@@ -1,0 +1,18 @@
+{
+    "id": "8",
+    "formVersion": "1",
+    "Type": "H",
+    "Description": "Training (individual or group)",
+    "CostPerHour": "50",
+    "HnbBudget": "Assuming training cost of £50 per hour",
+    "WeeklyCapInHoursForThisType": "0.4",
+    "WeeklyCapInHoursForDifferentTypes": "",
+    "PopUp": "This provision can only be in place for a maximum of 16 hours a year.",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "8/45.5",
+    "_rid": "-iR-ANmiT2wIAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wIAAAAAAAAAA==/",
+    "_etag": "\"0d00868a-0000-1100-0000-63234f9e0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258526
+}

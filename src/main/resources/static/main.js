@@ -159,7 +159,7 @@ function updateSelectedNeeds(hasSelectedProvisions, maximumNeedLevel){
   } 
 
   // Disable the back link temporarily to ensure the update completes before user can navigate away from the page
-  document.getElementById("back-button").style.pointerEvents="none";
+  document.getElementById("backButton").style.pointerEvents="none";
   
   var currentMaxLevel = findMaxLevel();
   if(hasSelectedProvisions == "true" && currentMaxLevel < maximumNeedLevel){	
@@ -192,9 +192,7 @@ function updateSelectedNeeds(hasSelectedProvisions, maximumNeedLevel){
 	      location.reload(); 
 		});
   }
-
-  // use javascript to update max level for the user without collapsing the accordians by reloading the page
-  showOrHideMaxLevel(currentMaxLevel);  
+  
 }
 
 
@@ -278,7 +276,7 @@ function updateSelectedProvisions(){
   });
 
   // Disable the back link temporarily to ensure the update completes before user can navigate away from the page
-  document.getElementById("back-button").style.pointerEvents="none";
+  document.getElementById("backButton").style.pointerEvents="none";
 
   jQuery.post("updateProvisions", 
     params, 
@@ -305,7 +303,7 @@ for (var i = 0; i < elements.length; i++) {
 }
 
 
-function confirmRemoval(subAreaId, provisionStatementId) {    
+function confirmProvisionRemoval(subAreaId, provisionStatementId) {    
   assessmentId = document.getElementById("assessmentId").value;
   let userConfirmation = confirm("Are you sure you want to remove this provision?");
 
@@ -344,6 +342,55 @@ function confirmAssessmentRemoval(pathPrefix, assessmentId, warningMessage) {
       location.reload();
     });
 
+  }
+}
+
+function provisionReviewWasTicked(){
+  if(document.getElementById("submitButton").disabled = true){    
+    document.getElementById("submitButton").disabled = false;
+  }
+}
+
+function confirmProvisionReview(assessmentId){    
+  // Get the ticked ids from provisions
+  let checkboxPrefix = "provision-checkbox-";
+  let tickedProvisions = "";
+  const checkboxes = $("input:checkbox[id^=provision-checkbox-]");
+
+  for(var i = 0; i < checkboxes.length; i++){
+    if(checkboxes[i].checked){
+      tickedProvisions = tickedProvisions + checkboxes[i].getAttribute("name").substr(checkboxPrefix.length) + ",";
+    }
+  }
+
+  if(tickedProvisions.endsWith(",")){
+    tickedProvisions = tickedProvisions.substring(0, tickedProvisions.length-1);
+  }
+
+  if ( window.history.replaceState ) {
+     window.history.replaceState( null, null, window.location.href );
+  } 
+  const params = jQuery.param({
+      assessmentId: assessmentId,
+      tickedProvisions: tickedProvisions
+  });
+
+  // Disable the back link temporarily to ensure the update completes before user can navigate away from the page
+  document.getElementById("backButton").style.pointerEvents="none";
+
+     jQuery.post("confirmProvisionReview",
+      params,
+      function() {
+      location.reload();
+    });
+    
+}
+
+function enableOrDisableSubmit(tcSelect){
+  if(tcSelect.checked == true){    
+    document.getElementById("submitButton").disabled = false;
+  }else  {    
+    document.getElementById("submitButton").disabled = true;
   }
 }
 

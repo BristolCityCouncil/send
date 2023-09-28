@@ -6,8 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import uk.gov.bristol.send.Assessment;
-import java.util.HashMap;
+import uk.gov.bristol.send.pages.BasePage;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -15,10 +18,14 @@ import java.util.Map;
  * A section of the Summary page for Communication & Interaction.
  * This contains the Needs and Provisions links.
  */
-public class CommunicationInteractionPage {
+@Component
+public class CommunicationInteractionPage extends BasePage {
     
     @FindBy(id = "needshref_expressiveCommunication")
     private WebElement elcNeedsLink;
+
+    @FindBy(id = "needshref_receptiveCommunication")
+    private WebElement rlcNeedsLink;
 
     @FindBy(id = "maximumNeedLevel_expressiveCommunication")
     private WebElement elcNeedsLevel;
@@ -28,6 +35,9 @@ public class CommunicationInteractionPage {
 
     @FindBy(id = "provisionhref_receptiveCommunication")
     private WebElement rlcProvisionsLink;
+
+    @FindBy(id = "provisionPageLink_receptiveCommunication")
+    private WebElement rlcSelectedProvisions;
 
     @FindBy(id = "selectedProvisionTitle_expressiveCommunication_1")
     private WebElement elcProvisionSelectedTitle;
@@ -50,6 +60,7 @@ public class CommunicationInteractionPage {
     private WebDriver webDriver;
 
     public CommunicationInteractionPage(WebDriver webDriver) {
+        super(webDriver);
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
@@ -58,28 +69,30 @@ public class CommunicationInteractionPage {
         elcNeedsLink.click();
     }
 
+    public List<WebElement> getAllNeedsLinks() {
+        return new ArrayList<>(List.of(elcNeedsLink, rlcNeedsLink));
+    }
+
+    public List<WebElement> getAllProvisionsLinks() {
+        return new ArrayList<>(List.of(elcProvisionsLink, rlcProvisionsLink));
+    }
+
+    public void clickRlcNeedsLink() {
+        rlcNeedsLink.click();
+    }
+
     public void clickRemoveElcProvisionLink(String itemNumber) {
         String provisionType = webDriver.findElement(By.id("selectedProvisionType_expressiveCommunication_" + itemNumber)).getText();
         webDriver.findElement(By.id("removeProvisionLink_expressiveCommunication_" + itemNumber)).click();
-        assessment.removeElcProvision(provisionType);
+        assessment.removeProvision(provisionType);
     }
 
-    /**
-     * Return a Map of all Expression Language Communication Provisions found on the
-     * Summary page. Key values of ProvisionType -> ProvisionText
-     * @return Map
-     */
     public Map<String, String> getElcSummaryProvisions() {
-        // Each selected provision is divided into 'info' <div> sections
-        List<WebElement> summaryProvisions = elcSelectedProvisions.findElements(By.className("info"));
+        return getSummaryProvisions(elcSelectedProvisions);
+    }
 
-        Map<String, String> summaryTypeText = new HashMap<>();
-        for (WebElement element : summaryProvisions) {
-            String text = element.getText();
-            Object[] provisionAttributes = text.lines().toArray();
-            summaryTypeText.put((String) provisionAttributes[1], (String) provisionAttributes[2]);
-        }
-        return summaryTypeText;
+    public Map<String, String> getRlcSummaryProvisions() {
+        return getSummaryProvisions(rlcSelectedProvisions);
     }
 
     public String getELCNeedsLevel() {
@@ -96,6 +109,9 @@ public class CommunicationInteractionPage {
 
     public void clickElcProvisionsLink() {
         elcProvisionsLink.click();
+    }
+    public void clickRlcProvisionsLink() {
+        rlcProvisionsLink.click();
     }
     public String getElcProvisionSelectedTitle() {
         return elcProvisionSelectedTitle.getText();

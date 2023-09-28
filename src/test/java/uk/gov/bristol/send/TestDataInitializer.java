@@ -1,12 +1,14 @@
 package uk.gov.bristol.send;
 import java.util.ArrayList;
 import java.util.List;
+
 import uk.gov.bristol.send.model.Assessment;
+import uk.gov.bristol.send.model.Need;
 import uk.gov.bristol.send.model.NeedStatement;
 import uk.gov.bristol.send.model.Provision;
+import uk.gov.bristol.send.model.ProvisionCodesLookUp;
 import uk.gov.bristol.send.model.ProvisionLookUp;
 import uk.gov.bristol.send.model.SelectedProvision;
-import uk.gov.bristol.send.model.Need;
 
 
 public class TestDataInitializer {
@@ -70,10 +72,10 @@ public class TestDataInitializer {
 
     public ArrayList<Provision> initProvisions(){
         ArrayList<Provision> provisions = new ArrayList<Provision>();
-        Provision p1 = new Provision(1, "A", "PGID1", "Specialist Professional Provision", "1", "PTID1", "Specialist professional advice and support 1", "PGID1_PTID1_PS1", "Supervision or coaching of staff by professionals.");
-        Provision p2 = new Provision(1, "B", "PGID1", "Specialist Professional Provision", "2", "PTID2", "Specialist professional supervision/overseeing of intervention", "PGID1_PTID2_PS3", "Supervision by a specialist professional with contact for 2 hours.");
-        Provision p3 = new Provision(1, "C", "PGID1", "Specialist Professional direct support", "3", "PTID3", "Specialist professional direct support", "PGID1_PTID3_PS5", "Direct therapy/intervention e.g. music, drama, art, play therapy, speech and language therapy, occupational therapy, physiotherapy on a regular basis");
-        Provision p4 = new Provision(1, "C", "PGID2", "Group & Individual Intervention", "5", "PTID9", "Post-16 tutoring", "Tutoring for over 16s", "PGID2_PTID9_PS1");        
+        Provision p1 = new Provision(1, "A", "PGID1", "Specialist Professional Provision", "1", "PTID1", "Specialist professional advice and support 1", "PGID1_PTID1_PS1", "Supervision or coaching of staff by professionals.","A", "1");
+        Provision p2 = new Provision(1, "B", "PGID1", "Specialist Professional Provision", "2", "PTID2", "Specialist professional supervision/overseeing of intervention", "PGID1_PTID2_PS3", "Supervision by a specialist professional with contact for 2 hours.", "B", "2");
+        Provision p3 = new Provision(1, "C", "PGID1", "Specialist Professional direct support", "3", "PTID3", "Specialist professional direct support", "PGID1_PTID3_PS5", "Direct therapy/intervention e.g. music, drama, art, play therapy, speech and language therapy, occupational therapy, physiotherapy on a regular basis", "C", "50");
+        Provision p4 = new Provision(1, "C", "PGID2", "Group & Individual Intervention", "5", "PTID9", "Post-16 tutoring", "Tutoring for over 16s", "PGID2_PTID9_PS1", "A", "25");        
         provisions.add(p1);        
         provisions.add(p2);        
         provisions.add(p3);
@@ -93,5 +95,19 @@ public class TestDataInitializer {
 
         return provisionsLookUp;
     }
+    
+
+    public ArrayList<ProvisionCodesLookUp> initProvisionCodesLookUp() {
+        ArrayList<ProvisionCodesLookUp> provisionCodesLookUp = new ArrayList<ProvisionCodesLookUp>();
+        ProvisionCodesLookUp pl1 = new ProvisionCodesLookUp(1, 1, "A", "1:1 dedicated Teaching assistant Support staff",13.98,null,25.00,32.00,null,null,null);
+        ProvisionCodesLookUp pl2 = new ProvisionCodesLookUp(1, 1, "B", "1:1 dedicated Lunchtime/breaktime assistant",11.78,null,5.00,32.00,null,null,null);
+        ProvisionCodesLookUp pl3 = new ProvisionCodesLookUp(1, 1, "C", "Shared lunchtime/breaktime support/monitoring",2.95,null,5.00, 32.00,null,null,null);
+        provisionCodesLookUp.add(pl1);
+        provisionCodesLookUp.add(pl2);
+        provisionCodesLookUp.add(pl3);
+
+        return provisionCodesLookUp;
+    }
+        
 
 }

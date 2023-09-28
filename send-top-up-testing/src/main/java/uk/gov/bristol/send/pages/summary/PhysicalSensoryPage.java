@@ -80,7 +80,7 @@ public class PhysicalSensoryPage extends BasePage {
     }
 
     public void clickPhysicalProvisionsLink() {
-        physicalNeedsLink.click();
+        physicalProvisionsLink.click();
     }
 
     public void clickVisionProvisionsLink() {
@@ -96,7 +96,7 @@ public class PhysicalSensoryPage extends BasePage {
     }
 
     public Map<String, String> getPhysicalSummaryProvisions() {
-        return getSummaryProvisions(physicalProvisionsLink);
+        return getSummaryProvisions(medicalSelectedProvisions);
     }
 
     public Map<String, String> getVisionSummaryProvisions() {

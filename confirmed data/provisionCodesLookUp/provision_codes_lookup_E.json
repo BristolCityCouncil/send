@@ -1,0 +1,18 @@
+{
+    "id": "5",
+    "formVersion": "1",
+    "Type": "E",
+    "Description": "Teaching assistant in class group (~ 1:20/30)",
+    "CostPerHour": "0.79",
+    "HnbBudget": "assume BG7 shared with 15 children ",
+    "WeeklyCapInHoursForThisType": "25",
+    "WeeklyCapInHoursForDifferentTypes": "35",
+    "PopUp": "This provision can only be in place for a maximum of 25 hours a week. ",
+    "AgreedPercentContribution ": "",
+    "CalculationNotes": "",
+    "_rid": "-iR-ANmiT2wFAAAAAAAAAA==",
+    "_self": "dbs/-iR-AA==/colls/-iR-ANmiT2w=/docs/-iR-ANmiT2wFAAAAAAAAAA==/",
+    "_etag": "\"0d00cf89-0000-1100-0000-63234f7f0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1663258495
+}

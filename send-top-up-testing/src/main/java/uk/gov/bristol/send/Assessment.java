@@ -1,6 +1,8 @@
 package uk.gov.bristol.send;
 
+import io.cucumber.spring.ScenarioScope;
 import org.springframework.stereotype.Component;
+import uk.gov.bristol.send.pages.NeedsPage;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,86 +10,90 @@ import java.util.Map;
 import java.util.Set;
 
 @Component
+@ScenarioScope
 public class Assessment {
 
-    private String upn;
+    private NeedsPage needsPage;
 
-    private String elcSelectedNeedLevel;
+    private Map<NeedsPage, Map<String, String>> allProvisions = new HashMap<>();
+    private Map<NeedsPage, Map<String, String>> allProvisionsTransient = new HashMap<NeedsPage, Map<String, String>>();
+    private Map<NeedsPage, Set<String>> allProvisionsDelete = new HashMap<>();
+    private Set<String> deleteSet = new HashSet<>();
 
-    private String elcProvisionType;
-
-    private Map<String, String> elcProvisions = new HashMap<>();
-
-    private Map<String, String> elcProvisionsTransient = new HashMap<>();
-    private Set<String> elcProvisionsTransientDelete = new HashSet<>();
-
-    public String getElcProvisionType() {
-        return elcProvisionType;
+    public NeedsPage getNeedsPage() {
+        return needsPage;
     }
 
-    public void setElcProvisionType(String elcProvisionType) {
-        this.elcProvisionType = elcProvisionType;
+    public void setNeedsPage(NeedsPage needsPage) {
+        this.needsPage = needsPage;
     }
 
-    public String getUpn() {
-        return upn;
-    }
-
-    public void setUpn(String upn) {
-        this.upn = upn;
-    }
-
-    public String getElcSelectedNeedLevel() {
-        return elcSelectedNeedLevel;
-    }
-
-    public void setElcSelectedNeedLevel(String elcSelectedNeedLevel) {
-        this.elcSelectedNeedLevel = elcSelectedNeedLevel;
-    }
-
-    /**
-     * Method to initialise all the values from the state held.
-     * Used at the end of every scenario to prevent values being propagated.
-     */
-    public void clearValues() {
-        this.elcSelectedNeedLevel = "";
-        this.elcProvisionType = "";
-        this.elcProvisions.clear();
-        this.elcProvisionsTransient.clear();
-        this.elcProvisionsTransientDelete.clear();
-    }
-    /**
-     * Return a Map of ProvisionType / ProvisionText
-     * @return
-     */
-    public Map<String, String> getElcProvisions() {
-        return elcProvisions;
+    public Map<String, String> getAllProvisions(NeedsPage needsPage) {
+        return allProvisions.get(needsPage);
     }
 
     /**
      * Values held are transient until either Save is clicked or the popup OK button is clicked.
      * Then transient values are moved into elcProvisions Map
-     * @param provisionType key
-     * @param provisionText value
+     * @param provisions Map<String, String>
      */
-    public void setElcProvisions(String provisionType, String provisionText) {
-        elcProvisionsTransient.put(provisionType, provisionText);
+    public void setAllProvisions(Map<String, String> provisions) {
+        if (!allProvisionsTransient.containsKey(needsPage)) {
+            allProvisionsTransient.put(needsPage, provisions);
+        } else {
+            allProvisionsTransient.forEach((provisionPage, keyVals) -> {
+                // if key exists then add keyVals to existing key
+                Map<String, String> provisionMap = allProvisionsTransient.get(needsPage);
+                provisionMap.putAll(provisions);
+            });
+        }
     }
 
-    public void removeElcProvision(String provisionType) {
-        elcProvisionsTransientDelete.add(provisionType);
+    public void removeProvision(String provisionType) {
+        deleteSet.add(provisionType);
+        allProvisionsDelete.put(needsPage, deleteSet);
     }
+
     /**
      * Values not yet saved are held but discarded if 'Back' button is pressed before 'Save'
      */
     public void clearTransientValues() {
-        elcProvisionsTransient.clear();
+        allProvisionsTransient.clear();
+    }
+
+    private void saveAllProvisions(Map<String, String> persistedProvisions,
+                                   Map<String, String> transientProvisions,
+                                   Set<String> deletedProvisions) {
+        persistedProvisions.putAll(transientProvisions);
+        for (String removeItem : deletedProvisions) {
+            persistedProvisions.remove(removeItem);
+        }
     }
 
     public void saveTransientValues() {
-        elcProvisions.putAll(elcProvisionsTransient);
-        for (String key : elcProvisionsTransientDelete) {
-            elcProvisions.remove(key);
-        }
+        persistProvisions();
     }
+
+    private void persistProvisions() {
+        // each key/value => DropDown Title/DropDown SelectItem
+        allProvisionsTransient.forEach((provisionPage, keyVals) -> {
+            // if key exists then add keyVals to existing key
+            if (allProvisions.containsKey(provisionPage)) {
+                Map<String, String> stringStringMap = allProvisions.get(provisionPage);
+                stringStringMap.putAll(keyVals);
+            } else {
+                // add new key and associated keyVals
+                allProvisions.put(provisionPage, allProvisionsTransient.get(provisionPage));
+            }
+        });
+
+        allProvisionsDelete.forEach((needsPage, deleteKey) -> {
+            Map<String, String> provisionsMap = allProvisions.get(needsPage);
+            deleteKey.forEach(s -> {
+                provisionsMap.remove(s);
+            });
+        });
+
+    }
+
 }

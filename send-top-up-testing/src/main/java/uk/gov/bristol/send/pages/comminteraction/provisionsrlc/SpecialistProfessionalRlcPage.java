@@ -16,8 +16,4 @@ public class SpecialistProfessionalRlcPage extends SpecialistProfessionalPage {
         super(webDriver);
     }
 
-    @Override
-    protected void setAssessmentProvision(String provisionType, String provisionText) {
-        assessment.setRlcProvisions(provisionType, provisionText);
-    }
 }
