@@ -2,6 +2,8 @@
 
 The Special Educational Needs application (SEND) was created so that Special Educational Needs Co-ordinators (SENDco's) in schools have a standardised way to apply to Bristol City Council for funding, for a pupil that has additional educational needs.
 
+This readme has been revised to include the phase 2 development, which added several functions (calculations, document uploads) and changed the workflow.
+
 # Tech overview
 
 The webapp is a maven based project, with Spring boot and Java 11. Pages are generated via freemarker templates. The database is a noSQL Azure Cosmos Db, and all data is held in .json format. Authentication to the app is through AD. 
@@ -11,7 +13,9 @@ The webapp is a maven based project, with Spring boot and Java 11. Pages are gen
 
 Once the SENDco has a login to the app, they can create an assessment based on a unique UPN. This is the first page a logged in user will see, the home page (home.ftlh). The UPN is a Unique Pupil Reference number, the format of which must match this [central government criteria](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/791190/UPNGenerator.xls). The assessment is also assigned a unique id by the database, although this is not generally visible to the user. 
 
-The SENDco can view a summary page for the assessment (assessment.ftlh). From here are links to pupil needs on the needs page (needs.ftlh). Under one of four *area* headings are links to 10 *sub-areas*. On the sub-area page are several *sub-categories* which contain groups of statements that represent the needs of this pupil. SENDco's pick the statements most relevant to this pupil, and use the button at the foot of the page to save these to the assessment stored in the database. Need selections are exclusive within the group, as only one can be selected per group. We do not expect SENDco's to read all the need statements, as there are several hundred need statements in the database! Instead they should be guided by the sub-area and sub-category headings to find the statements that best describe the needs of each pupil. 
+After creating an assement, the app directs them to overview page, overview.ftlh. From here are links to the provisions and needs page (via assessment.ftlh), to provisions review, to upload support documents, and to submit the completed assessment. These were added in phase 2. See more detail below.
+
+On the summary page for the assessment (assessment.ftlh), are are links to pupil needs on the needs page (needs.ftlh). Under one of four *area* headings are links to 10 *sub-areas*. On the sub-area page are several *sub-categories* which contain groups of statements that represent the needs of this pupil. SENDco's pick the statements most relevant to this pupil, and use the button at the foot of the page to save these to the assessment stored in the database. Need selections are exclusive within the group, as only one can be selected per group. We do not expect SENDco's to read all the need statements, as there are several hundred need statements in the database! Instead they should be guided by the sub-area and sub-category headings to finding the statements that best describe the needs of each pupil. 
 
 Once they have chosen the needs for a sub-area, the provisions links on the summary page become active. The SENDco can then use the provisions page (provisions.ftlh) to select requested provisions from a filtered list. Again these are saved to the assessment in the database by using the save button at the foot of the page. Provisions displayed are filtered according to which need statements have been selected, and which sub-area the needs belong to. A matrix of which provisions should be displayed is included in the file TBC confirmed-data/provisions-matrix.xlsx. This mapping between provisions and sub-areas is handled by the provisionsLookUp table (see Data structure heading below).
 
@@ -21,6 +25,13 @@ When at least one need and one provision have been selected, the SENDco can use 
 
 More detailed information and guidance about how to use the Send application can be found here. [Send pages link TBC](https://www.bristol.gov.uk/resources-professionals/professionals-working-with-children-with-send)
 
+# Phase 2 additions
+
+- The overview page, added in phase 2, has links to the stages that should be completed. However we do not check if the SENDCo has worked through these phases before submission. The only requirment before submission currently is that the SENDCo has checked a box to confirm acceptance of terms and conditions. Expected in a phase 3 development would be the addition of status flags ('completed', 'In progress' etc) to guide the SENDCo through the stages of creating an assessment.
+- Provisions are now reviewed to remove duplicates on provisionReview.ftlh page. This also includes a calculation of the maximum funding that would be provided. This is calculated by the app, and the calculation includes weekly caps on the amount that can be requested.
+- Supporting documents can be uploaded. To enable uploads we added this package; uk.gov.bristol.send.fileupload. This is an adapatation of existing java code written by bcc developers for handling file uploads. File upload process includes virus scanning by sending to a ClamAV docker container on BCC network. With small coding changes this could be bypassed. (ClamAVConnector.java)
+- For the upload we use Microsoft GraphAPI to put the assessment and file uploads into a Sharepoint site on BCC sharepoint. (SharepointService.java).
+- On submission (submitYourApplication.ftlh) the app sends a confirmation email to the SENDCo. (EmailService.java)
 
 # Data structure
 
